@@ -44,7 +44,7 @@ Unity-демонстрация многопользовательского дв
 ## Открыть исходники в Unity
 
 ```bash
-git clone --branch codex/dustline-network-game-20261024 https://github.com/teeeema/udp-csharp.git
+git clone --branch prac_4 https://github.com/teeeema/udp-csharp.git
 ```
 
 Откройте `unity/PredictionDemo` в Unity **6000.3.8f1**. Дождитесь установки пакетов и откройте `Assets/Scenes/PredictionDemo.unity`. Для проверки нажмите Play. Меню `PR4 → Build macOS Demo` пересоздаёт рабочие процедурные ресурсы и собирает приложение в `Builds/PR4PredictionDemo.app`.
