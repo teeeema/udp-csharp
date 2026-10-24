@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "command": "command script eval_file",
+  "data": {
+    "command": "script eval_file",
+    "parameters": {
+      "file": "/tmp/shoot-build.cs",
+      "timeout": "300"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": "BUILD_OK"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/tema/Documents/Разработка многопользовательских приложений виртуальной реальности/prac_1/unity/PredictionDemo"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

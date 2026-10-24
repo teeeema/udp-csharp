@@ -1,157 +1,76 @@
-# UDP Game Protocol — практические работы №1–№3
+# DUSTLINE — сетевой танковый полигон
 
-## Что это за проект
+Unity-демонстрация многопользовательского движения, стрельбы и влияния задержки/потерь на сетевую игру. В этой ветке находится рабочая сцена с процедурными танками и песчаным полигоном.
 
-Консольный проект C# / .NET 10: игровой UDP-протокол с authoritative Dedicated Server и эксперимент по измерению задержки, её изменчивости и потерь. ПР №2 развивает ПР №1, сохраняя обычный игровой режим.
+## Скачать игру
 
-## ПР №1
+Готовое приложение для macOS: [релиз DUSTLINE](https://github.com/teeeema/udp-csharp/releases/tag/dustline-20261024). Скачайте `Dustline-macOS.zip`, распакуйте и запустите `PR4PredictionDemo.app`.
 
-Клиент чередует MOVEMENT и SHOOT, сервер проверяет команды и возвращает STATE_UPDATE с тем же SequenceNumber. Сервер определяет итоговые координаты и счётчик выстрелов. [Демонстрация со снимками консоли](docs/Демонстрация_работы_протокола.md) сохранена.
+## Запуск двух игроков
 
-## ПР №2
+1. В первом экземпляре нажмите **START HOST / SOLO TEST**.
+2. Откройте второй экземпляр приложения. На macOS: `open -n /полный/путь/PR4PredictionDemo.app`.
+3. Во втором экземпляре укажите `127.0.0.1` и нажмите **JOIN**.
+4. На экране появятся два танка и `2 CONNECTED`.
 
-Режим --experiment использует PING/PONG и собирает RTT, SRTT, Jitter, Loss. Шесть профилей по 50 PING позволяют сравнить базовый обмен, delay, jitter и loss. Программный Network Emulator работает на исходящих PING клиента; повторных отправок нет.
+Для игры в локальной сети вместо `127.0.0.1` укажите адрес компьютера Host; используется UDP-порт 7777. Интернет-матчмейкинг и настройка NAT не реализованы. Автоматическая проверка выполнена на одном Mac в двух отдельных процессах.
 
-## ПР №3
+## Управление
 
-SHOOT теперь reliable: RequiresAck=true, отдельный UDP ACK, повтор исходных bytes с тем же sequence, maxAttempts=5 и failed без аварии. Adaptive RTO рассчитывает SRTT/RTTVAR в диапазоне 100–3000 ms. Karn исключает RTT ACK после retransmission; успешные PING/PONG также обучают RTO. Server использует RecentCommandWindow на 1024 команды каждого endpoint: duplicate получает ACK и сохранённый STATE_UPDATE, а игровой эффект не повторяется. MOVEMENT, PING/PONG, ACK и STATE_UPDATE остаются ненадёжными.
+| Действие | Управление |
+|---|---|
+| Движение и направление корпуса | WASD |
+| Выстрел вперёд по направлению корпуса | ЛКМ или F; можно удерживать |
+| Рывок | Space |
+| Намеренное расхождение для проверки серверной коррекции | B |
+| Сетевая лаборатория | F3 |
+| Процент логических потерь | Ползунок Packet loss в F3, 0–100% |
 
-Фактически выполнены шесть серий по 50 SHOOT: **300 исходных команд, 299 подтверждены, 59 retransmissions, 1 failed**. Failed-команда была применена сервером один раз, но не получила подтверждения за пять попыток. [Реальный CSV](docs/reliability_samples.csv), [отчёт](docs/Reliability_Protocol.md), [график попыток](docs/graphs/avg_attempts_vs_loss.png), [график adaptive RTO](docs/graphs/rto_jitter_loss_10.png). Seeds: 20261009 на отправку, 20261010 на приём. Эмуляция действует на запросы и ответы, включая ACK; полный эксперимент описан в отчёте.
+Смена потерь в окне Client влияет на его команды и обратные сообщения. Игрок Host работает непосредственно на сервере. Стрельба регистрирует попадания и отображает трассеры/вспышки; здоровье и разрушение не добавлены.
 
-Wire version=2, header=8 байт. Client и Server обновляются вместе; v1 отклоняется. Ограничения UInt16 rollover, late ACK, отсутствия session ID, bounded dedup window и failed retention описаны в отчёте. Безусловная exactly-once доставка не заявляется.
+## Важные сетевые механики Unity
 
-## Архитектура
+- Host/Client на Netcode for GameObjects и Unity Transport.
+- Server authority: клиент отправляет ввод, сервер рассчитывает позиции, проверяет направление/перезарядку и столкновения.
+- Client-side prediction: локальное движение без ожидания подтверждения сервера; переключение ON/OFF через F3.
+- Server reconciliation: номера команд, подтверждения, очередь неподтверждённого ввода и повторное проигрывание.
+- Удалённые игроки плавно следуют полученной серверной позиции; устаревшие обновления отбрасываются.
+- Серверная стрельба: клиент отправляет номер запроса; сервер определяет направление, допустимость и ближайшее попадание, реплицирует счётчики и эффекты.
+- Эмуляция задержки и детерминированных логических потерь: готовые профили 0 мс/0%, 100 мс/0%, 175 мс/5% и произвольный процент потерь.
+- Диагностика ACK, ожидающих команд, ошибок корректировки и реакции на рывок.
 
-Protocol задаёт wire format и validation, Transport передаёт дейтаграммы и применяет эмулятор, Telemetry хранит inFlight и рассчитывает метрики. Reliability хранит состояние доставки и адаптивный timeout без сетевого IO; Client связывает его с Protocol, Transport и Telemetry. Client организует сценарии, Server хранит авторитетное состояние и отвечает на PING.
+Потери моделируются внутри приложения, до RPC; это не потеря всех UDP-пакетов соединения. Надёжные счётчики выстрелов/попаданий идут отдельно от фильтра эффектов. Производственная защита от читов, rollback, урон и lag compensation в объём демонстрации не входят.
 
-Путь эксперимента: Client → UdpTransport → UDP → серверный UdpTransport → Server. Обычный клиент использует тот же UdpTransport без эмуляции. Сервер использует UdpTransport в обоих сценариях. [Подробные зависимости и диаграммы](docs/Architecture_Design.md).
-
-## Структура solution
-
-```text
-UdpGame.sln
-src/
-├── UdpGame.Protocol/       # header, payload, serializer, validation
-├── UdpGame.Transport/      # UdpTransport и NetworkEmulator
-├── UdpGame.Reliability/    # pending/failed, retransmission, adaptive RTO
-├── UdpGame.Telemetry/      # inFlight, RTT/SRTT/jitter/loss
-├── UdpGame.Server/         # состояние игры и PONG
-└── UdpGame.Client/         # обычный режим и ExperimentRunner
-tests/
-├── UdpGame.Protocol.Tests/
-├── UdpGame.Telemetry.Tests/
-├── UdpGame.Reliability.Tests/
-└── UdpGame.Integration.Tests/
-docs/                      # спецификация, архитектура, CSV, графики, фото
-```
-
-## Packet types
-
-| Пакет | Направление | Назначение | Полный размер, bytes |
-|---|---|---|---:|
-| MOVEMENT | Client → Server | Координаты | 20 |
-| SHOOT | Client → Server | Выстрел | 9 |
-| STATE_UPDATE | Server → Client | Авторитетное состояние | 27 |
-| PING | Client → Server | Начало измерения | 16 |
-| PONG | Server → Client | Ответ для измерения RTT | 32 |
-| ACK | Server → Client для reliable SHOOT | Подтверждение sequence | 10 |
-
-Header — 8 байт, ProtocolVersion = 2, многобайтовые числа — big-endian. [Wire specification](docs/Protocol_Specification.md).
-
-## Build
-
-Требуется .NET SDK 10.0 и возможность восстановления NuGet-пакетов. Все проекты нацелены на net10.0. Команды выполняются из корня проекта.
+## Открыть исходники в Unity
 
 ```bash
-dotnet restore
-dotnet build UdpGame.sln
+git clone --branch codex/dustline-network-game-20261024 https://github.com/teeeema/udp-csharp.git
 ```
 
-## Tests
+Откройте `unity/PredictionDemo` в Unity **6000.3.8f1**. Дождитесь установки пакетов и откройте `Assets/Scenes/PredictionDemo.unity`. Для проверки нажмите Play. Меню `PR4 → Build macOS Demo` пересоздаёт рабочие процедурные ресурсы и собирает приложение в `Builds/PR4PredictionDemo.app`.
 
-После сборки:
+Пакеты: Netcode for GameObjects 2.13.3, Unity Transport 2.6.0, URP 17.3.0. Модели полигона и танков создаются собственным Editor builder. Шрифты и стандартные TMP-ресурсы содержат сопутствующие лицензии. Временные импортированные карты и сторонние пакеты танков в публикацию не включены.
+
+## Проверки и материалы
+
+- Unity EditMode: **8/8**, 0 failed.
+- Реальный Unity Play Mode: стрельба, попадание, серверный cooldown; направление модели/трассера совпадает с корпусом после поворота на 90°.
+- macOS build: `BUILD_OK`.
+- Реальные Host + Client: 0%, 50%, 100% логических потерь; процессы завершились с кодом 0. При 100% сервер не принял ни одного выстрела соответствующего клиента.
+- `.NET`: 78 тестов ПР1–ПР3 в предыдущем прогоне. Для этой публикации повторно не запускались.
+
+[Управление, реализация и проверки стрельбы](docs/Shooting_and_Network_Lab.md) · [Поток prediction/reconciliation](docs/Prediction_Implementation.md) · [Матрица T1–T5](docs/Prediction_Test_Matrix.md) · [Логи и результаты](docs/test-results/shooting)
+
+Сохранённые результаты T1–T5 относятся к более ранней проверке prediction. Текущие проверки стрельбы и потерь находятся в отдельном каталоге `shooting`; они не обозначают новый полный прогон T1–T5.
+
+![Host + Client](docs/media/shooting/client-loss-0.png)
+
+## Предыдущие практики: собственный UDP-протокол C#
+
+Каталоги `src/`, `tests/` и `UdpGame.sln` содержат консольные клиент/сервер ПР1–ПР3: MOVEMENT, SHOOT, STATE_UPDATE, PING/PONG, ACK, ручную сериализацию, reliable SHOOT с повторными отправками, адаптивный RTO/Karn и серверную дедупликацию. Это отдельная реализация от Unity NGO.
 
 ```bash
-dotnet test UdpGame.sln --no-build
+dotnet test UdpGame.sln
 ```
 
-В исходниках **78 тестов**: 21 Protocol, 10 Telemetry, 27 Reliability и 20 Integration; MSTest 4.0.2. Все прежние 58 сохранены. Покрыты реальная потеря первого ACK с повтором SHOOT без второго эффекта, Karn, failed при 100% loss, bounded dedup/rollover, двусторонний эмулятор и непрерывный polling во время delayed ACK. Итоговый прогон: 78 passed, 0 failed. Обычный Client/Server сценарий и полный существующий эксперимент ПР №2 проверены.
-
-## Запуск сервера
-
-В первом терминале, с доступным UDP-портом 27015:
-
-```bash
-dotnet run --project src/UdpGame.Server -- --port 27015 --log server.log
-```
-
-Без --max-packets сервер работает до остановки. Для короткой демонстрации можно добавить --max-packets 6. Для эксперимента этот лимит использовать не следует: требуется обработать несколько серий. Лог дописывается в server.log.
-
-## Демонстрация ПР №1
-
-Во втором терминале:
-
-```bash
-dotnet run --project src/UdpGame.Client -- --host 127.0.0.1 --port 27015 --count 6 --interval-ms 500 --timeout-ms 2000
-```
-
-Обычный клиент работает с MOVEMENT / reliable SHOOT / ACK / STATE_UPDATE. При успешной демонстрации ожидается Completed: 6/6 responses received. [Описание обмена и photos](docs/Демонстрация_работы_протокола.md).
-
-## Запуск эксперимента ПР №2
-
-При работающем сервере без ограничения пакетов:
-
-```bash
-dotnet run --project src/UdpGame.Client -- --host 127.0.0.1 --port 27015 --experiment --csv docs/latency_samples_new.csv
-```
-
-Это команда для будущего запуска, а не шаг проверки документации. Новый путь выбран для сохранения исходного CSV: WriteCsv перезаписывает файл назначения. Значение --csv по умолчанию — docs/latency_samples.csv.
-
-Experiment mode работает с PING / PONG / RTT / SRTT / Jitter / Loss: 6 × 50 PING, плановый интервал 200 ms, timeout 1000 ms, seed 20260923. Параметры --count, --interval-ms, --timeout-ms не меняют константы эксперимента. [Профили и методика](docs/Experiment_Config.md).
-
-## Запуск эксперимента ПР №3
-
-При работающем сервере без --max-packets:
-
-```bash
-dotnet run --project src/UdpGame.Client -- --host 127.0.0.1 --port 27015 --reliability-experiment --csv docs/reliability_samples_new.csv
-```
-
-Режим выполняет шесть серий по 50 reliable SHOOT. --csv по умолчанию — docs/reliability_samples.csv; для повторного запуска используйте новый путь, поскольку файл перезаписывается. --count, --interval-ms и --timeout-ms относятся к обычному режиму. ПР №3 использует 50 ms паузу между завершёнными операциями, probe timeout=1000 ms и polling=20 ms; параметры профилей фиксированы в NetworkProfiles.ReliabilityProfiles. --experiment и --reliability-experiment взаимоисключающие.
-
-Независимая проверка сохранённого фактического запуска и построение графиков (Python 3, Base R; дополнительных Python-пакетов не требуется):
-
-```bash
-python3 scripts/analyze_reliability.py
-Rscript scripts/plot_reliability.R
-```
-
-Скрипты читают CSV, не генерируют samples. [Вывод ПР №3](docs/reliability_run.log) и [серверные ACK/duplicate эффекты](docs/reliability_server.log) сохранены для аудита.
-
-## Результаты ПР №2
-
-[Сохранённый CSV](docs/latency_samples.csv) содержит 300 строк: 295 received и 5 timeout. В loss_5 — 2 timeout (4%), в combined — 3 (6%). Остальные четыре серии завершились без timeout. [Аналитический отчёт](docs/Latency_Report.md) содержит независимо пересчитанную таблицу, анализ каждой серии и объяснение ограничений результатов.
-
-Шесть PNG построены через Plotly, экспортированы Kaleido и находятся в `docs/charts/`:
-
-- [Динамика RTT: шесть отдельных графиков](docs/Charts_Analysis.md#2-динамика-rtt-по-измерениям).
-- [Средний RTT](docs/charts/chart_mean_rtt.png).
-- [Final SRTT](docs/charts/chart_srtt.png).
-- [Jitter](docs/charts/chart_jitter.png).
-- [Потери пакетов](docs/charts/chart_packet_loss.png).
-- [Распределения RTT с увеличением baseline](docs/charts/chart_rtt_distribution.png).
-
-## Документация
-
-- [Architecture Design](docs/Architecture_Design.md): развитие ПР №1 → ПР №2 → ПР №3, модули, обмен, inFlight.
-- [Reliability Protocol](docs/Reliability_Protocol.md): реализация и фактические результаты ПР №3.
-- [Protocol Specification](docs/Protocol_Specification.md): header, offsets, payload, validation.
-- [Experiment_Config.md](docs/Experiment_Config.md) — конфигурация эксперимента, параметры эмуляции и воспроизводимость.
-- [Latency_Report.md](docs/Latency_Report.md) — результаты эксперимента, итоговая статистика и выводы.
-- [Charts_Analysis.md](docs/Charts_Analysis.md) — подробный анализ всех визуализаций и пояснения для защиты.
-- [Демонстрация ПР №1](docs/Демонстрация_работы_протокола.md): сохранённый игровой сценарий.
-
-
-- [Демонстрация ПР №2](docs/Демонстрация_запуска_ПР2.md): запуск и работоспособность ПР №2.
-- [Демонстрация запуска ПР №3](docs/Демонстрация_запуска_ПР3.md): полный запуск reliable UDP, ACK, retransmission, Adaptive RTO, Karn и результаты 6 серий.
-
+[Спецификация протокола](docs/Protocol_Specification.md) · [Надёжная доставка](docs/Reliability_Protocol.md) · [Архитектура](docs/Architecture_Design.md)

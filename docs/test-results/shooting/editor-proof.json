@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command script eval_file",
+  "data": {
+    "command": "script eval_file",
+    "parameters": {
+      "file": "/tmp/shoot-editor-proof.cs"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": "{\"frame\":3630,\"before\":0,\"after\":1,\"cooldownRejected\":true,\"hits\":1,\"lossEdges\":true,\"customLoss\":37}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/tema/Documents/Разработка многопользовательских приложений виртуальной реальности/prac_1/unity/PredictionDemo"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command script eval",
+  "data": {
+    "command": "script eval",
+    "parameters": {
+      "code": "UnityEditor.PlayerSettings.runInBackground=true; if (UnityEditor.AssetDatabase.IsValidFolder(\"Assets/Temp\") && System.IO.Directory.GetFiles(\"Assets/Temp\", \"*\", System.IO.SearchOption.AllDirectories).Length==0) UnityEditor.AssetDatabase.DeleteAsset(\"Assets/Temp\"); UnityEditor.AssetDatabase.SaveAssets(); return new { compileFailed=UnityEditor.EditorUtility.scriptCompilationFailed, scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().path };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "compileFailed": false,
+        "scene": "Assets/Scenes/PredictionDemo.unity"
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/tema/Documents/Разработка многопользовательских приложений виртуальной реальности/prac_1/unity/PredictionDemo"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

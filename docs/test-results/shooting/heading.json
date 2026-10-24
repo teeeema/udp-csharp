@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command script eval_file",
+  "data": {
+    "command": "script eval_file",
+    "parameters": {
+      "file": "/tmp/shoot-heading.cs"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": "{\"heading\":\"(1.00, 0.00, 0.00)\",\"visualDot\":1.00000024,\"shotDot\":1.00000012,\"shots\":1}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/tema/Documents/Разработка многопользовательских приложений виртуальной реальности/prac_1/unity/PredictionDemo"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

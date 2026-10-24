@@ -1,0 +1,28 @@
+{
+  "clients": [
+    {
+      "loss": 0,
+      "exit": 0,
+      "effects": 8,
+      "shotDrops": 0,
+      "exceptions": false
+    },
+    {
+      "loss": 50,
+      "exit": 0,
+      "effects": 4,
+      "shotDrops": 3,
+      "exceptions": false
+    },
+    {
+      "loss": 100,
+      "exit": 0,
+      "effects": 0,
+      "shotDrops": 8,
+      "exceptions": false
+    }
+  ],
+  "hostExit": 0,
+  "acceptedShots": 14,
+  "serverStateDrops": 2
+}

@@ -21,3 +21,14 @@ Thumbs.db
 /build-*/
 /graphify-out/
 /tmp/
+
+# Unity generated output (PR4)
+unity/PredictionDemo/[Ll]ibrary/
+unity/PredictionDemo/[Tt]emp/
+unity/PredictionDemo/[Oo]bj/
+unity/PredictionDemo/[Ll]ogs/
+unity/PredictionDemo/[Uu]ser[Ss]ettings/
+unity/PredictionDemo/Build/
+unity/PredictionDemo/Builds/
+
+unity/PredictionDemo/mono_crash.*.json

@@ -1,0 +1,84 @@
+{
+  "success": true,
+  "command": "command test status",
+  "data": {
+    "command": "test status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 0.7,
+      "summary": {
+        "total": 8,
+        "passed": 8,
+        "failed": 0,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.ClientOnlyDoubleDash_DivergesFromAuthoritativeDash",
+          "Status": "Passed",
+          "Duration": 0.0157862,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.Dash_RejectsSecondRequestDuringCooldown",
+          "Status": "Passed",
+          "Duration": 0.0005255,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.Dash_RequiresDirectionAndFinishedCooldown",
+          "Status": "Passed",
+          "Duration": 0.0000775,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.NetworkProfiles_MatchRequiredLabValues",
+          "Status": "Passed",
+          "Duration": 0.0004888,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.PacketLoss_IsDeterministicAndOnlyEnabledForStressProfile",
+          "Status": "Passed",
+          "Duration": 0.0024475,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.SanitizeMove_ClampsMagnitudeToOne",
+          "Status": "Passed",
+          "Duration": 0.0001161,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.TankCollisionTests.DashStopsChassisAtLowCoverIncludingSideContact(0.0f)",
+          "Status": "Passed",
+          "Duration": 0.0046132,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.TankCollisionTests.DashStopsChassisAtLowCoverIncludingSideContact(1.1f)",
+          "Status": "Passed",
+          "Duration": 0.0002883,
+          "Message": null,
+          "StackTrace": null
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/tema/Documents/Разработка многопользовательских приложений виртуальной реальности/prac_1/unity/PredictionDemo"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

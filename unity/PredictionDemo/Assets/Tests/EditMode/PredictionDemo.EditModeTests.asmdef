@@ -1,0 +1,13 @@
+{
+  "name": "PredictionDemo.EditModeTests",
+  "rootNamespace": "PredictionDemo.Tests",
+  "references": [
+    "PredictionDemo.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

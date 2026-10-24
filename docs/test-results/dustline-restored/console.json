@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "command": "command console get",
+  "data": {
+    "command": "console get",
+    "parameters": {
+      "tail": "15",
+      "level": "error"
+    },
+    "result": {
+      "entries": [],
+      "cursor": 47,
+      "session": "142919d35f314aaea79e4e8e53f0ad23",
+      "returned": 0,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 0,
+        "warn": 0,
+        "log": 22
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-10-23T20:10:28.376122Z",
+        "ageMs": 219,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 0,
+        "consoleWarnings": 0,
+        "consoleLogs": 22,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/tema/Documents/Разработка многопользовательских приложений виртуальной реальности/prac_1/unity/PredictionDemo"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

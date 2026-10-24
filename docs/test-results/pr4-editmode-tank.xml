@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="6" result="Passed" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-16 12:32:06Z" end-time="2026-10-16 12:32:06Z" duration="0.0160185">
+  <test-suite type="TestSuite" id="1000" name="PredictionDemo" fullname="PredictionDemo" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-16 12:32:06Z" end-time="2026-10-16 12:32:06Z" duration="0.016019" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1008" name="PredictionDemo.EditModeTests.dll" fullname="/Users/tema/Documents/Разработка многопользовательских приложений виртуальной реальности/prac_1/unity/PredictionDemo/Library/ScriptAssemblies/PredictionDemo.EditModeTests.dll" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-16 12:32:06Z" end-time="2026-10-16 12:32:06Z" duration="0.013310" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="95609" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1009" name="PredictionDemo" fullname="PredictionDemo" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-16 12:32:06Z" end-time="2026-10-16 12:32:06Z" duration="0.013084" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1010" name="Tests" fullname="PredictionDemo.Tests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-16 12:32:06Z" end-time="2026-10-16 12:32:06Z" duration="0.012850" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="PredictionRulesTests" fullname="PredictionDemo.Tests.PredictionRulesTests" classname="PredictionDemo.Tests.PredictionRulesTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-16 12:32:06Z" end-time="2026-10-16 12:32:06Z" duration="0.012361" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1006" name="ClientOnlyDoubleDash_DivergesFromAuthoritativeDash" fullname="PredictionDemo.Tests.PredictionRulesTests.ClientOnlyDoubleDash_DivergesFromAuthoritativeDash" methodname="ClientOnlyDoubleDash_DivergesFromAuthoritativeDash" classname="PredictionDemo.Tests.PredictionRulesTests" runstate="Runnable" seed="1866550162" result="Passed" start-time="2026-10-16 12:32:06Z" end-time="2026-10-16 12:32:06Z" duration="0.005913" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1005" name="Dash_RejectsSecondRequestDuringCooldown" fullname="PredictionDemo.Tests.PredictionRulesTests.Dash_RejectsSecondRequestDuringCooldown" methodname="Dash_RejectsSecondRequestDuringCooldown" classname="PredictionDemo.Tests.PredictionRulesTests" runstate="Runnable" seed="1816264124" result="Passed" start-time="2026-10-16 12:32:06Z" end-time="2026-10-16 12:32:06Z" duration="0.000225" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1004" name="Dash_RequiresDirectionAndFinishedCooldown" fullname="PredictionDemo.Tests.PredictionRulesTests.Dash_RequiresDirectionAndFinishedCooldown" methodname="Dash_RequiresDirectionAndFinishedCooldown" classname="PredictionDemo.Tests.PredictionRulesTests" runstate="Runnable" seed="2003124847" result="Passed" start-time="2026-10-16 12:32:06Z" end-time="2026-10-16 12:32:06Z" duration="0.000064" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1002" name="NetworkProfiles_MatchRequiredLabValues" fullname="PredictionDemo.Tests.PredictionRulesTests.NetworkProfiles_MatchRequiredLabValues" methodname="NetworkProfiles_MatchRequiredLabValues" classname="PredictionDemo.Tests.PredictionRulesTests" runstate="Runnable" seed="1372130694" result="Passed" start-time="2026-10-16 12:32:06Z" end-time="2026-10-16 12:32:06Z" duration="0.000297" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1007" name="PacketLoss_IsDeterministicAndOnlyEnabledForStressProfile" fullname="PredictionDemo.Tests.PredictionRulesTests.PacketLoss_IsDeterministicAndOnlyEnabledForStressProfile" methodname="PacketLoss_IsDeterministicAndOnlyEnabledForStressProfile" classname="PredictionDemo.Tests.PredictionRulesTests" runstate="Runnable" seed="144434486" result="Passed" start-time="2026-10-16 12:32:06Z" end-time="2026-10-16 12:32:06Z" duration="0.001217" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1003" name="SanitizeMove_ClampsMagnitudeToOne" fullname="PredictionDemo.Tests.PredictionRulesTests.SanitizeMove_ClampsMagnitudeToOne" methodname="SanitizeMove_ClampsMagnitudeToOne" classname="PredictionDemo.Tests.PredictionRulesTests" runstate="Runnable" seed="423628494" result="Passed" start-time="2026-10-16 12:32:06Z" end-time="2026-10-16 12:32:06Z" duration="0.000092" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: /Users/tema/Library/Application Support/DefaultCompany/PredictionDemo/TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

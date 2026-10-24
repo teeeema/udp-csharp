@@ -1,0 +1,12 @@
+[
+  "README.md",
+  "docs/Dustline_Test_World.md",
+  "unity/PredictionDemo/Assets/Editor/ProjectBootstrap/PredictionDemoBuilder.cs",
+  "unity/PredictionDemo/Assets/Materials/ConcreteBunker.mat",
+  "unity/PredictionDemo/Assets/Materials/MilitaryCrate.mat",
+  "unity/PredictionDemo/Assets/Materials/Player.mat",
+  "unity/PredictionDemo/Assets/Materials/SignalTeal.mat",
+  "unity/PredictionDemo/Assets/Materials/WarmLight.mat",
+  "unity/PredictionDemo/Assets/Prefabs/PredictedPlayer.prefab",
+  "unity/PredictionDemo/Assets/Scenes/PredictionDemo.unity"
+]
