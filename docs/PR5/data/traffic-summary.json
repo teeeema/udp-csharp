@@ -1,0 +1,325 @@
+{
+  "idle": {
+    "baseline": {
+      "host": {
+        "samples": 20,
+        "seconds": 9.518,
+        "tx_KBps": 74.505568396722,
+        "rx_KBps": 0.0,
+        "objects": [
+          50
+        ]
+      },
+      "client": {
+        "samples": 20,
+        "seconds": 9.521,
+        "tx_KBps": 0.0,
+        "rx_KBps": 74.48209221720407,
+        "objects": [
+          50
+        ]
+      }
+    },
+    "optimized": {
+      "host": {
+        "samples": 20,
+        "seconds": 9.540000000000001,
+        "tx_KBps": 0.29433962264150937,
+        "rx_KBps": 0.0,
+        "objects": [
+          50
+        ]
+      },
+      "client": {
+        "samples": 20,
+        "seconds": 9.534999999999998,
+        "tx_KBps": 0.0,
+        "rx_KBps": 0.2944939695857368,
+        "objects": [
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    "reduction_percent": 99.60494278618984
+  },
+  "client_move": {
+    "baseline": {
+      "host": {
+        "samples": 20,
+        "seconds": 9.518,
+        "tx_KBps": 76.23450304685858,
+        "rx_KBps": 1.76003362050851,
+        "objects": [
+          50
+        ]
+      },
+      "client": {
+        "samples": 20,
+        "seconds": 9.515,
+        "tx_KBps": 1.7656332107199157,
+        "rx_KBps": 76.2635838150289,
+        "objects": [
+          50
+        ]
+      }
+    },
+    "optimized": {
+      "host": {
+        "samples": 20,
+        "seconds": 9.535,
+        "tx_KBps": 1.954902988987939,
+        "rx_KBps": 1.7317252228631357,
+        "objects": [
+          50
+        ]
+      },
+      "client": {
+        "samples": 20,
+        "seconds": 9.533999999999999,
+        "tx_KBps": 1.7117684078036501,
+        "rx_KBps": 1.9349695825466753,
+        "objects": [
+          4,
+          6,
+          8,
+          10,
+          11
+        ]
+      }
+    },
+    "reduction_percent": 97.43567163048688
+  },
+  "both_move": {
+    "baseline": {
+      "host": {
+        "samples": 20,
+        "seconds": 9.520000000000003,
+        "tx_KBps": 77.92268907563023,
+        "rx_KBps": 1.7546218487394951,
+        "objects": [
+          50
+        ]
+      },
+      "client": {
+        "samples": 20,
+        "seconds": 9.516999999999996,
+        "tx_KBps": 1.7602185562677322,
+        "rx_KBps": 77.83797415151837,
+        "objects": [
+          50
+        ]
+      }
+    },
+    "optimized": {
+      "host": {
+        "samples": 20,
+        "seconds": 9.527000000000001,
+        "tx_KBps": 3.630943633882649,
+        "rx_KBps": 1.7180644484097825,
+        "objects": [
+          50
+        ]
+      },
+      "client": {
+        "samples": 20,
+        "seconds": 9.535999999999994,
+        "tx_KBps": 1.7013422818791957,
+        "rx_KBps": 3.587248322147653,
+        "objects": [
+          4,
+          6,
+          8,
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    "reduction_percent": 95.3403255496502
+  },
+  "shoot": {
+    "baseline": {
+      "host": {
+        "samples": 20,
+        "seconds": 9.519999999999996,
+        "tx_KBps": 74.70336134453784,
+        "rx_KBps": 0.05042016806722691,
+        "objects": [
+          50
+        ]
+      },
+      "client": {
+        "samples": 20,
+        "seconds": 9.515,
+        "tx_KBps": 0.050446663163426164,
+        "rx_KBps": 74.47356805044666,
+        "objects": [
+          50
+        ]
+      }
+    },
+    "optimized": {
+      "host": {
+        "samples": 20,
+        "seconds": 9.541000000000004,
+        "tx_KBps": 0.5324389476994024,
+        "rx_KBps": 0.050309191908604944,
+        "objects": [
+          50
+        ]
+      },
+      "client": {
+        "samples": 20,
+        "seconds": 9.542000000000002,
+        "tx_KBps": 0.05030391951372877,
+        "rx_KBps": 0.5231607629427792,
+        "objects": [
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    "reduction_percent": 99.28726239607379
+  },
+  "target_state": {
+    "baseline": {
+      "host": {
+        "samples": 20,
+        "seconds": 9.518,
+        "tx_KBps": 74.5240596764026,
+        "rx_KBps": 0.0,
+        "objects": [
+          50
+        ]
+      },
+      "client": {
+        "samples": 20,
+        "seconds": 9.517000000000003,
+        "tx_KBps": 0.0,
+        "rx_KBps": 74.26289797205,
+        "objects": [
+          50
+        ]
+      }
+    },
+    "optimized": {
+      "host": {
+        "samples": 20,
+        "seconds": 9.533999999999992,
+        "tx_KBps": 0.6066708621774707,
+        "rx_KBps": 0.0,
+        "objects": [
+          50
+        ]
+      },
+      "client": {
+        "samples": 20,
+        "seconds": 9.542000000000002,
+        "tx_KBps": 0.0,
+        "rx_KBps": 0.5961014462376859,
+        "objects": [
+          11,
+          12
+        ]
+      }
+    },
+    "reduction_percent": 99.18593959479429
+  },
+  "zones": {
+    "baseline": {
+      "host": {
+        "samples": 52,
+        "seconds": 25.558999999999997,
+        "tx_KBps": 76.51598262842835,
+        "rx_KBps": 2.4000939003873394,
+        "objects": [
+          50
+        ]
+      },
+      "client": {
+        "samples": 52,
+        "seconds": 25.558000000000007,
+        "tx_KBps": 2.4001878081227006,
+        "rx_KBps": 76.53400109554735,
+        "objects": [
+          50
+        ]
+      }
+    },
+    "optimized": {
+      "host": {
+        "samples": 52,
+        "seconds": 25.599999999999994,
+        "tx_KBps": 2.5775000000000006,
+        "rx_KBps": 2.4000000000000004,
+        "objects": [
+          50
+        ]
+      },
+      "client": {
+        "samples": 52,
+        "seconds": 25.578000000000003,
+        "tx_KBps": 2.400187661271405,
+        "rx_KBps": 2.576902025177887,
+        "objects": [
+          0,
+          2,
+          4,
+          5,
+          7,
+          9,
+          11
+        ]
+      }
+    },
+    "reduction_percent": 96.63142272835118
+  },
+  "combined": {
+    "baseline": {
+      "host": {
+        "samples": 28,
+        "seconds": 13.540000000000006,
+        "tx_KBps": 78.42304283604132,
+        "rx_KBps": 2.444313146233381,
+        "objects": [
+          50
+        ]
+      },
+      "client": {
+        "samples": 28,
+        "seconds": 13.543999999999997,
+        "tx_KBps": 2.4471352628470178,
+        "rx_KBps": 78.39988186650916,
+        "objects": [
+          50
+        ]
+      }
+    },
+    "optimized": {
+      "host": {
+        "samples": 28,
+        "seconds": 13.563999999999993,
+        "tx_KBps": 5.501032143910353,
+        "rx_KBps": 2.4417575936301987,
+        "objects": [
+          50
+        ]
+      },
+      "client": {
+        "samples": 28,
+        "seconds": 13.559999999999988,
+        "tx_KBps": 2.4424778761061967,
+        "rx_KBps": 5.502654867256642,
+        "objects": [
+          11,
+          12,
+          13
+        ]
+      }
+    },
+    "reduction_percent": 92.98543904320145
+  }
+}
