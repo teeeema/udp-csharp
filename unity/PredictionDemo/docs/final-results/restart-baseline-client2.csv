@@ -1,0 +1,10 @@
+seconds,mode,server,clients,objects,visible,tx_bytes,rx_bytes,tx_KBps,rx_KBps
+2.486,BASELINE,False,0,0,0,0,0,0.000,0.000
+3.665,BASELINE,False,0,0,0,0,0,0.000,0.000
+3.796,BASELINE,False,0,0,0,0,0,0.000,0.000
+4.800,BASELINE,False,0,0,0,0,0,0.000,0.000
+5.801,BASELINE,False,0,0,0,0,0,0.000,0.000
+6.802,BASELINE,False,0,0,0,0,0,0.000,0.000
+7.810,BASELINE,False,0,0,0,0,0,0.000,0.000
+8.818,BASELINE,False,0,0,0,0,0,0.000,0.000
+9.825,BASELINE,False,0,0,0,0,0,0.000,0.000

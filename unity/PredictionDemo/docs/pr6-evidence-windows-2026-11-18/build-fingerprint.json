@@ -1,0 +1,7 @@
+{
+  "runtime_sha256": "0f185cfed903800f7f9efe22f5ca1a93f3c520a43a457ce61fe5c9954767af00",
+  "app": "Builds/PR6-Windows-CopperBasin/DUSTLINE.exe",
+  "unity": "6000.6.9f1",
+  "platform": "Windows x64",
+  "date": "2026-11-18"
+}

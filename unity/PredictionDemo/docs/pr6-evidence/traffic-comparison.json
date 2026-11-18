@@ -1,0 +1,58 @@
+{
+  "before-baseline": {
+    "window": [
+      11.744852999999999,
+      28.744853
+    ],
+    "udp_bytes": 1397606,
+    "udp_KBps": 82.21211764705882,
+    "encrypted_packets": 0,
+    "inner_bytes": 0,
+    "overhead_bytes": 0,
+    "overhead_percent": null,
+    "host_ngo_tx_KBps": 76.52176470588236,
+    "ngo_samples": 17
+  },
+  "before": {
+    "window": [
+      12.237238999999999,
+      29.237239
+    ],
+    "udp_bytes": 87467,
+    "udp_KBps": 5.145117647058823,
+    "encrypted_packets": 0,
+    "inner_bytes": 0,
+    "overhead_bytes": 0,
+    "overhead_percent": null,
+    "host_ngo_tx_KBps": 1.5401176470588236,
+    "ngo_samples": 17
+  },
+  "baseline-bounded": {
+    "window": [
+      13.012122,
+      30.012121999999998
+    ],
+    "udp_bytes": 1917424,
+    "udp_KBps": 112.78964705882353,
+    "encrypted_packets": 3337,
+    "inner_bytes": 1757248,
+    "overhead_bytes": 160176,
+    "overhead_percent": 9.115161889499946,
+    "host_ngo_tx_KBps": 74.89558823529414,
+    "ngo_samples": 17
+  },
+  "optimized-bounded": {
+    "window": [
+      12.975228999999999,
+      29.975229
+    ],
+    "udp_bytes": 95470,
+    "udp_KBps": 5.615882352941177,
+    "encrypted_packets": 775,
+    "inner_bytes": 58270,
+    "overhead_bytes": 37200,
+    "overhead_percent": 63.84074137635147,
+    "host_ngo_tx_KBps": 1.3482941176470589,
+    "ngo_samples": 17
+  }
+}

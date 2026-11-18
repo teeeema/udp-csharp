@@ -1,0 +1,27 @@
+{
+  "status": "completed",
+  "duration": 7.79,
+  "summary": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "PredictionDemo.Tests.DefectPlayModeTests.RestartHitSelectionAndMaterialLifecycle",
+      "Status": "Passed",
+      "Duration": 4.1132062,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "PredictionDemo.Tests.ReplicationSmokeTests.HostSpawnsLoadAndReplicatesAuthoritativeState",
+      "Status": "Passed",
+      "Duration": 3.6543202,
+      "Message": null,
+      "StackTrace": null
+    }
+  ]
+}

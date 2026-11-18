@@ -1,0 +1,26 @@
+{
+  "asset": "rock_07",
+  "source": "tmp/visual-assets/rock_07/rock_07.gltf",
+  "triangles": 6000,
+  "materials": [
+    {
+      "name": "rock_07_rock_07",
+      "sourceName": "rock_07",
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "alphaClip": false,
+      "doubleSided": true,
+      "textures": {
+        "diffuse": "Textures/rock_07_diff.png",
+        "normal": "Textures/rock_07_nor_gl.png",
+        "orm": "Textures/rock_07_rough.png"
+      }
+    }
+  ]
+}

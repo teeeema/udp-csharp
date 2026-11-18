@@ -1,0 +1,12 @@
+{
+  "success": false,
+  "command": "unity command test",
+  "data": null,
+  "errors": [
+    {
+      "code": "COMMAND_FAILED",
+      "message": "Pipeline command 'test' timed out after 30000ms"
+    }
+  ],
+  "warnings": []
+}

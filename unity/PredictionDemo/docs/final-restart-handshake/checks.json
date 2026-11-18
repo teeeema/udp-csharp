@@ -1,0 +1,19 @@
+{
+  "host-ready-baseline": true,
+  "client-baseline-0": true,
+  "restart-baseline-1": true,
+  "client-baseline-1": true,
+  "restart-baseline-2": true,
+  "client-baseline-2": true,
+  "restart-baseline-3": true,
+  "client-baseline-3": true,
+  "host-ready-optimized": true,
+  "client-optimized-0": true,
+  "restart-optimized-1": true,
+  "client-optimized-1": true,
+  "restart-optimized-2": true,
+  "client-optimized-2": true,
+  "restart-optimized-3": true,
+  "client-optimized-3": true,
+  "no-runtime-exceptions": true
+}

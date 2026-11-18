@@ -1,0 +1,38 @@
+{
+  "PASS": 12,
+  "FAIL": 0,
+  "checks": {
+    "exit_codes_zero": true,
+    "actual_udp_observed": true,
+    "no_runtime_exceptions": true,
+    "client1_connected": true,
+    "client1_shoot_accepted": true,
+    "client1_effect": true,
+    "client1_reconciliation": true,
+    "client1_movement": true,
+    "shoot_sequences_unique": true,
+    "wire_only_handshake_or_encrypted": true,
+    "handshake_ok": true,
+    "datagram_mtu": true
+  },
+  "exit_codes": [
+    0,
+    0
+  ],
+  "observed_datagrams": 1513,
+  "fault_injection": {
+    "dropped": 0,
+    "duplicated": 0,
+    "corrupted": 0
+  },
+  "capture_type": "actual UDP payloads observed at local relay, NOT BPF/PCAPNG",
+  "steady_window": [
+    12.962911,
+    29.962911
+  ],
+  "steady_udp_bytes": 123391,
+  "encrypted_steady_packets": 1130,
+  "encrypted_inner_bytes": 69151,
+  "encryption_overhead_bytes": 54240,
+  "encryption_overhead_percent": 78.43704357131494
+}

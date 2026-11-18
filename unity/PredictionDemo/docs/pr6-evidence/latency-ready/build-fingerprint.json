@@ -1,0 +1,15 @@
+{
+  "runtime_sha256": "12b9a12bdfd81eee2ab2b38f31376076148a14144b305e86f2c5284c881344a2",
+  "app": "Builds/PR6/ReplicationLab.app",
+  "scenario": {
+    "output": "docs/pr6-evidence/latency-ready",
+    "app": "Builds/PR6/ReplicationLab.app",
+    "secure": true,
+    "optimized": true,
+    "clients": 1,
+    "duration": 30,
+    "impair": false,
+    "replication_verify": false,
+    "transport_delay": 100
+  }
+}

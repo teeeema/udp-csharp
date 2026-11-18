@@ -1,0 +1,21 @@
+{
+  "speed-baseline": true,
+  "speed-correction-baseline": true,
+  "restart-baseline": true,
+  "reconnect-baseline-0": true,
+  "reconnect-baseline-1": true,
+  "reconnect-baseline-2": true,
+  "reconnect-baseline-3": true,
+  "csp-loss-baseline": true,
+  "delayed-shoot-baseline": true,
+  "speed-optimized": true,
+  "speed-correction-optimized": true,
+  "restart-optimized": true,
+  "reconnect-optimized-0": true,
+  "reconnect-optimized-1": true,
+  "reconnect-optimized-2": true,
+  "reconnect-optimized-3": false,
+  "csp-loss-optimized": true,
+  "delayed-shoot-optimized": true,
+  "no-runtime-exceptions": true
+}

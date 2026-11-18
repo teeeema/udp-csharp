@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "foreach(var p in UnityEngine.Object.FindObjectsByType<PredictionDemo.ReplicatedProp>(UnityEngine.FindObjectsSortMode.None))if(p.Health.Value==55){var id=p.NetworkObjectId;p.NetworkObject.Despawn();return new {removed=id,objects=UnityEngine.Object.FindObjectsByType<PredictionDemo.ReplicatedProp>(UnityEngine.FindObjectsSortMode.None).Length};}return \"not found\";"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "removed": 52,
+        "objects": 51
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/tema/Documents/Saturday/Разработка многопользовательских приложений виртуальной реальности/Practice5Replication"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

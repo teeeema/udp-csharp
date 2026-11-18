@@ -1,0 +1,13 @@
+{
+  "object_seen_before_hide": true,
+  "object_hidden": true,
+  "object_reappeared_current_state": true,
+  "object_deleted_on_client": true,
+  "client_connected": true,
+  "server_hidden_health_changed": true,
+  "client_received_current_health_after_reentry": true,
+  "server_despawn": true,
+  "critical_shoot_accepted": true,
+  "shoot_effect_received": true,
+  "no_runtime_exceptions": true
+}

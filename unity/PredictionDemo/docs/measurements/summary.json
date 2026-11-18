@@ -1,0 +1,53 @@
+{
+  "baseline": {
+    "host": {
+      "samples": 30,
+      "tx_KBps": 73.72136666666667,
+      "rx_KBps": 0.0,
+      "objects": [
+        "50"
+      ],
+      "clients": [
+        "2"
+      ]
+    },
+    "client": {
+      "samples": 30,
+      "tx_KBps": 0.0,
+      "rx_KBps": 73.6012,
+      "objects": [
+        "50"
+      ],
+      "clients": [
+        "2"
+      ]
+    }
+  },
+  "optimized": {
+    "host": {
+      "samples": 30,
+      "tx_KBps": 0.23643333333333333,
+      "rx_KBps": 0.0,
+      "objects": [
+        "50"
+      ],
+      "clients": [
+        "2"
+      ]
+    },
+    "client": {
+      "samples": 30,
+      "tx_KBps": 0.0,
+      "rx_KBps": 0.22440000000000002,
+      "objects": [
+        "10",
+        "11",
+        "12"
+      ],
+      "clients": [
+        "2"
+      ]
+    }
+  },
+  "reduction_percent": 99.67928791336386
+}

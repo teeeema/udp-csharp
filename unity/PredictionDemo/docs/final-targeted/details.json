@@ -1,0 +1,16 @@
+{
+  "speed-baseline": {
+    "max_half_second_displacement": 0.40000000000000036,
+    "rejected": 495
+  },
+  "csp-baseline": {
+    "max_correction_m": 2.0
+  },
+  "speed-optimized": {
+    "max_half_second_displacement": 0.40000000000000036,
+    "rejected": 495
+  },
+  "csp-optimized": {
+    "max_correction_m": 2.0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "asset": "grass_bermuda_01",
+  "source": "tmp/visual-assets/grass_bermuda_01/grass_bermuda_01.gltf",
+  "triangles": 941,
+  "materials": [
+    {
+      "name": "grass_bermuda_01_grass_bermuda_01",
+      "sourceName": "grass_bermuda_01",
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "alphaClip": false,
+      "doubleSided": true,
+      "textures": {
+        "diffuse": "Textures/grass_bermuda_01_diff.png",
+        "normal": "Textures/grass_bermuda_01_nor_gl.png",
+        "orm": "Textures/grass_bermuda_01_rough.png"
+      }
+    }
+  ]
+}

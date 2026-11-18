@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Globalization;
 using System.IO;
+using System.Net;
+using System.Net.Sockets;
 using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
 using UnityEngine;
@@ -42,6 +44,8 @@ namespace PredictionDemo
         private string _screenshotPath;
         private float _screenshotAtSeconds = -1.0f;
         private float _exitAfterSeconds = -1.0f;
+        private bool _resolving;
+        private int _waitForPlayers;
 
         private void Awake()
         {
@@ -67,6 +71,17 @@ namespace PredictionDemo
                 {
                     NetworkLabSettings.ActiveProfile = (LabProfile)Mathf.Clamp(p, 0, 2);
                     i++;
+                }
+                else if (args[i] == "--pr6-address" && i + 1 < args.Length)
+                {
+                    address = args[++i];
+                }
+                else if (args[i] == "--pr6-wait-players" && i + 1 < args.Length && int.TryParse(args[i + 1], out var playerCount))
+                {
+                    _waitForPlayers = Mathf.Clamp(playerCount, 2, 16); i++;
+                    // Explicit verification only: keep multiple graphical players from
+                    // rendering without a frame limit and starving each other's updates.
+                    QualitySettings.vSyncCount = 0; Application.targetFrameRate = 30;
                 }
                 else if (args[i] == "--pr4-no-prediction")
                 {
@@ -143,6 +158,18 @@ namespace PredictionDemo
 
         private IEnumerator CaptureAndExit()
         {
+            if (_waitForPlayers > 0)
+            {
+                var deadline = Time.realtimeSinceStartup + 90;
+                while (_networkManager.IsServer ? _networkManager.ConnectedClientsList.Count < _waitForPlayers :
+                    (!_networkManager.IsConnectedClient || FindObjectsByType<PredictedPlayer>(FindObjectsSortMode.None).Length < _waitForPlayers))
+                {
+                    if (Time.realtimeSinceStartup > deadline)
+                    { Debug.LogWarning("[PR6] SCENARIO_CONNECT_TIMEOUT"); Application.Quit(2); yield break; }
+                    yield return null;
+                }
+                Debug.Log("[PR6] SCENARIO_READY");
+            }
             var captureAt = string.IsNullOrWhiteSpace(_screenshotPath)
                 ? -1.0f
                 : (_screenshotAtSeconds > 0.0f ? _screenshotAtSeconds : 2.5f);
@@ -186,26 +213,44 @@ namespace PredictionDemo
 
         public void StartHost()
         {
-            if (_networkManager.IsListening)
+            if (_networkManager.IsListening || _networkManager.ShutdownInProgress)
             {
                 return;
             }
 
             _transport.SetConnectionData(address, port, "0.0.0.0");
+            GetComponent<MeteredTransport>()?.SetConnectionData(address, port, "0.0.0.0");
             _status = _networkManager.StartHost() ? "Host started" : "Host start failed";
             Debug.Log($"[PR4][Bootstrap] {_status} on {address}:{port}");
         }
 
-        public void StartClient()
+        public async void StartClient()
         {
-            if (_networkManager.IsListening)
+            if (_resolving || _networkManager.IsListening || _networkManager.ShutdownInProgress)
             {
                 return;
             }
-
-            _transport.SetConnectionData(address, port);
-            _status = _networkManager.StartClient() ? "Client connecting" : "Client start failed";
-            Debug.Log($"[PR4][Bootstrap] {_status} to {address}:{port}");
+            _resolving = true;
+            try
+            {
+                string resolved = address;
+                if (!IPAddress.TryParse(address, out var ip))
+                {
+                    _status = "Resolving server";
+                    var addresses = await Dns.GetHostAddressesAsync(address);
+                    ip = Array.Find(addresses, a => a.AddressFamily == AddressFamily.InterNetwork);
+                    if (ip == null) throw new SocketException((int)SocketError.HostNotFound);
+                    resolved = ip.ToString();
+                }
+                if (this == null || _networkManager.IsListening || _networkManager.ShutdownInProgress) return;
+                _transport.SetConnectionData(resolved, port);
+                GetComponent<MeteredTransport>()?.SetConnectionData(resolved, port);
+                _status = _networkManager.StartClient() ? "Secure client connecting" : "Client start failed";
+                Debug.Log($"[PR4][Bootstrap] {_status} to {address}:{port}");
+            }
+            catch (Exception e) when (e is SocketException || e is ArgumentException)
+            { _status = "Server address could not be resolved"; Debug.LogWarning("[PR6] HANDSHAKE_FAIL address resolution"); }
+            finally { _resolving = false; }
         }
 
         private void OnClientConnected(ulong clientId)
@@ -213,6 +258,7 @@ namespace PredictionDemo
             _status = $"Connected: client {clientId}";
             if (!_networkManager.IsServer)
             {
+                if (clientId == _networkManager.LocalClientId) Debug.Log($"[PR6] LOCAL_CLIENT id={clientId}");
                 return;
             }
 

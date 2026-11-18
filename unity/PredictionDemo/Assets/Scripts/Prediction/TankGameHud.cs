@@ -10,113 +10,222 @@ namespace PredictionDemo
     public sealed class TankGameHud : MonoBehaviour
     {
         public static bool DiagnosticsVisible { get; private set; }
+
+        private static readonly Color Ink = new Color32(21, 29, 35, 250);
+        private static readonly Color Surface = new Color32(38, 49, 56, 255);
+        private static readonly Color Ivory = new Color32(249, 243, 227, 255);
+        private static readonly Color Muted = new Color32(182, 199, 193, 255);
+        private static readonly Color Amber = new Color32(255, 181, 77, 255);
+        private static readonly Color Teal = new Color32(95, 222, 208, 255);
+
         private Canvas _canvas;
-        private GameObject _menu, _info, _leave;
-        private TMP_Text _status, _position, _profile, _boostLabel;
+        private RectTransform _menu, _match, _playerPanel;
+        private TMP_Text _status, _connection, _playerId, _fireStats, _boostLabel;
         private TMP_InputField _address;
-        private UnityEngine.UI.Image _boost;
+        private RectTransform _boost;
         private NetworkBootstrap _bootstrap;
         private PredictedPlayer _player;
+        private TankWeapon _weapon;
         private TMP_FontAsset _font;
-        private readonly Color _ink = new Color(.045f, .07f, .08f, .95f);
-        private readonly Color _mint = new Color(.32f, .92f, .79f);
 
         private void Awake()
         {
             DiagnosticsVisible = false;
             _bootstrap = GetComponent<NetworkBootstrap>();
             _font = Resources.Load<TMP_FontAsset>("Fonts & Materials/LiberationSans SDF");
-            var canvasObject = new GameObject("Test range HUD", typeof(RectTransform), typeof(Canvas), typeof(UnityEngine.UI.CanvasScaler), typeof(UnityEngine.UI.GraphicRaycaster));
+            var canvasObject = new GameObject("Dustline HUD", typeof(RectTransform), typeof(Canvas),
+                typeof(UnityEngine.UI.CanvasScaler), typeof(UnityEngine.UI.GraphicRaycaster));
             canvasObject.transform.SetParent(transform, false);
-            _canvas = canvasObject.GetComponent<Canvas>(); _canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+            _canvas = canvasObject.GetComponent<Canvas>();
+            _canvas.renderMode = RenderMode.ScreenSpaceOverlay;
             var scaler = canvasObject.GetComponent<UnityEngine.UI.CanvasScaler>();
             scaler.uiScaleMode = UnityEngine.UI.CanvasScaler.ScaleMode.ScaleWithScreenSize;
-            scaler.referenceResolution = new Vector2(1440, 900); scaler.matchWidthOrHeight = .5f;
+            scaler.referenceResolution = new Vector2(1280, 720);
+            scaler.screenMatchMode = UnityEngine.UI.CanvasScaler.ScreenMatchMode.Expand;
             if (FindFirstObjectByType<EventSystem>() == null)
                 new GameObject("UI EventSystem", typeof(EventSystem), typeof(InputSystemUIInputModule));
-            var title = Panel("Brand", canvasObject.transform, new Vector2(24, -24), new Vector2(390, 98), new Vector2(0, 1));
-            Label(title, "D U S T L I N E", 30, new Vector2(20, -14), new Vector2(360, 40), Color.white);
-            Label(title, "OPEN WORLD    /    NETWORK TEST RANGE", 12, new Vector2(22, -61), new Vector2(350, 24), _mint);
-            var state = Panel("Connection", canvasObject.transform, new Vector2(-24, -24), new Vector2(330, 66), new Vector2(1, 1));
-            _status = Label(state, "SYSTEM READY", 16, new Vector2(18, -14), new Vector2(300, 42), _mint);
-            _menu = Panel("Session", canvasObject.transform, new Vector2(24, 24), new Vector2(390, 450), new Vector2(0, 0)).gameObject;
-            Label(_menu.transform, "NETWORK TEST SESSION", 23, new Vector2(22, -24), new Vector2(350, 40), Color.white);
-            Label(_menu.transform, "Explore the open test range freely.\nTest movement, shooting and network delay.", 16, new Vector2(22, -76), new Vector2(346, 64), new Color(.78f, .83f, .8f));
-            Button(_menu.transform, "START HOST / SOLO TEST", new Vector2(22, -160), new Vector2(346, 50), () => _bootstrap.StartHost(), true);
-            Label(_menu.transform, "JOIN ANOTHER INSTANCE  /  IP ADDRESS", 12, new Vector2(22, -231), new Vector2(346, 20), _mint);
-            _address = Input(_menu.transform, new Vector2(22, -261), new Vector2(216, 44));
-            Button(_menu.transform, "JOIN", new Vector2(248, -261), new Vector2(120, 44), () => { _bootstrap.Address = _address.text.Trim(); _bootstrap.StartClient(); });
-            _profile = Button(_menu.transform, "NETWORK / LOCAL", new Vector2(22, -325), new Vector2(346, 38), () =>
-                NetworkLabSettings.ActiveProfile = (LabProfile)(((int)NetworkLabSettings.ActiveProfile + 1) % 3));
-            Label(_menu.transform, "F3  NETWORK LAB & PREDICTION SETTINGS", 13, new Vector2(22, -391), new Vector2(346, 40), Color.white);
-            _info = Panel("FreeRoam", canvasObject.transform, new Vector2(24, 24), new Vector2(390, 112), new Vector2(0, 0)).gameObject;
-            Label(_info.transform, "FREE ROAM / TEST SANDBOX", 20, new Vector2(20, -16), new Vector2(350, 32), Color.white);
-            _position = Label(_info.transform, "", 15, new Vector2(20, -58), new Vector2(350, 34), _mint);
-            var controls = Panel("Controls", canvasObject.transform, new Vector2(-24, 24), new Vector2(390, 132), new Vector2(1, 0));
-            Label(controls, "WASD MOVE   SPACE DASH   LMB / F FIRE", 16, new Vector2(18, -14), new Vector2(355, 30), Color.white);
-            Label(controls, "B  DIVERGENCE TEST    F3  NETWORK LAB", 12, new Vector2(18, -48), new Vector2(355, 24), _mint);
-            _boostLabel = Label(controls, "DASH READY", 12, new Vector2(18, -80), new Vector2(355, 24), Color.white);
-            var boostBack = Panel("Boost", controls, new Vector2(18, -113), new Vector2(354, 5), new Vector2(0, 1));
-            _boost = Panel("Charge", boostBack, Vector2.zero, new Vector2(354, 5), new Vector2(0, 1)).GetComponent<UnityEngine.UI.Image>(); _boost.color = _mint;
-            _leave = Button(canvasObject.transform, "LEAVE SESSION", new Vector2(-24, -104), new Vector2(190, 40), () => NetworkManager.Singleton.Shutdown()).transform.parent.gameObject;
-            var leaveRect = _leave.GetComponent<RectTransform>(); leaveRect.anchorMin = leaveRect.anchorMax = leaveRect.pivot = new Vector2(1, 1);
+
+            BuildMenu(canvasObject.transform);
+            BuildMatchHud(canvasObject.transform);
+        }
+
+        private void BuildMenu(Transform canvas)
+        {
+            var anchor = new Vector2(0f, .5f);
+            _menu = Rect("Session menu", canvas, anchor, anchor, new Vector2(32, 0), new Vector2(370, 400));
+            Fill(_menu, Ink);
+            Stripe(_menu, 370);
+
+            Label(_menu, "MULTIPLAYER TANK ARENA", 13, 24, -24, 322, 20, Amber, true).characterSpacing = 4;
+            Label(_menu, "DUSTLINE", 54, 21, -46, 328, 66, Ivory, true);
+            Label(_menu, "Copper Basin", 20, 24, -118, 300, 28, Muted, true);
+
+            Button(_menu, "HOST GAME", 24, -164, 322, 47, _bootstrap.StartHost, true);
+            Label(_menu, "SERVER ADDRESS", 12, 24, -230, 210, 18, Muted, true).characterSpacing = 3;
+            _address = Input(_menu, 24, -252, 226, 42);
+            Button(_menu, "JOIN", 258, -252, 88, 42, () =>
+            {
+                _bootstrap.Address = _address.text.Trim();
+                _bootstrap.StartClient();
+            });
+            _status = Label(_menu, "", 14, 24, -312, 322, 34, Teal);
+            Label(_menu, "F3  Network lab       F4  Replication", 13, 24, -363, 322, 21, Muted);
+        }
+
+        private void BuildMatchHud(Transform canvas)
+        {
+            _match = Rect("Match HUD", canvas, Vector2.zero, Vector2.zero, Vector2.zero, Vector2.zero);
+            _match.anchorMax = Vector2.one;
+            var top = new Vector2(.5f, 1);
+            var status = Rect("Session status", _match, top, top, new Vector2(0, -20), new Vector2(284, 44));
+            Fill(status, Ink);
+            Stripe(status, 284);
+            _connection = Label(status, "", 14, 0, -3, 284, 41, Ivory, true);
+            _connection.alignment = TextAlignmentOptions.Center;
+
+            var right = new Vector2(1, 1);
+            var leave = Rect("Session actions", _match, right, right, new Vector2(-24, -20), new Vector2(108, 34));
+            Button(leave, "LEAVE", 0, 0, 108, 34, () => NetworkManager.Singleton.Shutdown());
+
+            _playerPanel = Rect("Tank status", _match, Vector2.zero, Vector2.zero, new Vector2(24, 24), new Vector2(258, 110));
+            Fill(_playerPanel, Ink);
+            Stripe(_playerPanel, 258);
+            _playerId = Label(_playerPanel, "", 17, 16, -12, 226, 25, Teal, true);
+            _fireStats = Label(_playerPanel, "", 14, 16, -41, 226, 22, Ivory);
+            _boostLabel = Label(_playerPanel, "", 12, 16, -68, 226, 18, Muted, true);
+            var track = Rect("Dash track", _playerPanel, Vector2.up, Vector2.up, new Vector2(16, -93), new Vector2(226, 5));
+            Fill(track, Surface);
+            _boost = Rect("Dash charge", track, Vector2.zero, Vector2.zero, Vector2.zero, Vector2.zero);
+            _boost.anchorMax = Vector2.one;
+            Fill(_boost, Amber);
+
+            var bottomRight = Vector2.right;
+            var controls = Rect("Controls", _match, bottomRight, bottomRight, new Vector2(-24, 24), new Vector2(332, 66));
+            Fill(controls, Ink);
+            Label(controls, "WASD Move   Space Dash   F / LMB Fire", 14, 12, -10, 308, 20, Ivory, true);
+            Label(controls, "F3   Network lab       F4   Replication", 14, 12, -36, 308, 20, Muted);
         }
 
         private void Update()
         {
-            if (Keyboard.current != null && Keyboard.current.f3Key.wasPressedThisFrame) DiagnosticsVisible = !DiagnosticsVisible;
+            if (Keyboard.current?.f3Key.wasPressedThisFrame == true)
+            {
+                DiagnosticsVisible = !DiagnosticsVisible;
+                if (DiagnosticsVisible && EventSystem.current?.currentSelectedGameObject == _address.gameObject)
+                    EventSystem.current.SetSelectedGameObject(null);
+                else if (!DiagnosticsVisible && !_address.isFocused)
+                    _address.text = _bootstrap.Address;
+            }
+
             _canvas.enabled = !DiagnosticsVisible;
             var manager = NetworkManager.Singleton;
             bool connected = manager != null && manager.IsConnectedClient;
-            _menu.SetActive(!connected); _info.SetActive(connected); _leave.SetActive(connected);
-            _status.text = connected ? $"{(manager.IsHost ? "HOST" : "CLIENT")}   /   {manager.ConnectedClientsIds.Count} CONNECTED" : _bootstrap.Status.ToUpperInvariant();
-            _profile.text = NetworkLabSettings.ActiveProfile == LabProfile.Custom ? $"NETWORK / CUSTOM : {NetworkLabSettings.CustomDelayMs} ms, {NetworkLabSettings.CustomLossPercent}%" : NetworkLabSettings.ActiveProfile == LabProfile.Local ? "NETWORK / LOCAL : 0 ms, 0%" : NetworkLabSettings.ActiveProfile == LabProfile.Lag100 ? "NETWORK / DELAY : 100 ms, 0%" : "NETWORK / STRESS : 175 ms, 5%";
-            if (!connected) { _player = null; return; }
-            if (_player == null && manager.LocalClient.PlayerObject != null) _player = manager.LocalClient.PlayerObject.GetComponent<PredictedPlayer>();
-            if (_player == null || !_player.IsSpawned) return;
-            var p = _player.transform.position;
-            _position.text = $"PLAYER {_player.OwnerClientId}   /   X {p.x:F1}   Z {p.z:F1}";
-            var cooldown = _player.DashCooldownRemaining;
-            var weapon = _player.GetComponent<TankWeapon>();
-            _boostLabel.text = (weapon != null ? $"FIRE {weapon.ShotsFired.Value} / HITS {weapon.Hits.Value}  |  " : "") + (cooldown > .01f ? $"DASH RECHARGING  /  {cooldown:F1}s" : "DASH READY");
-            _boost.rectTransform.sizeDelta = new Vector2(354 * (1 - cooldown / PredictionRules.DashCooldownSeconds), 5);
+            _menu.gameObject.SetActive(!connected);
+            _match.gameObject.SetActive(connected);
+            _status.text = _bootstrap.Status;
+            if (!connected)
+            {
+                _player = null;
+                _weapon = null;
+                return;
+            }
+
+            if (_player == null && manager.LocalClient.PlayerObject != null)
+            {
+                _player = manager.LocalClient.PlayerObject.GetComponent<PredictedPlayer>();
+                _weapon = manager.LocalClient.PlayerObject.GetComponent<TankWeapon>();
+            }
+
+            var count = ReplicationLab.Instance != null ? ReplicationLab.Instance.PlayerCount : 0;
+            _connection.text = $"{(manager.IsHost ? "HOST" : "CLIENT")}   /   {count} IN ARENA";
+            bool hasTank = _player != null && _player.IsSpawned;
+            _playerPanel.gameObject.SetActive(hasTank);
+            if (!hasTank) return;
+
+            _playerId.text = $"TANK {_player.OwnerClientId + 1:00}";
+            _fireStats.text = _weapon == null ? string.Empty : $"SHOTS  {_weapon.ShotsFired.Value}     HITS  {_weapon.Hits.Value}";
+            float cooldown = _player.DashCooldownRemaining;
+            _boostLabel.text = cooldown > .01f ? $"DASH   {cooldown:F1}s" : "DASH READY";
+            _boost.anchorMax = new Vector2(Mathf.Clamp01(1f - cooldown / PredictionRules.DashCooldownSeconds), 1);
         }
 
-        private RectTransform Panel(string name, Transform parent, Vector2 position, Vector2 size, Vector2 anchor)
+        private static RectTransform Rect(string name, Transform parent, Vector2 anchor, Vector2 pivot, Vector2 position, Vector2 size)
         {
-            var go = new GameObject(name, typeof(RectTransform), typeof(UnityEngine.UI.Image)); go.transform.SetParent(parent, false);
-            var rect = go.GetComponent<RectTransform>(); rect.anchorMin = rect.anchorMax = rect.pivot = anchor; rect.anchoredPosition = position; rect.sizeDelta = size;
-            var image = go.GetComponent<UnityEngine.UI.Image>(); image.color = _ink; image.raycastTarget = false; return rect;
+            var go = new GameObject(name, typeof(RectTransform));
+            var rect = (RectTransform)go.transform;
+            rect.SetParent(parent, false);
+            rect.anchorMin = rect.anchorMax = anchor;
+            rect.pivot = pivot;
+            rect.anchoredPosition = position;
+            rect.sizeDelta = size;
+            return rect;
         }
 
-        private TMP_Text Label(Transform parent, string content, float size, Vector2 position, Vector2 dimensions, Color color)
+        private static UnityEngine.UI.Image Fill(RectTransform rect, Color color, bool interactive = false)
         {
-            var go = new GameObject("Text", typeof(RectTransform), typeof(TextMeshProUGUI)); go.transform.SetParent(parent, false);
-            var text = go.GetComponent<TextMeshProUGUI>(); text.font = _font; text.text = content; text.fontSize = size; text.color = color;
-            text.raycastTarget = false; text.textWrappingMode = TextWrappingModes.Normal;
-            var rect = text.rectTransform; rect.anchorMin = rect.anchorMax = rect.pivot = new Vector2(0, 1); rect.anchoredPosition = position; rect.sizeDelta = dimensions;
+            var image = rect.gameObject.AddComponent<UnityEngine.UI.Image>();
+            image.color = color;
+            image.raycastTarget = interactive;
+            return image;
+        }
+
+        private static void Stripe(Transform parent, float width)
+        {
+            Fill(Rect("Accent", parent, Vector2.up, Vector2.up, Vector2.zero, new Vector2(width, 3)), Amber);
+        }
+
+        private TextMeshProUGUI Label(Transform parent, string content, float size, float x, float y,
+            float width, float height, Color color, bool bold = false)
+        {
+            var rect = Rect(content.Length > 0 ? content : "Text", parent, Vector2.up, Vector2.up,
+                new Vector2(x, y), new Vector2(width, height));
+            var text = rect.gameObject.AddComponent<TextMeshProUGUI>();
+            text.font = _font;
+            text.text = content;
+            text.fontSize = size;
+            text.color = color;
+            text.fontStyle = bold ? FontStyles.Bold : FontStyles.Normal;
+            text.alignment = TextAlignmentOptions.MidlineLeft;
+            text.textWrappingMode = TextWrappingModes.NoWrap;
+            text.overflowMode = TextOverflowModes.Ellipsis;
+            text.raycastTarget = false;
             return text;
         }
 
-        private TMP_Text Button(Transform parent, string text, Vector2 position, Vector2 size, UnityEngine.Events.UnityAction action, bool primary = false)
+        private void Button(Transform parent, string title, float x, float y, float width, float height,
+            UnityEngine.Events.UnityAction action, bool primary = false)
         {
-            var panel = Panel(text, parent, position, size, new Vector2(0, 1));
-            var image = panel.GetComponent<UnityEngine.UI.Image>(); image.raycastTarget = true; image.color = primary ? _mint : new Color(.16f, .23f, .23f);
-            var button = panel.gameObject.AddComponent<UnityEngine.UI.Button>(); button.targetGraphic = image; button.onClick.AddListener(action);
-            var colors = button.colors; colors.highlightedColor = new Color(.78f, 1, .93f); colors.pressedColor = new Color(.5f, .75f, .68f); button.colors = colors;
-            var label = Label(panel, text, 16, Vector2.zero, size, primary ? _ink : Color.white); label.alignment = TextAlignmentOptions.Center;
-            return label;
+            var rect = Rect(title, parent, Vector2.up, Vector2.up, new Vector2(x, y), new Vector2(width, height));
+            var image = Fill(rect, primary ? Amber : Surface, true);
+            var button = rect.gameObject.AddComponent<UnityEngine.UI.Button>();
+            button.targetGraphic = image;
+            button.onClick.AddListener(action);
+            var colors = button.colors;
+            colors.normalColor = new Color(.93f, .93f, .93f);
+            colors.highlightedColor = Color.white;
+            colors.selectedColor = Color.white;
+            colors.pressedColor = new Color(.75f, .75f, .75f);
+            button.colors = colors;
+            Label(rect, title, 15, 0, 0, width, height, primary ? Ink : Ivory, true).alignment = TextAlignmentOptions.Center;
         }
 
-        private TMP_InputField Input(Transform parent, Vector2 position, Vector2 size)
+        private TMP_InputField Input(Transform parent, float x, float y, float width, float height)
         {
-            var panel = Panel("Address", parent, position, size, new Vector2(0, 1));
-            panel.GetComponent<UnityEngine.UI.Image>().raycastTarget = true;
-            var text = (TextMeshProUGUI)Label(panel, "127.0.0.1", 18, new Vector2(12, -5), size - new Vector2(24, 10), Color.white);
-            var field = panel.gameObject.AddComponent<TMP_InputField>(); field.textViewport = panel; field.textComponent = text; field.text = "127.0.0.1"; field.characterLimit = 253;
+            var rect = Rect("Server address", parent, Vector2.up, Vector2.up, new Vector2(x, y), new Vector2(width, height));
+            var image = Fill(rect, Surface, true);
+            var text = Label(rect, "", 17, 12, 0, width - 24, height, Ivory);
+            var field = rect.gameObject.AddComponent<TMP_InputField>();
+            field.targetGraphic = image;
+            field.textViewport = rect;
+            field.textComponent = text;
+            field.text = _bootstrap.Address;
+            field.characterLimit = 253;
             return field;
         }
 
-        private void OnDestroy() { DiagnosticsVisible = false; }
+        private void OnDestroy()
+        {
+            DiagnosticsVisible = false;
+        }
     }
 }

@@ -1,0 +1,9 @@
+{
+  "connected-baseline": true,
+  "correction-baseline": true,
+  "shoot-baseline": true,
+  "connected-optimized": true,
+  "correction-optimized": true,
+  "shoot-optimized": true,
+  "no-runtime-exceptions": true
+}

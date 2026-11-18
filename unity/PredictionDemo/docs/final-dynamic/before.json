@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "return new {server=Unity.Netcode.NetworkManager.Singleton.IsServer,clients=Unity.Netcode.NetworkManager.Singleton.ConnectedClientsIds.Count,props=UnityEngine.Object.FindObjectsByType<PredictionDemo.ReplicatedProp>(UnityEngine.FindObjectsSortMode.None).Length};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "server": true,
+        "clients": 1,
+        "props": 50
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/tema/Documents/Saturday/Разработка многопользовательских приложений виртуальной реальности/Practice5Replication"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

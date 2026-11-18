@@ -1,0 +1,1 @@
+{"name":"Replication.PlayModeTests","references":["PredictionDemo.Runtime","Unity.Netcode.Runtime"],"optionalUnityReferences":["TestAssemblies"]}
