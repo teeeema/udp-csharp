@@ -1,0 +1,293 @@
+{
+  "success": true,
+  "command": "command test",
+  "data": {
+    "command": "test",
+    "parameters": {
+      "mode": "editor"
+    },
+    "result": {
+      "Summary": {
+        "Total": 37,
+        "Passed": 37,
+        "Failed": 0,
+        "Skipped": 0,
+        "Inconclusive": 0
+      },
+      "Results": [
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.FiveHundredCommandsCannotMintTime",
+          "Status": "Passed",
+          "Duration": 0.0118081,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.InvalidOrBackwardServerTimeCannotCreateCredit(-1)",
+          "Status": "Passed",
+          "Duration": 0.000266,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.InvalidOrBackwardServerTimeCannotCreateCredit(double.NaN)",
+          "Status": "Passed",
+          "Duration": 0.00002,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.InvalidOrBackwardServerTimeCannotCreateCredit(double.PositiveInfinity)",
+          "Status": "Passed",
+          "Duration": 0.0000139,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.InvalidOrBackwardServerTimeCannotCreateCredit(double.NegativeInfinity)",
+          "Status": "Passed",
+          "Duration": 0.000013,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.LegitimateHundredMillisecondBatchIsAccepted",
+          "Status": "Passed",
+          "Duration": 0.0001288,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.MeterResetBeginsNewEpoch",
+          "Status": "Passed",
+          "Duration": 0.0055576,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.NearestOfTwoTargetsWins",
+          "Status": "Passed",
+          "Duration": 0.0038339,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.NormalFiftyTicksAllowFourMetresPerSecond",
+          "Status": "Passed",
+          "Duration": 0.0005919,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.OneReceiveCountedOnceAfterRepeatedInitialize(1)",
+          "Status": "Passed",
+          "Duration": 0.0004839,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.OneReceiveCountedOnceAfterRepeatedInitialize(2)",
+          "Status": "Passed",
+          "Duration": 0.000076,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.OneReceiveCountedOnceAfterRepeatedInitialize(4)",
+          "Status": "Passed",
+          "Duration": 0.0000706,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.RejectInvalidShotDirection(0,0,0,False)",
+          "Status": "Passed",
+          "Duration": 0.0014616,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.RejectInvalidShotDirection(0,0,1,True)",
+          "Status": "Passed",
+          "Duration": 0.0000595,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.RejectInvalidShotDirection(float.NaN,0,1,False)",
+          "Status": "Passed",
+          "Duration": 0.0000429,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.RejectInvalidShotDirection(float.PositiveInfinity,0,0,False)",
+          "Status": "Passed",
+          "Duration": 0.0000455,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.RejectInvalidShotDirection(float.MaxValue,0,0,False)",
+          "Status": "Passed",
+          "Duration": 0.00004,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.SameServerTimestampDoesNotRefillCredit",
+          "Status": "Passed",
+          "Duration": 0.0001012,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.DefectRegressionTests.SustainedFloodBoundedByElapsedTimeAndBurstTolerance",
+          "Status": "Passed",
+          "Duration": 0.0017252,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.ClientOnlyDoubleDash_DivergesFromAuthoritativeDash",
+          "Status": "Passed",
+          "Duration": 0.0012666,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.Dash_RejectsSecondRequestDuringCooldown",
+          "Status": "Passed",
+          "Duration": 0.0002425,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.Dash_RequiresDirectionAndFinishedCooldown",
+          "Status": "Passed",
+          "Duration": 0.0001174,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.NetworkProfiles_MatchRequiredLabValues",
+          "Status": "Passed",
+          "Duration": 0.000368,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.PacketLoss_IsDeterministicAndOnlyEnabledForStressProfile",
+          "Status": "Passed",
+          "Duration": 0.0014242,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.SanitizeMove_ClampsMagnitudeToOne",
+          "Status": "Passed",
+          "Duration": 0.0001363,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.LoadHasFiftyObjects",
+          "Status": "Passed",
+          "Duration": 0.0005904,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.QuantizationBounded",
+          "Status": "Passed",
+          "Duration": 0.0003197,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.ReducedCadence(0)",
+          "Status": "Passed",
+          "Duration": 0.0002687,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.ReducedCadence(1)",
+          "Status": "Passed",
+          "Duration": 0.0000328,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.ReducedCadence(2)",
+          "Status": "Passed",
+          "Duration": 0.0000287,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.ReducedCadence(3)",
+          "Status": "Passed",
+          "Duration": 0.0000292,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.RelevanceBoundary(0,True)",
+          "Status": "Passed",
+          "Duration": 0.0005806,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.RelevanceBoundary(38,True)",
+          "Status": "Passed",
+          "Duration": 0.0001825,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.RelevanceBoundary(39,False)",
+          "Status": "Passed",
+          "Duration": 0.0000581,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.ReturningToRangeRestoresVisibility",
+          "Status": "Passed",
+          "Duration": 0.0004284,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.TankCollisionTests.DashStopsChassisAtLowCoverIncludingSideContact(0.0f)",
+          "Status": "Passed",
+          "Duration": 0.0037402,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.TankCollisionTests.DashStopsChassisAtLowCoverIncludingSideContact(1.1f)",
+          "Status": "Passed",
+          "Duration": 0.0003256,
+          "Message": null,
+          "StackTrace": null
+        }
+      ],
+      "Duration": 4.37,
+      "StatusPath": null,
+      "Mode": "EditMode",
+      "FilterApplied": null,
+      "success": true,
+      "result": null
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/tema/Documents/Saturday/Разработка многопользовательских приложений виртуальной реальности/Practice5Replication"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

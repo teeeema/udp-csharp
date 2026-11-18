@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var go=UnityEngine.Object.Instantiate(UnityEngine.Resources.Load<UnityEngine.GameObject>(\"ReplicationProp\"));var p=go.GetComponent<PredictionDemo.ReplicatedProp>();p.Kind.Value=2;p.Health.Value=55;p.Position.Value=new UnityEngine.Vector3(0,1,16);go.GetComponent<Unity.Netcode.NetworkObject>().Spawn();return new {id=p.NetworkObjectId,objects=UnityEngine.Object.FindObjectsByType<PredictionDemo.ReplicatedProp>(UnityEngine.FindObjectsSortMode.None).Length};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "id": 55,
+        "objects": 51
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/tema/Documents/Saturday/Разработка многопользовательских приложений виртуальной реальности/Practice5Replication"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

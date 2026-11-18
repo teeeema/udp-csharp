@@ -1,0 +1,112 @@
+{
+  "asset": "Abrams",
+  "source": "tmp/visual-assets/abrams-tank.blend",
+  "triangles": 37340,
+  "materials": [
+    {
+      "name": "Abrams_body",
+      "sourceName": "body",
+      "color": [
+        0.6859572529792786,
+        0.4730450212955475,
+        0.03541572019457817,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "alphaClip": false,
+      "doubleSided": true,
+      "textures": {}
+    },
+    {
+      "name": "Abrams_metal_barrel",
+      "sourceName": "metal barrel",
+      "color": [
+        0.0880235880613327,
+        0.12370579689741135,
+        0.09021808207035065,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "alphaClip": false,
+      "doubleSided": true,
+      "textures": {}
+    },
+    {
+      "name": "Abrams_Material",
+      "sourceName": "Material",
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "alphaClip": false,
+      "doubleSided": true,
+      "textures": {}
+    },
+    {
+      "name": "Abrams_guide",
+      "sourceName": "guide",
+      "color": [
+        0.800000011920929,
+        0.00878076534718275,
+        0.0,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "alphaClip": false,
+      "doubleSided": true,
+      "textures": {}
+    },
+    {
+      "name": "Abrams_wheels",
+      "sourceName": "wheels",
+      "color": [
+        0.28829658031463623,
+        0.23364533483982086,
+        0.0,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "alphaClip": false,
+      "doubleSided": true,
+      "textures": {}
+    },
+    {
+      "name": "Abrams_nukclearsign",
+      "sourceName": "nukclearsign",
+      "color": [
+        0.02539221942424774,
+        0.02539221942424774,
+        0.02539221942424774,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "alphaClip": false,
+      "doubleSided": true,
+      "textures": {}
+    },
+    {
+      "name": "Abrams_body_001",
+      "sourceName": "body.001",
+      "color": [
+        0.004241902381181717,
+        0.0037220807280391455,
+        0.0037220807280391455,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "alphaClip": false,
+      "doubleSided": true,
+      "textures": {}
+    }
+  ]
+}

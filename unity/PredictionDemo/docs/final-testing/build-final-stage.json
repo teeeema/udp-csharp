@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "job status",
+  "data": {
+    "jobId": "163e57bc61ef42ef89bee372f944aa06",
+    "command": "script eval",
+    "state": "completed",
+    "cancellationRequested": false,
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "command": "script eval",
+      "result": "final fixed macOS application",
+      "executionTimeMs": 8797,
+      "message": null,
+      "error": null,
+      "errorDetails": null,
+      "executedAt": "2026-11-06T14:05:07.235764Z"
+    },
+    "error": null,
+    "errorDetails": null,
+    "progress": null
+  },
+  "errors": [],
+  "warnings": []
+}

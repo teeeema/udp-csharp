@@ -1,0 +1,11 @@
+{
+  "long-session-baseline": true,
+  "two-remote-clients-baseline": true,
+  "abrupt-reconnect-baseline": true,
+  "host-only-movement-baseline": true,
+  "long-session-optimized": true,
+  "two-remote-clients-optimized": true,
+  "abrupt-reconnect-optimized": true,
+  "host-only-movement-optimized": true,
+  "no-runtime-exceptions": true
+}

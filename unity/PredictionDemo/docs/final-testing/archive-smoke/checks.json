@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "host_two_players_50_props": true,
+    "host_received_payload": true,
+    "host_no_exceptions": true,
+    "client_two_players_50_props": true,
+    "client_received_payload": true,
+    "client_no_exceptions": true,
+    "exit_codes_zero": true
+  },
+  "PASS": 7,
+  "FAIL": 0,
+  "exit_codes": [
+    0,
+    0
+  ],
+  "ordinary_app_no_fix_case": true,
+  "source": "first verified extraction; final repack changes docs only"
+}

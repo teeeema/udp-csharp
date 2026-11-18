@@ -1,0 +1,18 @@
+{
+  "Assets/Scripts/Prediction/ServerMovementBudget.cs": "01d69030872a230b1bb72ea4fb7595b43b8b4d553c0f6f77b0181a28d0d894ac",
+  "Assets/Scripts/Prediction/TankPresentation.cs": "30949d752c3a3c3fe9bdef11bb11537ca06543ef06c74ecb2829c06d5b96eacf",
+  "Assets/Scripts/Prediction/PredictionRules.cs": "1f95eb8aa4a60fc048d83e44ee8bddadb15638fd8e126d84a9d59bdc443e4ca8",
+  "Assets/Scripts/Prediction/NetworkLabSettings.cs": "c474add1ecf9ad756dbca3ed88782dfad28ff769ebd510a2e21486f61403f7c1",
+  "Assets/Scripts/Prediction/TankWeapon.cs": "42124493694da977d363aed158ae9b90f2f15b47f3deb7f251c399c6f62a0eb5",
+  "Assets/Scripts/Prediction/PredictionInput.cs": "b7fcd9c6ac9c60a28efead3382c54d7afd734830ef40086138c70d8b8a7b2164",
+  "Assets/Scripts/Prediction/ServerShotTrace.cs": "817b95904a86ff78265dad5468005eea7cdae058549481a0e6b08b8f3284e0f3",
+  "Assets/Scripts/Prediction/PredictedPlayer.cs": "c68deab628b6d874d97781adc3b0d915d6c7a1e1c4737592427d1303977132a2",
+  "Assets/Scripts/Prediction/TankGameHud.cs": "d1e7414b7a066ee7da2bd3f5a7c4614391a5d47b0b12b143d0a39afd85dce713",
+  "Assets/Scripts/Prediction/NetworkBootstrap.cs": "ee33be04c6232536e4ef462ff228cf16e1dfa0a4dcc11395a5b0d475f43caf6c",
+  "Assets/Scripts/Prediction/CameraFollow.cs": "8c55c4b838e665fedb292cd4aaadce9bb5bb975cded1ce10756030bce777581c",
+  "Assets/Scripts/Prediction/Replication/ReplicationVerification.cs": "c256bc43d70d1ac70d8e01abd8ccfb03182d5e45b56370ca49acea62a9708766",
+  "Assets/Scripts/Prediction/Replication/ReplicatedProp.cs": "74c3880571caa8c542f373d69f45a68cdb1689e90586bcf045c74af0794f0d2c",
+  "Assets/Scripts/Prediction/Replication/ReplicationPolicy.cs": "65a62ee55d141da6fbad49d954649d9deaef54fa790e3efd0bbebc20c8de3a65",
+  "Assets/Scripts/Prediction/Replication/MeteredTransport.cs": "f45119c6df1a612fbca1d1decea9b42a92a832c6f9af73bf12b7c7a8a4800f25",
+  "Assets/Scripts/Prediction/Replication/ReplicationLab.cs": "d48c446cf359cbdef5b83dfe946a59d5bac8f3e70caf065213cf6803a654dbf9"
+}

@@ -1,0 +1,22 @@
+{
+  "baseline": {
+    "seconds": 184.935,
+    "max_players": 4.0,
+    "material_range_host": [
+      84.0,
+      85.0
+    ],
+    "memory_start": 129577616.0,
+    "memory_end": 147041560.0
+  },
+  "optimized": {
+    "seconds": 184.842,
+    "max_players": 3.0,
+    "material_range_host": [
+      84.0,
+      85.0
+    ],
+    "memory_start": 129572832.0,
+    "memory_end": 138686908.0
+  }
+}

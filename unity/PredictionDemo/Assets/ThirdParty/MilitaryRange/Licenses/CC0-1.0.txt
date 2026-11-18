@@ -1,0 +1,7 @@
+All imported assets are published under CC0 1.0 Universal.
+https://creativecommons.org/publicdomain/zero/1.0/
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
+Primary source pages and Poly Haven download metadata are preserved alongside this notice.
+Abrams: Sketlux, based on the Freeciv model by yd.
+Warehouse: 32kda, textures based on CC0 sets including Screaming Brain Studios.
+Poly Haven contributors: see asset pages linked in docs/Visual_Upgrade_Report.md.

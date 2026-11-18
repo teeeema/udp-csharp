@@ -61,25 +61,11 @@ namespace PredictionDemo
             _nextServerFire = Time.unscaledTime + ReloadSeconds;
             var origin = transform.position + Vector3.up * .2f;
             var direction = transform.forward;
-            var ray = new Ray(origin, direction);
-            float distance = Range;
-            var hitName = "range";
-            if (Physics.Raycast(ray, out var hit, Range, ~0, QueryTriggerInteraction.Ignore))
-            {
-                distance = hit.distance;
-                hitName = hit.collider.name;
-            }
-            // Player visuals have no physics colliders: test their chassis bounds explicitly.
-            foreach (var player in FindObjectsByType<PredictedPlayer>(FindObjectsSortMode.None))
-            {
-                if (player.gameObject == gameObject || !player.IsSpawned) continue;
-                var bounds = new Bounds(player.transform.position, new Vector3(1.9f, 1.5f, 2.2f));
-                if (bounds.IntersectRay(ray, out var tankDistance) && tankDistance < distance)
-                {
-                    distance = tankDistance;
-                    hitName = $"tank:{player.OwnerClientId}";
-                }
-            }
+            if (!ServerShotTrace.ValidDirection(direction)) return;
+            var hit = ServerShotTrace.Cast(origin, direction, Range, gameObject);
+            float distance = hit.Distance;
+            var hitName = hit.Name;
+            hit.Prop?.Damage(); // apply exactly once, after selecting the nearest blocker/target
             ShotsFired.Value++;
             if (distance < Range) Hits.Value++;
             var end = origin + direction * distance;

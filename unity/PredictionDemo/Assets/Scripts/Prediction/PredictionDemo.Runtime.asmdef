@@ -6,7 +6,9 @@
     "Unity.InputSystem",
     "Unity.Networking.Transport",
     "UnityEngine.UI",
-    "Unity.TextMeshPro"
+    "Unity.TextMeshPro",
+    "Unity.Collections"
   ],
-  "autoReferenced": true
+  "autoReferenced": true,
+  "allowUnsafeCode": true
 }

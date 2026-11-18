@@ -2,7 +2,8 @@
   "name": "PredictionDemo.EditModeTests",
   "rootNamespace": "PredictionDemo.Tests",
   "references": [
-    "PredictionDemo.Runtime"
+    "PredictionDemo.Runtime",
+    "Unity.Netcode.Runtime"
   ],
   "includePlatforms": [
     "Editor"

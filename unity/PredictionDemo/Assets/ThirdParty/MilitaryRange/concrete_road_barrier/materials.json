@@ -1,0 +1,26 @@
+{
+  "asset": "concrete_road_barrier",
+  "source": "tmp/visual-assets/concrete_road_barrier/concrete_road_barrier.gltf",
+  "triangles": 12000,
+  "materials": [
+    {
+      "name": "concrete_road_barrier_concrete_road_barrier",
+      "sourceName": "concrete_road_barrier",
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "alphaClip": false,
+      "doubleSided": true,
+      "textures": {
+        "diffuse": "Textures/concrete_road_barrier_diff.png",
+        "normal": "Textures/concrete_road_barrier_nor_gl.png",
+        "orm": "Textures/concrete_road_barrier_rough.png"
+      }
+    }
+  ]
+}

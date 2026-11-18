@@ -1,0 +1,64 @@
+{
+  "asset": "wild_rooibos_bush",
+  "source": "tmp/visual-assets/wild_rooibos_bush/wild_rooibos_bush.gltf",
+  "triangles": 6000,
+  "materials": [
+    {
+      "name": "wild_rooibos_bush_wild_rooibos_bush_twigs",
+      "sourceName": "wild_rooibos_bush_twigs",
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "alphaClip": true,
+      "doubleSided": true,
+      "textures": {
+        "diffuse": "Textures/wild_rooibos_bush_diff_wild_rooibos_bush_alpha.png",
+        "normal": "Textures/wild_rooibos_bush_nor_gl.png",
+        "orm": "Textures/wild_rooibos_bush_rough.png"
+      }
+    },
+    {
+      "name": "wild_rooibos_bush_wild_rooibos_bush_leaves",
+      "sourceName": "wild_rooibos_bush_leaves",
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "alphaClip": true,
+      "doubleSided": true,
+      "textures": {
+        "diffuse": "Textures/wild_rooibos_bush_diff_wild_rooibos_bush_alpha.png",
+        "normal": "Textures/wild_rooibos_bush_nor_gl.png",
+        "orm": "Textures/wild_rooibos_bush_rough.png"
+      }
+    },
+    {
+      "name": "wild_rooibos_bush_wild_rooibos_bush",
+      "sourceName": "wild_rooibos_bush",
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "alphaClip": false,
+      "doubleSided": true,
+      "textures": {
+        "diffuse": "Textures/wild_rooibos_bush_diff_wild_rooibos_bush_alpha.png",
+        "normal": "Textures/wild_rooibos_bush_nor_gl.png",
+        "orm": "Textures/wild_rooibos_bush_rough.png"
+      }
+    }
+  ]
+}

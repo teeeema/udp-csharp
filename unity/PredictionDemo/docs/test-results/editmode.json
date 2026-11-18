@@ -1,0 +1,160 @@
+{
+  "success": true,
+  "command": "command test",
+  "data": {
+    "command": "test",
+    "parameters": {
+      "mode": "editor"
+    },
+    "result": {
+      "Summary": {
+        "Total": 18,
+        "Passed": 18,
+        "Failed": 0,
+        "Skipped": 0,
+        "Inconclusive": 0
+      },
+      "Results": [
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.ClientOnlyDoubleDash_DivergesFromAuthoritativeDash",
+          "Status": "Passed",
+          "Duration": 0.0056816,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.Dash_RejectsSecondRequestDuringCooldown",
+          "Status": "Passed",
+          "Duration": 0.0002545,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.Dash_RequiresDirectionAndFinishedCooldown",
+          "Status": "Passed",
+          "Duration": 0.0000679,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.NetworkProfiles_MatchRequiredLabValues",
+          "Status": "Passed",
+          "Duration": 0.0003398,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.PacketLoss_IsDeterministicAndOnlyEnabledForStressProfile",
+          "Status": "Passed",
+          "Duration": 0.0013437,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.PredictionRulesTests.SanitizeMove_ClampsMagnitudeToOne",
+          "Status": "Passed",
+          "Duration": 0.0000852,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.LoadHasFiftyObjects",
+          "Status": "Passed",
+          "Duration": 0.0001873,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.QuantizationBounded",
+          "Status": "Passed",
+          "Duration": 0.0001423,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.ReducedCadence(0)",
+          "Status": "Passed",
+          "Duration": 0.0000999,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.ReducedCadence(1)",
+          "Status": "Passed",
+          "Duration": 0.0000237,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.ReducedCadence(2)",
+          "Status": "Passed",
+          "Duration": 0.000019,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.ReducedCadence(3)",
+          "Status": "Passed",
+          "Duration": 0.0000187,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.RelevanceBoundary(0,True)",
+          "Status": "Passed",
+          "Duration": 0.0001263,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.RelevanceBoundary(38,True)",
+          "Status": "Passed",
+          "Duration": 0.0000194,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.RelevanceBoundary(39,False)",
+          "Status": "Passed",
+          "Duration": 0.0000251,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.ReplicationPolicyTests.ReturningToRangeRestoresVisibility",
+          "Status": "Passed",
+          "Duration": 0.0001033,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.TankCollisionTests.DashStopsChassisAtLowCoverIncludingSideContact(0.0f)",
+          "Status": "Passed",
+          "Duration": 0.0020148,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "PredictionDemo.Tests.TankCollisionTests.DashStopsChassisAtLowCoverIncludingSideContact(1.1f)",
+          "Status": "Passed",
+          "Duration": 0.0001022,
+          "Message": null,
+          "StackTrace": null
+        }
+      ],
+      "Duration": 0.45,
+      "StatusPath": null,
+      "Mode": "EditMode",
+      "FilterApplied": null,
+      "success": true,
+      "result": null
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/tema/Documents/Saturday/Разработка многопользовательских приложений виртуальной реальности/Practice5Replication"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

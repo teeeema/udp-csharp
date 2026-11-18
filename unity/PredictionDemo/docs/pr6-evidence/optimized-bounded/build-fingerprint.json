@@ -1,0 +1,16 @@
+{
+  "runtime_sha256": "f8f16889df931b1f3164906fd7a23472fcd372d8aa58e7358c2de56715433b0e",
+  "app": "Builds/PR6/ReplicationLab.app",
+  "scenario": {
+    "output": "docs/pr6-evidence/optimized-bounded",
+    "app": "Builds/PR6/ReplicationLab.app",
+    "secure": true,
+    "optimized": true,
+    "clients": 1,
+    "duration": 30,
+    "impair": false,
+    "replication_verify": false,
+    "transport_delay": 0,
+    "headless": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "command": "test",
+  "data": {
+    "projectPath": "/Users/tema/Documents/Saturday/Разработка многопользовательских приложений виртуальной реальности/Practice5Replication",
+    "output": "/Users/tema/Documents/Saturday/Разработка многопользовательских приложений виртуальной реальности/Practice5Replication/docs/pr6-evidence/rekey-playmode.xml",
+    "reports": {
+      "nunit": "/Users/tema/Documents/Saturday/Разработка многопользовательских приложений виртуальной реальности/Practice5Replication/docs/pr6-evidence/rekey-playmode.xml",
+      "junit": null
+    },
+    "coverage": {
+      "requested": false,
+      "enabled": false,
+      "output": null
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

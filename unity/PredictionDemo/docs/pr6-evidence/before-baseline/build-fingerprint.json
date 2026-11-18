@@ -1,0 +1,15 @@
+{
+  "runtime_sha256": "26d6886d18fdd9d0c5a1a6af337d06b805912d151896cfde10ba1d8da657d59f",
+  "app": "Builds/ReplicationLab.app",
+  "scenario": {
+    "output": "docs/pr6-evidence/before-baseline",
+    "app": "Builds/ReplicationLab.app",
+    "secure": false,
+    "optimized": false,
+    "clients": 1,
+    "duration": 30,
+    "impair": false,
+    "replication_verify": false,
+    "transport_delay": 0
+  }
+}

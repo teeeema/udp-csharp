@@ -13,9 +13,13 @@ namespace PredictionDemo
 
         private readonly List<PredictionInput> _pending = new List<PredictionInput>(128);
 
+        private readonly ServerMovementBudget _movementBudget = new ServerMovementBudget();
+        private bool _rejectionPending;
+        public int RejectedMovementCommands { get; private set; }
         private uint _nextSequence = 1;
         private uint _lastSentSequence;
         private uint _serverLastSequence;
+        private uint _serverLastDashSequence;
         private uint _remoteLastSequence;
         private Vector3 _remoteTarget;
         private float _serverNextDashTime;
@@ -35,6 +39,7 @@ namespace PredictionDemo
         public override void OnNetworkSpawn()
         {
             _remoteTarget = transform.position;
+            if (IsServer) _movementBudget.Reset(Time.unscaledTimeAsDouble);
 
             if (IsOwner)
             {
@@ -55,10 +60,13 @@ namespace PredictionDemo
 
         private void FixedUpdate()
         {
-            if (!IsSpawned || !IsOwner)
+            if (IsSpawned && IsServer && _rejectionPending)
             {
-                return;
+                _rejectionPending = false;
+                RejectedInputStateRpc(_serverLastSequence, transform.position,
+                    Mathf.Max(0, _serverNextDashTime - Time.unscaledTime));
             }
+            if (!IsSpawned || !IsOwner) return;
 
             Vector2 move;
             bool normalDash;
@@ -196,17 +204,50 @@ namespace PredictionDemo
                 yield break;
             }
 
-            SubmitInputRpc(input.Sequence, input.Move, input.DashRequested, (byte)profile, spec.OneWayDelayMs, spec.LossPercent);
+            if (input.DashRequested)
+                SubmitDashRpc(input.Sequence, input.Move, (byte)profile, spec.OneWayDelayMs, spec.LossPercent);
+            else
+                SubmitInputRpc(input.Sequence, input.Move, false, (byte)profile, spec.OneWayDelayMs, spec.LossPercent);
         }
 
-        // Keep client intents ordered at the NGO transport layer. The lab's packet-loss
-        // profile is applied explicitly in SendAfterNetworkDelay, so a 0% profile must
-        // never lose a dash only because a later movement RPC overtook it in transit.
-        [Rpc(SendTo.Server, Delivery = RpcDelivery.Reliable, InvokePermission = RpcInvokePermission.Owner)]
+        // Frequent movement is intentionally unreliable. Dash uses a separate reliable
+        // RPC so that an overtaking movement cannot discard a one-off dash intent.
+        [Rpc(SendTo.Server, Delivery = RpcDelivery.Unreliable, InvokePermission = RpcInvokePermission.Owner)]
         private void SubmitInputRpc(uint sequence, Vector2 move, bool dashRequested, byte profileId, int delayMs, int lossPercent)
         {
             var profile = (LabProfile)Mathf.Clamp(profileId, 0, 3);
-            ProcessServerInput(sequence, move, dashRequested, profile, delayMs, lossPercent);
+            ProcessServerInput(sequence, move, false, profile, delayMs, lossPercent);
+        }
+
+        [Rpc(SendTo.Server, Delivery = RpcDelivery.Reliable, InvokePermission = RpcInvokePermission.Owner)]
+        private void SubmitDashRpc(uint sequence, Vector2 move, byte profileId, int delayMs, int lossPercent)
+        {
+            ProcessServerDash(sequence, move, (LabProfile)Mathf.Clamp(profileId, 0, 3), delayMs, lossPercent);
+        }
+
+        private void ProcessServerDash(uint sequence, Vector2 move, LabProfile profile, int delayMs, int lossPercent)
+        {
+            if (!IsServer || sequence <= _serverLastDashSequence ||
+                !ServerMovementBudget.IsFinite(move.x) || !ServerMovementBudget.IsFinite(move.y)) return;
+            _serverLastDashSequence = sequence;
+            if (sequence > _serverLastSequence)
+            {
+                ProcessServerInput(sequence, move, true, profile, delayMs, lossPercent);
+                return;
+            }
+            // Only the dash increment is applied for an old intent. Its base movement
+            // is already superseded; neither server time nor an extra move is minted.
+            move = PredictionRules.SanitizeMove(move);
+            bool accepted = PredictionRules.CanDash(Time.unscaledTime, _serverNextDashTime, move);
+            if (accepted)
+            {
+                _serverNextDashTime = Time.unscaledTime + PredictionRules.DashCooldownSeconds;
+                var extra = PredictionRules.ComputeDisplacement(move, true, 1) - PredictionRules.ComputeDisplacement(move, false, 1);
+                transform.position = ResolveCollision(transform.position, extra);
+            }
+            Debug.Log($"[PR4][Server] seq={sequence} late-dash={(accepted ? "ACCEPT" : "REJECT")}");
+            // Following movement snapshots carry the current position; never send an
+            // old authoritative sequence that could roll reconciliation backwards.
         }
 
         private void ProcessServerInput(uint sequence, Vector2 move, bool dashRequested, LabProfile profile, int delayMs = -1, int lossPercent = -1)
@@ -217,6 +258,14 @@ namespace PredictionDemo
             }
 
             _serverLastSequence = sequence;
+            // A sender can choose its sequence and burst rate, but cannot mint server time.
+            if (!ServerMovementBudget.IsFinite(move.x) || !ServerMovementBudget.IsFinite(move.y)
+                || !_movementBudget.TryConsume(Time.unscaledTimeAsDouble))
+            {
+                RejectedMovementCommands++;
+                _rejectionPending = true; // coalesce a flood to one reliable owner correction per server tick
+                return;
+            }
             move = PredictionRules.SanitizeMove(move);
 
             var now = Time.unscaledTime;
@@ -245,6 +294,12 @@ namespace PredictionDemo
 
             var spec = delayMs < 0 ? NetworkLabSettings.GetProfile(profile) : new LabProfileSpec(Mathf.Clamp(delayMs, 0, 500), Mathf.Clamp(lossPercent, 0, 100));
             StartCoroutine(SendStateAfterNetworkDelay(sequence, transform.position, dashAccepted, cooldownRemaining, spec));
+        }
+
+        [Rpc(SendTo.Owner, Delivery = RpcDelivery.Reliable)]
+        private void RejectedInputStateRpc(uint sequence, Vector3 position, float cooldown)
+        {
+            if (!IsServer) ReconcileOwner(sequence, position, false, cooldown);
         }
 
         private IEnumerator SendStateAfterNetworkDelay(uint sequence, Vector3 authoritativePosition, bool dashAccepted, float cooldownRemaining, LabProfileSpec spec)

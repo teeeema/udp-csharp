@@ -1,0 +1,89 @@
+[
+  {
+    "case": "before-baseline",
+    "command": [
+      "python3",
+      "Tools/run_pr6_game.py",
+      "--output",
+      "docs/pr6-evidence/before-baseline"
+    ],
+    "exit": 0
+  },
+  {
+    "case": "after-final",
+    "command": [
+      "python3",
+      "Tools/run_pr6_game.py",
+      "--output",
+      "docs/pr6-evidence/after-final",
+      "--app",
+      "Builds/PR6/ReplicationLab.app",
+      "--optimized",
+      "--secure"
+    ],
+    "exit": 0
+  },
+  {
+    "case": "after-baseline",
+    "command": [
+      "python3",
+      "Tools/run_pr6_game.py",
+      "--output",
+      "docs/pr6-evidence/after-baseline",
+      "--app",
+      "Builds/PR6/ReplicationLab.app",
+      "--secure"
+    ],
+    "exit": 1
+  },
+  {
+    "case": "multiclient-final",
+    "command": [
+      "python3",
+      "Tools/run_pr6_game.py",
+      "--output",
+      "docs/pr6-evidence/multiclient-final",
+      "--app",
+      "Builds/PR6/ReplicationLab.app",
+      "--optimized",
+      "--secure",
+      "--clients",
+      "2",
+      "--impair"
+    ],
+    "exit": 1
+  },
+  {
+    "case": "replication-final-build",
+    "command": [
+      "python3",
+      "Tools/run_pr6_game.py",
+      "--output",
+      "docs/pr6-evidence/replication-final-build",
+      "--app",
+      "Builds/PR6/ReplicationLab.app",
+      "--optimized",
+      "--secure",
+      "--replication-verify",
+      "--duration",
+      "37"
+    ],
+    "exit": 1
+  },
+  {
+    "case": "latency100",
+    "command": [
+      "python3",
+      "Tools/run_pr6_game.py",
+      "--output",
+      "docs/pr6-evidence/latency100",
+      "--app",
+      "Builds/PR6/ReplicationLab.app",
+      "--optimized",
+      "--secure",
+      "--transport-delay",
+      "100"
+    ],
+    "exit": 0
+  }
+]

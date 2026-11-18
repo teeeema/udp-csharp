@@ -1,0 +1,26 @@
+{
+  "asset": "barrel_03",
+  "source": "tmp/visual-assets/barrel_03/barrel_03.gltf",
+  "triangles": 1473,
+  "materials": [
+    {
+      "name": "barrel_03_barrel_03",
+      "sourceName": "barrel_03",
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "alphaClip": false,
+      "doubleSided": true,
+      "textures": {
+        "diffuse": "Textures/barrel_03_diff.png",
+        "normal": "Textures/barrel_03_nor_gl.png",
+        "orm": "Textures/barrel_03_metal_barrel_03_rough.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "foreach(var p in UnityEngine.Object.FindObjectsByType<PredictionDemo.ReplicatedProp>(UnityEngine.FindObjectsSortMode.None))if(p.Health.Value==55)p.NetworkObject.Despawn();PredictionDemo.ReplicationLab.Instance.Optimized=false;return \"configured\";"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": "configured"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/tema/Documents/Saturday/Разработка многопользовательских приложений виртуальной реальности/Practice5Replication"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
