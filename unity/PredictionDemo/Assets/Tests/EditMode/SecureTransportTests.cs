@@ -145,7 +145,21 @@ namespace PredictionDemo.Tests
         [Test] public void OldWindowPacketDropped()
         { var w = new ReplayWindow(); Assert.IsFalse(w.Allows(0)); w.Accept(100); Assert.IsTrue(w.Allows(37)); Assert.IsFalse(w.Allows(36)); w.Accept(37); Assert.IsFalse(w.Allows(37)); w.Accept(200); Assert.IsFalse(w.Allows(100)); }
         [Test] public void ForgedHighCounterDoesNotPoisonReplayWindow()
-        { using (var p = new Pair()) { p.Connect(); p.Client.SendGame("s", new byte[] { 1 }, 1); var valid = p.Queue[0].data; var bad = (byte[])valid.Clone(); SecureWire.Put64(bad, 24, ulong.MaxValue); Assert.IsNull(p.Server.Receive("c", "ip", bad, 1)); Assert.IsNotNull(p.Server.Receive("c", "ip", valid, 1)); } }
+        {
+            using (var p = new Pair())
+            {
+                p.Connect();
+                p.Client.SendGame("s", new byte[] { 1 }, 1);
+                var valid = p.Queue[0].data;
+                var bad = (byte[])valid.Clone();
+                SecureWire.Put64(bad, 24, ulong.MaxValue);
+
+                Assert.IsNull(p.Server.Receive("c", "client-ip", bad, 1));
+                Assert.IsNull(p.Server.Receive("c", "client-ip", bad, 1.1));
+                Assert.AreEqual(1, p.Events.Count(e => e == "[PR6] AUTH_FAIL remote=c"));
+                Assert.IsNotNull(p.Server.Receive("c", "client-ip", valid, 1.1));
+            }
+        }
         public static IEnumerable<int> HeaderOffsets => Enumerable.Range(0, SecureWire.HeaderSize);
         [TestCaseSource(nameof(HeaderOffsets))] public void EveryHeaderByteAuthenticatedOrRejected(int offset)
         { using (var p = new Pair()) { p.Connect(); p.Client.SendGame("s", new byte[] { 1, 2, 3 }, 1); var valid = p.Queue[0].data; var bad = (byte[])valid.Clone(); bad[offset] ^= 1; Assert.IsNull(p.Server.Receive("c", "ip", bad, 1)); Assert.IsNotNull(p.Server.Receive("c", "ip", valid, 1)); } }

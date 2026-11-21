@@ -83,7 +83,7 @@ MOVEMENT в исходной ПР5 был Reliable. Для требования 
 - Global Hello budget 20/s burst 40; per-IP 2/s burst 4 (порт не меняет лимит), таблица IP ≤1024, записи очищаются через 60 с.
 - Global receive crypto budget 5000/s burst 10000; не более 256 UDP receives за UTP update.
 - Idle 30 с; handshake 8 с. Установленную сессию нельзя сбросить неаутентифицированным Hello.
-- HANDSHAKE_OK, HANDSHAKE_FAIL, AUTH_FAIL, REPLAY_DROP, RATE_LIMIT, SESSION_EXPIRED. Повторяющиеся события ограничены одним сообщением на тип в секунду. TRAFFIC содержит только счётчики байтов/пакетов при Dispose. Ключи и сырые plaintext payload не выводятся. Существующая учебная игровая диагностика показывает координаты/события; она не является dump расшифрованных UDP-буферов.
+- `HANDSHAKE_OK`, `HANDSHAKE_FAIL`, `AUTH_FAIL`, `REPLAY_DROP`, `RATE_LIMIT`, `SESSION_EXPIRED`. Повторяющиеся события ограничены одним сообщением на тип в секунду. `AUTH_FAIL remote=<IP:порт>` указывает UDP-отправителя, которого видит сокет. При проксировании это адрес и порт реле. `TRAFFIC` содержит счётчики байтов и пакетов. Ключи и открытая полезная нагрузка в транспортные журналы не записываются.
 
 Rate limiting ограничивает ресурсы приложения, не обеспечивает защиту сети от распределённой атаки и не содержит stateless cookie. За прокси несколько клиентов могут делить source IP: это учитывается в [Cloudflare_Spectrum_Setup.md](Cloudflare_Spectrum_Setup.md).
 
@@ -91,22 +91,25 @@ Rate limiting ограничивает ресурсы приложения, не
 
 ## Проверки, трафик и доказательства
 
-Фактические XML, логи native players, исходные CSV и точные datagram наблюдения находятся в `docs/pr6-evidence`. Итоговые числа и статусы — [PR6_Report.md](PR6_Report.md). Изображения игры создаются самим ScreenCapture текущих игроков; скриншоты Wireshark/Cloudflare не подделываются. Наблюдения локального UDP-реле — JSONL с точным payload из recvfrom и экспорт `relay-payloads.pcapng` с LinkType USER0. В нём **нет придуманных IP/UDP заголовков**; timestamp — реальное elapsed-время реле относительно условной эпохи 0. Это экспорт реальных payload-наблюдений, **не захват сетевого интерфейса/BPF**. `tcpdump -r` подтвердил читаемость PCAPNG; Wireshark GUI остаётся NOT_VERIFIED. `packet-layout.html` размечает реальные bytes Header/nonce/ciphertext/tag, явно обозначен как визуализация, не screenshot.
+После изменения журнала 21.11.2026 на macOS прошло 99/99 EditMode и 2/2 PlayMode. Тест `ForgedHighCounterDoesNotPoisonReplayWindow` проверяет отклонение подменённого пакета, адрес в журнале, ограничение частоты записи и приём следующего валидного пакета. [Отчёты NUnit](pr6-wireshark-2026-11-21/)
 
-Обязательная криптографическая надбавка: 12-byte nonce + 16-byte tag = 28 B. Адаптер дополнительно добавляет 20-byte outer Header, итого **48 B на каждый UTP datagram**. Процент для N внутренних байт — `4800/N`; при максимуме N=1152 это 4.167%, на маленьком ACK существенно больше. Handshake — отдельные пакеты, изменение MTU может увеличить число UTP фрагментов. Не путать старые NGO payload CSV с полным UDP wire. Сравнение before/after использует одинаковый сценарий, а точная стоимость crypto определяется по каждому наблюдаемому encrypted packet как `size - innerSize = 48`.
+Исторические прогоны в `docs/pr6-evidence` содержат XML, CSV и измерения реле. Их `relay-payloads.pcapng` имеет тип USER0 и содержит только полезные нагрузки, полученные через `recvfrom`. Итоговые данные по датам перечислены в [сверке методички](PR6_Methodichka_Audit.md).
 
-## Wireshark: NOT_VERIFIED
+Поля nonce и тег занимают 12 и 16 байт, внешний заголовок занимает 20 байт. Итого **48 дополнительных байт на каждую UTP-датаграмму**. Для N байт внутренней нагрузки накладные расходы равны `4800/N` процентов, при максимуме N = 1 152 это 4,17%. Обмен ключами использует отдельные пакеты. В измеренном интервале прогона с двумя клиентами обёртка 1 648 датаграмм добавила 79 104 байта к 146 696 байтам UTP, то есть 53,92%. [Измерение](pr6-wireshark-2026-11-21/native-result.json)
 
-Wireshark/tshark не установлен; `/usr/sbin/tcpdump -i lo0 -c 1 -w /tmp/pr6-permission-check.pcap udp port 7777` вернул Permission denied на /dev/bpf0. Права ОС не менялись. Поэтому PCAPNG сетевого интерфейса и screenshots Wireshark в результате нет. Для просмотра USER0 экспорта запустить Wireshark с `-X lua_script:Tools/pr6_dissector.lua`, открыть `relay-payloads.pcapng`; фильтр для него `dustline6` / `dustline6.type == 11`, UDP port filter к USER0 неприменим. Lua GUI-разбор не запускался, статус NOT_VERIFIED. Ручное получение обычного IP/UDP capture на собственном loopback:
+## Wireshark до и после шифрования
+
+Захваты от 21.11.2026 содержат Ethernet, IPv4 и UDP с интерфейса `eth0` локального реле. В ПР5 UDP передаёт бинарный UTP/NGO payload. В ПР6 после открытых сообщений X25519 игровые пакеты идут в формате `DSL6` с видимыми AAD, nonce и тегом. [Захваты, снимки и разбор пакетов](pr6-wireshark-2026-11-21/)
+
+Для собственного захвата запустите команду захвата, сервер и клиент в отдельных терминалах.
 
 ```sh
-# Терминал с правами захвата; без запуска чужого трафика.
 sudo tcpdump -i lo0 -s 0 -w /tmp/pr6-after.pcap 'udp port 7777'
 ./Builds/PR6/ReplicationLab.app/Contents/MacOS/PredictionDemo --pr4-host --pr4-profile 0
 ./Builds/PR6/ReplicationLab.app/Contents/MacOS/PredictionDemo --pr4-client --pr6-address localhost --pr4-profile 0 --pr4-auto --pr4-auto-fire
 ```
 
-Повторить те же флаги для сохранённой `Builds/ReplicationLab.app`, записывая `/tmp/pr6-before.pcap`. В Wireshark открыть захваты, display filter `udp.port == 7777`, выбрать data packet. До: исходный бинарный UTP/NGO payload читается без crypto; это не обязательно ASCII-текст. После: `44 53 4c 36`/version/type и выделение bytes UDP payload: 0–19 Header, 20–31 nonce, 32..len-17 ciphertext, последние 16 tag. Hello/Response ожидаемо открыты. Использовать `Tools/pr6_dissector.lua` для выделения полей, затем Save As PCAPNG и сохранить настоящие screenshots пакетов и игры. Для автоматического relay-сценария фильтр `udp.port == 7906 || udp.port == 7907`.
+Для сравнения повторите сценарий на сборке ПР5, сохранив `pr6-before.pcap`. Откройте захваты с Lua-диссектором `Tools/pr6_dissector.lua` и примените фильтр `udp.port == 7777`. Фильтр `dustline6.type == 11 && dustline6.kind == 0` выделяет зашифрованные игровые пакеты.
 
 ## Эксплуатация
 

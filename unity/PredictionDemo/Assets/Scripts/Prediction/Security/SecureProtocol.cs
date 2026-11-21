@@ -159,10 +159,14 @@ namespace PredictionDemo.Security
         public long EncryptedPackets, PlaintextBytes, WireBytes;
         public SecureSessionEngine(bool server, Action<string, byte[]> send, Action<string> log = null)
         { this.server = server; this.send = send; this.log = log; handshakeBudget = new TokenBucket(20, 40, 0); receiveBudget = new TokenBucket(5000, 10000, 0); }
-        private void Event(string code, double now)
+        private void Event(string code, double now, string remote = null)
         {
             if (!logTimes.TryGetValue(code, out var last) || now - last >= 1)
-            { logTimes[code] = now; log?.Invoke("[PR6] " + code); }
+            {
+                logTimes[code] = now;
+                var message = "[PR6] " + code;
+                log?.Invoke(remote == null ? message : message + " remote=" + remote);
+            }
         }
         public bool Established(string endpoint) => peers.TryGetValue(endpoint, out var p) && p.State == SecurePeer.Phase.Established;
         public bool SendGame(string endpoint, byte[] data, double now)
@@ -234,7 +238,11 @@ namespace PredictionDemo.Security
                 if (!replacements.TryGetValue(endpoint, out p) || p.Id != SecureWire.Get64(packet, 8)) return null;
                 replacing = true;
             }
-            if (!p.Open(packet, out var plaintext, out var error)) { Event(error, now); return null; }
+            if (!p.Open(packet, out var plaintext, out var error))
+            {
+                Event(error, now, error == "AUTH_FAIL" ? endpoint : null);
+                return null;
+            }
             try
             {
                 byte kind = packet[6];
