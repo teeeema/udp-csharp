@@ -13,7 +13,6 @@
 | 5 | [Оптимизация репликации и релевантность](practices/05-replication/) | Отчёт и измерения |
 | 6 | [Шифрование игрового UDP](practices/06-encrypted-transport/) | Код, отчёт и захваты Wireshark |
 | 7 | [Linux Dedicated Server, Docker и Steam](practices/07-dedicated-server-steam/) | 19 PASS, 9 BLOCKED |
-| 8 | [Место для следующей практики](practices/08/) | Ещё не начата |
 
 ## Структура репозитория
 
