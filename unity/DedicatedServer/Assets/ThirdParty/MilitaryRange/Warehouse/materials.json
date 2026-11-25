@@ -1,0 +1,24 @@
+{
+  "asset": "Warehouse",
+  "source": "tmp/visual-assets/warehouse/warehouse02.glb",
+  "triangles": 344,
+  "materials": [
+    {
+      "name": "Warehouse_Material_013",
+      "sourceName": "Material.013",
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "metallic": 1.0,
+      "roughness": 1.0,
+      "alphaClip": false,
+      "doubleSided": true,
+      "textures": {
+        "diffuse": "Textures/Set_01_DiffuseMap.png"
+      }
+    }
+  ]
+}

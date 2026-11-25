@@ -1,0 +1,16 @@
+services:
+  server:
+    environment:
+      DUSTLINE_PROFILE: steam
+      DUSTLINE_QUERY_PORT: ${DUSTLINE_QUERY_PORT:-27015}
+      DUSTLINE_APP_ID: ${DUSTLINE_APP_ID:?Set an authorized Steam App ID}
+      DUSTLINE_ALLOW_APP_ID_480: ${DUSTLINE_ALLOW_APP_ID_480:-0}
+    ports:
+      - "${DUSTLINE_PUBLISH_IP:-0.0.0.0}:${DUSTLINE_QUERY_PORT:-27015}:${DUSTLINE_QUERY_PORT:-27015}/udp"
+    volumes:
+      - type: bind
+        source: ${DUSTLINE_STEAMCLIENT:?Set the path to Valve's Linux x86_64 steamclient.so}
+        target: /home/dustline/.steam/sdk64/steamclient.so
+        read_only: true
+        bind:
+          create_host_path: false

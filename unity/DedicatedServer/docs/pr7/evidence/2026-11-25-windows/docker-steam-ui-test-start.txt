@@ -1,0 +1,9 @@
+server-1  | [PR7] STEAM_INIT_OK role=dedicated appid=480 query=27018
+server-1  | [PR7] SERVER_READY name=DUSTLINE-Steam-PR7 map=Copper Basin profile=steam transport=SteamNetworkingSockets+secure-UTP bind=0.0.0.0:7789 max=4 clients=0 localPlayer=false
+server-1  | [PR7] STEAM_ADVERTISE_REQUESTED appid=480
+ Container dustline-pr7-steam-server-1 Recreate
+ Container dustline-pr7-steam-server-1 Recreated
+ Container dustline-pr7-steam-server-1 Starting
+ Container dustline-pr7-steam-server-1 Started
+ Container dustline-pr7-steam-server-1 Waiting
+ Container dustline-pr7-steam-server-1 Healthy

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Failed(Child)" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-25 08:20:08Z" end-time="2026-11-25 08:20:11Z" duration="3,042517">
+  <test-suite type="TestSuite" id="1011" name="PredictionDemo" fullname="PredictionDemo" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2026-11-25 08:20:08Z" end-time="2026-11-25 08:20:11Z" duration="3.042517" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1005" name="Replication.PlayModeTests.dll" fullname="PROJECT_ROOT/Library/ScriptAssemblies/Replication.PlayModeTests.dll" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2026-11-25 08:20:08Z" end-time="2026-11-25 08:20:11Z" duration="3.013769" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="30280" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1006" name="PredictionDemo" fullname="PredictionDemo" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2026-11-25 08:20:08Z" end-time="2026-11-25 08:20:11Z" duration="3.012788" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1007" name="Tests" fullname="PredictionDemo.Tests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2026-11-25 08:20:08Z" end-time="2026-11-25 08:20:11Z" duration="3.012260" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1001" name="DefectPlayModeTests" fullname="PredictionDemo.Tests.DefectPlayModeTests" classname="PredictionDemo.Tests.DefectPlayModeTests" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2026-11-25 08:20:08Z" end-time="2026-11-25 08:20:09Z" duration="0.851318" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1002" name="RestartHitSelectionAndMaterialLifecycle" fullname="PredictionDemo.Tests.DefectPlayModeTests.RestartHitSelectionAndMaterialLifecycle" methodname="RestartHitSelectionAndMaterialLifecycle" classname="PredictionDemo.Tests.DefectPlayModeTests" runstate="Runnable" seed="428010892" result="Failed" start-time="2026-11-25 08:20:08Z" end-time="2026-11-25 08:20:08Z" duration="0.832299" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] [PR7] SERVER_ERROR NGO dedicated startup failed'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[PredictionDemo.NetworkBootstrap:StartDedicated (string[]) (at Assets/Scripts/Prediction/NetworkBootstrap.cs:221)
+PredictionDemo.NetworkBootstrap/<Start>d__18:MoveNext () (at Assets/Scripts/Prediction/NetworkBootstrap.cs:73)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+[PR4][Server] Spawned authoritative player for client=0 at (-2.50, 1.00, -4.00)
+[PR4][Bootstrap] Host started on 127.0.0.1:7795
+[Netcode] [CanStart][Start:Server] Can't start while listening
+[PR7] SERVER_ERROR NGO dedicated startup failed
+[PR6] TRAFFIC packets=0 inner_bytes=0 wire_bytes=0
+[PR7] SERVER_STOPPED
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1003" name="ReplicationSmokeTests" fullname="PredictionDemo.Tests.ReplicationSmokeTests" classname="PredictionDemo.Tests.ReplicationSmokeTests" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2026-11-25 08:20:09Z" end-time="2026-11-25 08:20:11Z" duration="2.137771" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1004" name="HostSpawnsLoadAndReplicatesAuthoritativeState" fullname="PredictionDemo.Tests.ReplicationSmokeTests.HostSpawnsLoadAndReplicatesAuthoritativeState" methodname="HostSpawnsLoadAndReplicatesAuthoritativeState" classname="PredictionDemo.Tests.ReplicationSmokeTests" runstate="Runnable" seed="2145776332" result="Failed" start-time="2026-11-25 08:20:09Z" end-time="2026-11-25 08:20:11Z" duration="2.124813" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] [PR7] SERVER_ERROR Secure game transport is unavailable'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[PredictionDemo.NetworkBootstrap:StartDedicated (string[]) (at Assets/Scripts/Prediction/NetworkBootstrap.cs:221)
+PredictionDemo.NetworkBootstrap/<Start>d__18:MoveNext () (at Assets/Scripts/Prediction/NetworkBootstrap.cs:73)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+[PR7] SERVER_ERROR Secure game transport is unavailable
+Saving results to: WINDOWS_USER_HOME/AppData/LocalLow/DefaultCompany/PredictionDemo\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,116 @@
+Crash recovery RestartCount 0 -> 1
+NAME                    IMAGE                                                                     COMMAND                  SERVICE   CREATED         STATUS                    PORTS
+dustline-pr7-server-1   sha256:3bbe1c4dff51ba8cf8a79813c373b693ae9c99a274c611ae3c13ad4ea502ff26   "/usr/local/bin/dust…"   server    7 minutes ago   Up 40 seconds (healthy)   0.0.0.0:7777->7777/udp
+CONTAINER ID   NAME                    CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O     PIDS
+91b267174b7b   dustline-pr7-server-1   6.65%     141.4MiB / 3.824GiB   3.61%     806B / 2.01kB   0B / 8.19kB   26
+Image bytes 874497687
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2        20G  5.4G   14G  29% /
+server-1  |
+server-1  | (Filename: /home/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 223)
+server-1  |
+server-1  | NetworkVariable is written to, but doesn't know its NetworkBehaviour yet. Are you modifying a NetworkVariable before the NetworkObject is spawned?
+server-1  | UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+server-1  | UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+server-1  | UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+server-1  | UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /home/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+server-1  | UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+server-1  | UnityEngine.Debug:LogWarning (object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:223)
+server-1  | Unity.Netcode.NetworkVariableBase:MarkNetworkBehaviourDirty () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/NetworkVariable/NetworkVariableBase.cs:320)
+server-1  | Unity.Netcode.NetworkVariableBase:SetDirty (bool) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/NetworkVariable/NetworkVariableBase.cs:283)
+server-1  | Unity.Netcode.NetworkVariable`1<int>:set_Value (int) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/NetworkVariable/NetworkVariable.cs:163)
+server-1  | PredictionDemo.ReplicationLab:Update () (at PROJECT_ROOT/Assets/Scripts/Prediction/Replication/ReplicationLab.cs:43)
+server-1  |
+server-1  | (Filename: /home/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 223)
+server-1  |
+server-1  | NetworkVariable is written to, but doesn't know its NetworkBehaviour yet. Are you modifying a NetworkVariable before the NetworkObject is spawned?
+server-1  | UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+server-1  | UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+server-1  | UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+server-1  | UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /home/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+server-1  | UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+server-1  | UnityEngine.Debug:LogWarning (object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:223)
+server-1  | Unity.Netcode.NetworkVariableBase:MarkNetworkBehaviourDirty () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/NetworkVariable/NetworkVariableBase.cs:320)
+server-1  | Unity.Netcode.NetworkVariableBase:SetDirty (bool) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/NetworkVariable/NetworkVariableBase.cs:283)
+server-1  | Unity.Netcode.NetworkVariable`1<UnityEngine.Vector3>:set_Value (UnityEngine.Vector3) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/NetworkVariable/NetworkVariable.cs:163)
+server-1  | PredictionDemo.ReplicationLab:Update () (at PROJECT_ROOT/Assets/Scripts/Prediction/Replication/ReplicationLab.cs:44)
+server-1  |
+server-1  | (Filename: /home/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 223)
+server-1  |
+server-1  | [PR7] SERVER_STOP_REQUEST
+server-1  | UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+server-1  | UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+server-1  | UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+server-1  | UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /home/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+server-1  | UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+server-1  | UnityEngine.Debug:Log (object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:130)
+server-1  | PredictionDemo.NetworkBootstrap:Update () (at PROJECT_ROOT/Assets/Scripts/Prediction/NetworkBootstrap.cs:261)
+server-1  |
+server-1  | (Filename: /home/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 130)
+server-1  |
+server-1  | [PR6] TRAFFIC packets=0 inner_bytes=0 wire_bytes=0
+server-1  | UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+server-1  | UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+server-1  | UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+server-1  | UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /home/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+server-1  | UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+server-1  | UnityEngine.Debug:Log (object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:130)
+server-1  | PredictionDemo.Security.SecureNetworkInterface:Dispose () (at PROJECT_ROOT/Assets/Scripts/Prediction/Security/SecureNetworkInterface.cs:142)
+server-1  | Unity.Networking.Transport.NetworkInterfaceWrapper:DisposeWrapper (void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkInterfaceWrapper.cs:135)
+server-1  | Unity.Networking.Transport.ManagedCallWrapper:Trampoline (void*,void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:34)
+server-1  | Unity.Networking.Transport.ManagedCallWrapper:Invoke (void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:87)
+server-1  | Unity.Networking.Transport.ManagedCallWrapper:Invoke<Unity.Networking.Transport.NetworkInterfaceWrapper/Arguments> (Unity.Networking.Transport.NetworkInterfaceWrapper/Arguments&) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:95)
+server-1  | Unity.Networking.Transport.NetworkInterfaceWrapper:Dispose () (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkInterfaceWrapper.cs:129)
+server-1  | Unity.Networking.Transport.NetworkInterfaceLayer:Dispose () (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Layers/NetworkInterfaceLayer.cs:17)
+server-1  | Unity.Networking.Transport.NetworkLayerWrapper:DisposeWrapper<Unity.Networking.Transport.NetworkInterfaceLayer> (void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkLayerWrapper.cs:75)
+server-1  | Unity.Networking.Transport.ManagedCallWrapper:Trampoline (void*,void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:34)
+server-1  | Unity.Networking.Transport.ManagedCallWrapper:Invoke (void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:87)
+server-1  | Unity.Networking.Transport.ManagedCallWrapper:Invoke<Unity.Networking.Transport.NetworkLayerWrapper/DisposeArguments> (Unity.Networking.Transport.NetworkLayerWrapper/DisposeArguments&) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:95)
+server-1  | Unity.Networking.Transport.NetworkLayerWrapper:Dispose () (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkLayerWrapper.cs:62)
+server-1  | Unity.Networking.Transport.NetworkStack:Dispose () (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkStack.cs:112)
+server-1  | Unity.Networking.Transport.NetworkDriver:Dispose () (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkDriver.cs:564)
+server-1  | Unity.Netcode.Transports.UTP.UnityTransport:DisposeInternals () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Transports/UTP/UnityTransport.cs:474)
+server-1  | Unity.Netcode.Transports.UTP.UnityTransport:Shutdown () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Transports/UTP/UnityTransport.cs:1789)
+server-1  | PredictionDemo.MeteredTransport:Shutdown () (at PROJECT_ROOT/Assets/Scripts/Prediction/Replication/MeteredTransport.cs:24)
+server-1  | Unity.Netcode.NetworkConnectionManager:Shutdown () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Connection/NetworkConnectionManager.cs:1759)
+server-1  | Unity.Netcode.NetworkManager:ShutdownInternal () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkManager.cs:1667)
+server-1  | Unity.Netcode.NetworkManager:ProcessServerShutdown () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkManager.cs:589)
+server-1  | Unity.Netcode.NetworkManager:ProcessServerShutdown () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkManager.cs:573)
+server-1  | Unity.Netcode.NetworkManager:NetworkUpdate (Unity.Netcode.NetworkUpdateStage) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkManager.cs:514)
+server-1  | Unity.Netcode.NetworkUpdateLoop:RunNetworkUpdateStage (Unity.Netcode.NetworkUpdateStage) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkUpdateLoop.cs:191)
+server-1  | Unity.Netcode.NetworkUpdateLoop/NetworkPostLateUpdate/<>c:<CreateLoopSystem>b__0_0 () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkUpdateLoop.cs:286)
+server-1  |
+server-1  | (Filename: /home/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 130)
+server-1  |
+server-1  | [PR7] SERVER_STOPPED
+server-1  | UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+server-1  | UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+server-1  | UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+server-1  | UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /home/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+server-1  | UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+server-1  | UnityEngine.Debug:Log (object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:130)
+server-1  | PredictionDemo.NetworkBootstrap:OnServerStopped (bool) (at PROJECT_ROOT/Assets/Scripts/Prediction/NetworkBootstrap.cs:272)
+server-1  | Unity.Netcode.NetworkManager:ShutdownInternal () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkManager.cs:1720)
+server-1  | Unity.Netcode.NetworkManager:ProcessServerShutdown () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkManager.cs:589)
+server-1  | Unity.Netcode.NetworkManager:ProcessServerShutdown () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkManager.cs:573)
+server-1  | Unity.Netcode.NetworkManager:NetworkUpdate (Unity.Netcode.NetworkUpdateStage) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkManager.cs:514)
+server-1  | Unity.Netcode.NetworkUpdateLoop:RunNetworkUpdateStage (Unity.Netcode.NetworkUpdateStage) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkUpdateLoop.cs:191)
+server-1  | Unity.Netcode.NetworkUpdateLoop/NetworkPostLateUpdate/<>c:<CreateLoopSystem>b__0_0 () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkUpdateLoop.cs:286)
+server-1  |
+server-1  | (Filename: /home/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 130)
+server-1  |
+server-1  | [Physics::Module] Cleanup current backend.
+server-1  | [Physics::Module] Id: 0xf2b8ea05
+server-1  | Input System module state changed to: ShutdownInProgress.
+server-1  | Input Polling Thread exited.
+server-1  | Input System module state changed to: Shutdown.
+server-1  | CodeReloadManager destroyed
+server-1  | PlayerConnection::Cleanup##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1795595424220,"processId":9,"allocatedMemory":587846,"memoryLabels":[{"Default":8984},{"NewDelete":10688},{"Manager":541095},{"Shader":8},{"Audio":552},{"Serialization":16616},{"String":407},{"Utility":752},{"PoolAlloc":336},{"ScriptManager":5696},{"CodeReload":440},{"CloudService":144},{"VR":1904},{"Subsystems":96},{"CoreBusinessMetrics":128}]}
+ Container dustline-pr7-server-1 Restarting
+ Container dustline-pr7-server-1 Started
+ Container dustline-pr7-server-1 Stopping
+ Container dustline-pr7-server-1 Stopped
+ Container dustline-pr7-server-1 Starting
+ Container dustline-pr7-server-1 Started
+ Container dustline-pr7-server-1 Waiting
+ Container dustline-pr7-server-1 Healthy

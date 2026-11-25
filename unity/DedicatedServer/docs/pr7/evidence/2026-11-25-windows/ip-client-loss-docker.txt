@@ -1,0 +1,9 @@
+ Container dustline-pr7-server-1 Stopping
+ Container dustline-pr7-server-1 Stopped
+
+NAME                    IMAGE                COMMAND                  SERVICE   CREATED              STATUS                   PORTS
+dustline-pr7-server-1   dustline-pr7:local   "/usr/local/bin/dust…"   server    About a minute ago   Up 5 seconds (healthy)   0.0.0.0:7777->7777/udp
+ Container dustline-pr7-server-1 Starting
+ Container dustline-pr7-server-1 Started
+ Container dustline-pr7-server-1 Waiting
+ Container dustline-pr7-server-1 Healthy

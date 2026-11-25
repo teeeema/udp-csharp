@@ -1,0 +1,14 @@
+{
+  "name": "PredictionDemo.Runtime",
+  "rootNamespace": "PredictionDemo",
+  "references": [
+    "Unity.Netcode.Runtime",
+    "Unity.InputSystem",
+    "Unity.Networking.Transport",
+    "UnityEngine.UI",
+    "Unity.TextMeshPro",
+    "Unity.Collections"
+  ],
+  "autoReferenced": true,
+  "allowUnsafeCode": true
+}

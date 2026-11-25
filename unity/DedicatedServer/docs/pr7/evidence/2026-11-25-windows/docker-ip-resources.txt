@@ -1,0 +1,8 @@
+first-running-sample
+CONTAINER ID   NAME                    CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O     PIDS
+91b267174b7b   dustline-pr7-server-1   11.38%    148.4MiB / 3.824GiB   3.79%     1.32kB / 18.3kB   0B / 12.3kB   26
+874497687
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2        20G  5.3G   14G  29% /
+195M	Builds/PR7/LinuxServer
+uid=10001(dustline) gid=10001(dustline) groups=10001(dustline)

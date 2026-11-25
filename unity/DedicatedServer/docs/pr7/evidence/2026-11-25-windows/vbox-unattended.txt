@@ -1,0 +1,30 @@
+VBoxManage.exe: info: Starting unattended installation of Ubuntu_64 in machine 'UnityDedicatedServer-PR7' (81099739-b3ef-4193-81b0-c6d99ea8294e).
+VBoxManage.exe: info: Using values:
+                           isoPath = LOCAL_PR7\ubuntu-24.04.5-live-server-amd64.iso
+                              user = dustline
+                      fullUserName =
+                        productKey =
+                  additionsIsoPath = C:\Program Files\Oracle\VirtualBox/VBoxGuestAdditions.iso
+             installGuestAdditions = false
+              validationKitIsoPath =
+            installTestExecService = false
+                            locale = en_US
+                           country = RU
+                          timeZone = UTC
+                             proxy =
+                          hostname = dustline-pr7.local
+       packageSelectionAdjustments =
+                 auxiliaryBasePath = LOCAL_PR7\vm\UnityDedicatedServer-PR7\Unattended-81099739-b3ef-4193-81b0-c6d99ea8294e-
+                        imageIndex = 1
+                scriptTemplatePath = LOCAL_PR7\pr7-autoinstall
+     postInstallScriptTemplatePath = C:\Program Files\Oracle\VirtualBox\UnattendedTemplates\ubuntu_postinstall.sh
+                postInstallCommand =
+      extraInstallKernelParameters =  autoinstall ds=nocloud\;s=/cdrom/
+                          language = en-US
+                  detectedOSTypeId = Ubuntu24_64
+                 detectedOSVersion = 24.04.5 LTS "Noble Numbat"
+                  detectedOSFlavor = Ubuntu-Server
+               detectedOSLanguages = en-US
+                   detectedOSHints =
+VBoxManage.exe: info: Waiting for VM 'UnityDedicatedServer-PR7' to power on...
+VBoxManage.exe: info: VM 'UnityDedicatedServer-PR7' (81099739-b3ef-4193-81b0-c6d99ea8294e) has been successfully started.

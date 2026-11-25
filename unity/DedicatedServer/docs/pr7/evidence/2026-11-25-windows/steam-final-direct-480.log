@@ -1,0 +1,388 @@
+Mono path[0] = 'PROJECT_ROOT/Builds/PR7/WindowsClient/Dustline_Data/Managed'
+Mono config path = 'PROJECT_ROOT/Builds/PR7/WindowsClient/MonoBleedingEdge/etc'
+CodeReloadManager initialized
+Found 3 interfaces on host : 0) 192.168.1.151 1) 192.168.56.1 2) 10.20.0.1
+Player connection [19892]  Target information:
+
+Player connection [19892]  * "[IP] 192.168.1.151 [Port] 55000 [Flags] 2 [Guid] 2457156348 [EditorId] 4276136075 [Version] 1048832 [Id] WindowsPlayer(2,tema) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] PredictionDemo"
+
+Player connection [19892]  * "[IP] 192.168.56.1 [Port] 55000 [Flags] 2 [Guid] 2457156348 [EditorId] 4276136075 [Version] 1048832 [Id] WindowsPlayer(2,tema) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] PredictionDemo"
+
+Player connection [19892]  * "[IP] 10.20.0.1 [Port] 55000 [Flags] 2 [Guid] 2457156348 [EditorId] 4276136075 [Version] 1048832 [Id] WindowsPlayer(2,tema) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] PredictionDemo"
+
+Player connection [19892] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Initialize engine version: 6000.6.7f1 (b22767f04f04)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=262144, entitiesPerBlock=1024, blocksPerSlotPage=0, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path PROJECT_ROOT/Builds/PR7/WindowsClient/Dustline_Data/UnitySubsystems
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Begin MonoManager ReloadAssembly
+- Finished resetting the current domain, in  0.010 seconds
+[Physics::Module] Selected backend (deferred post-plugins).
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Microsoft Media Foundation video decoding to texture disabled: graphics device is Null, only Direct3D 11 and Direct3D 12 (only on desktop) are supported for hardware-accelerated video decoding.
+UnloadTime: 0.632200 ms
+[Presentation] development=True native=1920x1080 requestedNative=True
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:130)
+PredictionDemo.PresentationDisplay:Initialize () (at PROJECT_ROOT/Assets/Scripts/Prediction/PresentationDisplay.cs:22)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 130)
+
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:226)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:1784)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TMP_Text.cs:2157)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:2470)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:226)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:226)
+UnityEngine.Canvas:SendWillRenderCanvases () (at C:/build/output/unity/unity/Modules/UI/ScriptBindings/UICanvas.bindings.cs:161)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 226)
+
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:226)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:1784)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TMP_Text.cs:2157)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:2470)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:226)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:226)
+UnityEngine.Canvas:SendWillRenderCanvases () (at C:/build/output/unity/unity/Modules/UI/ScriptBindings/UICanvas.bindings.cs:161)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 226)
+
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:226)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:1784)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TMP_Text.cs:2157)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:2470)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:226)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:226)
+UnityEngine.Canvas:SendWillRenderCanvases () (at C:/build/output/unity/unity/Modules/UI/ScriptBindings/UICanvas.bindings.cs:161)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 226)
+
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:226)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:1784)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TMP_Text.cs:2157)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:2470)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:226)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:226)
+UnityEngine.Canvas:SendWillRenderCanvases () (at C:/build/output/unity/unity/Modules/UI/ScriptBindings/UICanvas.bindings.cs:161)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 226)
+
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:226)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:1784)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TMP_Text.cs:2157)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:2470)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:226)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:226)
+UnityEngine.Canvas:SendWillRenderCanvases () (at C:/build/output/unity/unity/Modules/UI/ScriptBindings/UICanvas.bindings.cs:161)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 226)
+
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:226)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:1784)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TMP_Text.cs:2157)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:2470)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:226)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:226)
+UnityEngine.Canvas:SendWillRenderCanvases () (at C:/build/output/unity/unity/Modules/UI/ScriptBindings/UICanvas.bindings.cs:161)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 226)
+
+[PR7] STEAM_INIT_OK role=client appid=480
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:130)
+PredictionDemo.Steam.SteamSessionService:InitializeClient () (at PROJECT_ROOT/Assets/Scripts/Steam/SteamSessionService.cs:69)
+PredictionDemo.SessionCoordinator:TestSteamEndpoint (string,uint16) (at PROJECT_ROOT/Assets/Scripts/Prediction/SessionCoordinator.cs:146)
+PredictionDemo.NetworkBootstrap/<Start>d__18:MoveNext () (at PROJECT_ROOT/Assets/Scripts/Prediction/NetworkBootstrap.cs:175)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 130)
+
+[PR7] JOIN profile=steam transport=SteamNetworkingSockets+secure-UTP addressType=IPv4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:130)
+PredictionDemo.SessionCoordinator:StartClient (System.Net.IPEndPoint,bool) (at PROJECT_ROOT/Assets/Scripts/Prediction/SessionCoordinator.cs:170)
+PredictionDemo.SessionCoordinator:TestSteamEndpoint (string,uint16) (at PROJECT_ROOT/Assets/Scripts/Prediction/SessionCoordinator.cs:147)
+PredictionDemo.NetworkBootstrap/<Start>d__18:MoveNext () (at PROJECT_ROOT/Assets/Scripts/Prediction/NetworkBootstrap.cs:175)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 130)
+
+[PR7] STEAM_SOCKET_CONNECTED role=client addressType=IPv4 connection=direct-ip relayPop=0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:130)
+PredictionDemo.Steam.SteamDatagramSocket:ConnectionChanged (Steamworks.SteamNetConnectionStatusChangedCallback_t) (at PROJECT_ROOT/Assets/Scripts/Steam/SteamDatagramSocket.cs:95)
+Steamworks.Callback`1<Steamworks.SteamNetConnectionStatusChangedCallback_t>:OnRunCallback (intptr) (at ./Library/PackageCache/com.rlabrecque.steamworks.net@f995a13a7c90/Runtime/CallbackDispatcher.cs:329)
+Steamworks.CallbackDispatcher:RunFrame (bool) (at ./Library/PackageCache/com.rlabrecque.steamworks.net@f995a13a7c90/Runtime/CallbackDispatcher.cs:225)
+Steamworks.SteamAPI:RunCallbacks () (at ./Library/PackageCache/com.rlabrecque.steamworks.net@f995a13a7c90/Runtime/Steam.cs:183)
+PredictionDemo.Steam.SteamSessionService:Pump () (at PROJECT_ROOT/Assets/Scripts/Steam/SteamSessionService.cs:227)
+PredictionDemo.SessionCoordinator:Tick () (at PROJECT_ROOT/Assets/Scripts/Prediction/SessionCoordinator.cs:234)
+PredictionDemo.NetworkBootstrap:Update () (at PROJECT_ROOT/Assets/Scripts/Prediction/NetworkBootstrap.cs:256)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 130)
+
+[PR6] HANDSHAKE_OK
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:130)
+PredictionDemo.Security.SecureSessionEngine:Event (string,double) (at PROJECT_ROOT/Assets/Scripts/Prediction/Security/SecureProtocol.cs:165)
+PredictionDemo.Security.SecureSessionEngine:Receive (string,string,byte[],double) (at PROJECT_ROOT/Assets/Scripts/Prediction/Security/SecureProtocol.cs:252)
+PredictionDemo.Security.SecureNetworkInterface:ScheduleReceive (Unity.Networking.Transport.ReceiveJobArguments&,Unity.Jobs.JobHandle) (at PROJECT_ROOT/Assets/Scripts/Prediction/Security/SecureNetworkInterface.cs:108)
+Unity.Networking.Transport.NetworkInterfaceWrapper:ScheduleReceiveWrapper (void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkInterfaceWrapper.cs:201)
+Unity.Networking.Transport.ManagedCallWrapper:Trampoline (void*,void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:34)
+Unity.Networking.Transport.ManagedCallWrapper:Invoke (void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:87)
+Unity.Networking.Transport.ManagedCallWrapper:Invoke<Unity.Networking.Transport.NetworkInterfaceWrapper/Arguments> (Unity.Networking.Transport.NetworkInterfaceWrapper/Arguments&) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:95)
+Unity.Networking.Transport.NetworkInterfaceWrapper:ScheduleReceive (Unity.Networking.Transport.ReceiveJobArguments&,Unity.Jobs.JobHandle) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkInterfaceWrapper.cs:191)
+Unity.Networking.Transport.NetworkInterfaceLayer:ScheduleReceive (Unity.Networking.Transport.ReceiveJobArguments&,Unity.Jobs.JobHandle) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Layers/NetworkInterfaceLayer.cs:20)
+Unity.Networking.Transport.NetworkLayerWrapper:ScheduleReceiveWrapper<Unity.Networking.Transport.NetworkInterfaceLayer> (void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkLayerWrapper.cs:102)
+Unity.Networking.Transport.ManagedCallWrapper:Trampoline (void*,void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:34)
+Unity.Networking.Transport.ManagedCallWrapper:Invoke (void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:87)
+Unity.Networking.Transport.ManagedCallWrapper:Invoke<Unity.Networking.Transport.NetworkLayerWrapper/ScheduleReceiveArguments> (Unity.Networking.Transport.NetworkLayerWrapper/ScheduleReceiveArguments&) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:95)
+Unity.Networking.Transport.NetworkLayerWrapper:ScheduleReceive (Unity.Networking.Transport.ReceiveJobArguments&,Unity.Jobs.JobHandle) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkLayerWrapper.cs:87)
+Unity.Networking.Transport.NetworkStack:ScheduleReceive (Unity.Networking.Transport.NetworkDriverReceiver&,Unity.Networking.Transport.ConnectionList&,Unity.Networking.Transport.NetworkEventQueue&,Unity.Networking.Transport.NetworkPipelineProcessor&,Unity.Collections.NativeHashMap`2<Unity.Networking.Transport.ConnectionId, Unity.Networking.Transport.ConnectionPayload>&,long,Unity.Jobs.JobHandle) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkStack.cs:278)
+Unity.Networking.Transport.NetworkDriver:ScheduleUpdate (Unity.Jobs.JobHandle) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkDriver.cs:666)
+Unity.Netcode.Transports.UTP.UnityTransport:OnEarlyUpdate () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Transports/UTP/UnityTransport.cs:1191)
+Unity.Netcode.NetworkTransport:EarlyUpdate () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Transports/NetworkTransport.cs:131)
+Unity.Netcode.NetworkManager:NetworkUpdate (Unity.Netcode.NetworkUpdateStage) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkManager.cs:356)
+Unity.Netcode.NetworkUpdateLoop:RunNetworkUpdateStage (Unity.Netcode.NetworkUpdateStage) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkUpdateLoop.cs:191)
+Unity.Netcode.NetworkUpdateLoop/NetworkEarlyUpdate/<>c:<CreateLoopSystem>b__0_0 () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkUpdateLoop.cs:214)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 130)
+
+[PR7] JOIN_OK client=1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:130)
+PredictionDemo.SessionCoordinator:Connected (ulong) (at PROJECT_ROOT/Assets/Scripts/Prediction/SessionCoordinator.cs:179)
+PredictionDemo.NetworkBootstrap:OnClientConnected (ulong) (at PROJECT_ROOT/Assets/Scripts/Prediction/NetworkBootstrap.cs:370)
+Unity.Netcode.NetworkConnectionManager:InvokeOnClientConnectedCallback (ulong) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Connection/NetworkConnectionManager.cs:158)
+Unity.Netcode.ConnectionApprovedMessage:Handle (Unity.Netcode.NetworkContext&) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Messaging/Messages/ConnectionApprovedMessage.cs:360)
+Unity.Netcode.NetworkMessageManager:ReceiveMessage<Unity.Netcode.ConnectionApprovedMessage> (Unity.Netcode.FastBufferReader,Unity.Netcode.NetworkContext&,Unity.Netcode.NetworkMessageManager) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Messaging/NetworkMessageManager.cs:566)
+Unity.Netcode.NetworkMessageManager:HandleMessage (Unity.Netcode.NetworkMessageHeader&,Unity.Netcode.FastBufferReader,ulong,single,int) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Messaging/NetworkMessageManager.cs:420)
+Unity.Netcode.NetworkMessageManager:ProcessIncomingMessageQueue () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Messaging/NetworkMessageManager.cs:446)
+Unity.Netcode.NetworkManager:NetworkUpdate (Unity.Netcode.NetworkUpdateStage) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkManager.cs:364)
+Unity.Netcode.NetworkUpdateLoop:RunNetworkUpdateStage (Unity.Netcode.NetworkUpdateStage) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkUpdateLoop.cs:191)
+Unity.Netcode.NetworkUpdateLoop/NetworkEarlyUpdate/<>c:<CreateLoopSystem>b__0_0 () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkUpdateLoop.cs:214)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 130)
+
+[PR6] LOCAL_CLIENT id=1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:130)
+PredictionDemo.NetworkBootstrap:OnClientConnected (ulong) (at PROJECT_ROOT/Assets/Scripts/Prediction/NetworkBootstrap.cs:371)
+Unity.Netcode.NetworkConnectionManager:InvokeOnClientConnectedCallback (ulong) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Connection/NetworkConnectionManager.cs:158)
+Unity.Netcode.ConnectionApprovedMessage:Handle (Unity.Netcode.NetworkContext&) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Messaging/Messages/ConnectionApprovedMessage.cs:360)
+Unity.Netcode.NetworkMessageManager:ReceiveMessage<Unity.Netcode.ConnectionApprovedMessage> (Unity.Netcode.FastBufferReader,Unity.Netcode.NetworkContext&,Unity.Netcode.NetworkMessageManager) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Messaging/NetworkMessageManager.cs:566)
+Unity.Netcode.NetworkMessageManager:HandleMessage (Unity.Netcode.NetworkMessageHeader&,Unity.Netcode.FastBufferReader,ulong,single,int) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Messaging/NetworkMessageManager.cs:420)
+Unity.Netcode.NetworkMessageManager:ProcessIncomingMessageQueue () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Messaging/NetworkMessageManager.cs:446)
+Unity.Netcode.NetworkManager:NetworkUpdate (Unity.Netcode.NetworkUpdateStage) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkManager.cs:364)
+Unity.Netcode.NetworkUpdateLoop:RunNetworkUpdateStage (Unity.Netcode.NetworkUpdateStage) (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkUpdateLoop.cs:191)
+Unity.Netcode.NetworkUpdateLoop/NetworkEarlyUpdate/<>c:<CreateLoopSystem>b__0_0 () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkUpdateLoop.cs:214)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 130)
+
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:226)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:1784)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TMP_Text.cs:2157)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:2470)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:226)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:226)
+UnityEngine.Canvas:SendWillRenderCanvases () (at C:/build/output/unity/unity/Modules/UI/ScriptBindings/UICanvas.bindings.cs:161)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 226)
+
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:226)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:1784)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TMP_Text.cs:2157)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:2470)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:226)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:226)
+UnityEngine.Canvas:SendWillRenderCanvases () (at C:/build/output/unity/unity/Modules/UI/ScriptBindings/UICanvas.bindings.cs:161)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 226)
+
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:226)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:1784)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TMP_Text.cs:2157)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:2470)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:226)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:226)
+UnityEngine.Canvas:SendWillRenderCanvases () (at C:/build/output/unity/unity/Modules/UI/ScriptBindings/UICanvas.bindings.cs:161)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 226)
+
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:226)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:1784)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TMP_Text.cs:2157)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:2470)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:226)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:226)
+UnityEngine.Canvas:SendWillRenderCanvases () (at C:/build/output/unity/unity/Modules/UI/ScriptBindings/UICanvas.bindings.cs:161)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 226)
+
+The character used for Ellipsis is not available in font asset [LiberationSans SDF] or any potential fallbacks. Switching Text Overflow mode to Truncate.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:226)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:1784)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TMP_Text.cs:2157)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:2470)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/TMP/TextMeshProUGUI.cs:226)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@eb824e41fbc7/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:226)
+UnityEngine.Canvas:SendWillRenderCanvases () (at C:/build/output/unity/unity/Modules/UI/ScriptBindings/UICanvas.bindings.cs:161)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 226)
+
+[PR4][Evidence] automatic demo complete; quitting
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:130)
+PredictionDemo.NetworkBootstrap/<CaptureAndExit>d__26:MoveNext () (at PROJECT_ROOT/Assets/Scripts/Prediction/NetworkBootstrap.cs:328)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 130)
+
+[PR6] TRAFFIC packets=114 inner_bytes=3428 wire_bytes=8900
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:130)
+PredictionDemo.Security.SecureNetworkInterface:Dispose () (at PROJECT_ROOT/Assets/Scripts/Prediction/Security/SecureNetworkInterface.cs:142)
+Unity.Networking.Transport.NetworkInterfaceWrapper:DisposeWrapper (void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkInterfaceWrapper.cs:135)
+Unity.Networking.Transport.ManagedCallWrapper:Trampoline (void*,void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:34)
+Unity.Networking.Transport.ManagedCallWrapper:Invoke (void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:87)
+Unity.Networking.Transport.ManagedCallWrapper:Invoke<Unity.Networking.Transport.NetworkInterfaceWrapper/Arguments> (Unity.Networking.Transport.NetworkInterfaceWrapper/Arguments&) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:95)
+Unity.Networking.Transport.NetworkInterfaceWrapper:Dispose () (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkInterfaceWrapper.cs:129)
+Unity.Networking.Transport.NetworkInterfaceLayer:Dispose () (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Layers/NetworkInterfaceLayer.cs:17)
+Unity.Networking.Transport.NetworkLayerWrapper:DisposeWrapper<Unity.Networking.Transport.NetworkInterfaceLayer> (void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkLayerWrapper.cs:75)
+Unity.Networking.Transport.ManagedCallWrapper:Trampoline (void*,void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:34)
+Unity.Networking.Transport.ManagedCallWrapper:Invoke (void*,int) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:87)
+Unity.Networking.Transport.ManagedCallWrapper:Invoke<Unity.Networking.Transport.NetworkLayerWrapper/DisposeArguments> (Unity.Networking.Transport.NetworkLayerWrapper/DisposeArguments&) (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/Utilities/ManagedCallWrapper.cs:95)
+Unity.Networking.Transport.NetworkLayerWrapper:Dispose () (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkLayerWrapper.cs:62)
+Unity.Networking.Transport.NetworkStack:Dispose () (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkStack.cs:112)
+Unity.Networking.Transport.NetworkDriver:Dispose () (at ./Library/PackageCache/com.unity.transport@1b9b1e9062a8/Runtime/NetworkDriver.cs:564)
+Unity.Netcode.Transports.UTP.UnityTransport:DisposeInternals () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Transports/UTP/UnityTransport.cs:474)
+Unity.Netcode.Transports.UTP.UnityTransport:Shutdown () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Transports/UTP/UnityTransport.cs:1789)
+PredictionDemo.MeteredTransport:Shutdown () (at PROJECT_ROOT/Assets/Scripts/Prediction/Replication/MeteredTransport.cs:24)
+Unity.Netcode.NetworkConnectionManager:Shutdown () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Connection/NetworkConnectionManager.cs:1759)
+Unity.Netcode.NetworkManager:ShutdownInternal () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkManager.cs:1667)
+Unity.Netcode.NetworkManager:OnDestroy () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkManager.cs:1754)
+Unity.Netcode.NetworkManager:OnApplicationQuit () (at ./Library/PackageCache/com.unity.netcode.gameobjects@277a288a1cea/Runtime/Core/NetworkManager.cs:1740)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 130)
+
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+CodeReloadManager destroyed
+PlayerConnection::Cleanup##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1795596356539,"processId":22236,"allocatedMemory":574392,"memoryLabels":[{"Default":5368},{"NewDelete":104},{"Manager":542324},{"Shader":2024},{"GfxDevice":72},{"Audio":544},{"Serialization":14608},{"String":532},{"PoolAlloc":384},{"ScriptManager":5696},{"CodeReload":440},{"CloudService":144},{"VR":1928},{"Subsystems":96},{"CoreBusinessMetrics":128}]}

@@ -1,0 +1,33 @@
+services:
+  server:
+    image: dustline-pr7:local
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    platform: linux/amd64
+    init: true
+    restart: unless-stopped
+    stop_grace_period: 25s
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    environment:
+      DUSTLINE_PORT: ${DUSTLINE_PORT:-7777}
+      DUSTLINE_MAP: ${DUSTLINE_MAP:-PredictionDemo}
+      DUSTLINE_MAX_PLAYERS: ${DUSTLINE_MAX_PLAYERS:-4}
+      DUSTLINE_NAME: ${DUSTLINE_NAME:-DUSTLINE Dedicated}
+      DUSTLINE_LOG_LEVEL: ${DUSTLINE_LOG_LEVEL:-info}
+    ports:
+      - "${DUSTLINE_PUBLISH_IP:-0.0.0.0}:${DUSTLINE_PUBLISH_PORT:-7777}:${DUSTLINE_PORT:-7777}/udp"
+    healthcheck:
+      test: ["CMD-SHELL", "test -f /tmp/dustline.ready && kill -0 \"$$(cat /tmp/dustline.pid)\""]
+      interval: 5s
+      timeout: 2s
+      retries: 4
+      start_period: 20s
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "3"

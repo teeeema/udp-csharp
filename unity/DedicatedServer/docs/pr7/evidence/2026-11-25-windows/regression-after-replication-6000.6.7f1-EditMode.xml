@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="114" result="Passed" total="114" passed="114" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:04Z" duration="0,9816819">
+  <test-suite type="TestSuite" id="1000" name="PredictionDemo" fullname="PredictionDemo" runstate="Runnable" testcasecount="114" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:04Z" duration="0.981682" total="114" passed="114" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1133" name="PredictionDemo.EditModeTests.dll" fullname="PROJECT_ROOT/Library/ScriptAssemblies/PredictionDemo.EditModeTests.dll" runstate="Runnable" testcasecount="114" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:04Z" duration="0.955514" total="114" passed="114" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="9360" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1134" name="PredictionDemo" fullname="PredictionDemo" runstate="Runnable" testcasecount="114" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:04Z" duration="0.952537" total="114" passed="114" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1135" name="Tests" fullname="PredictionDemo.Tests" runstate="Runnable" testcasecount="114" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:04Z" duration="0.950289" total="114" passed="114" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="DefectRegressionTests" fullname="PredictionDemo.Tests.DefectRegressionTests" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" testcasecount="19" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.095467" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1003" name="FiveHundredCommandsCannotMintTime" fullname="PredictionDemo.Tests.DefectRegressionTests.FiveHundredCommandsCannotMintTime" methodname="FiveHundredCommandsCannotMintTime" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="1739933415" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.021684" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1011" name="InvalidOrBackwardServerTimeCannotCreateCredit" fullname="PredictionDemo.Tests.DefectRegressionTests.InvalidOrBackwardServerTimeCannotCreateCredit" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.005312" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1007" name="InvalidOrBackwardServerTimeCannotCreateCredit(-1)" fullname="PredictionDemo.Tests.DefectRegressionTests.InvalidOrBackwardServerTimeCannotCreateCredit(-1)" methodname="InvalidOrBackwardServerTimeCannotCreateCredit" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="1019118547" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000926" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1008" name="InvalidOrBackwardServerTimeCannotCreateCredit(double.NaN)" fullname="PredictionDemo.Tests.DefectRegressionTests.InvalidOrBackwardServerTimeCannotCreateCredit(double.NaN)" methodname="InvalidOrBackwardServerTimeCannotCreateCredit" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="1109287743" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000183" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1009" name="InvalidOrBackwardServerTimeCannotCreateCredit(double.PositiveInfinity)" fullname="PredictionDemo.Tests.DefectRegressionTests.InvalidOrBackwardServerTimeCannotCreateCredit(double.PositiveInfinity)" methodname="InvalidOrBackwardServerTimeCannotCreateCredit" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="1919455478" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000148" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1010" name="InvalidOrBackwardServerTimeCannotCreateCredit(double.NegativeInfinity)" fullname="PredictionDemo.Tests.DefectRegressionTests.InvalidOrBackwardServerTimeCannotCreateCredit(double.NegativeInfinity)" methodname="InvalidOrBackwardServerTimeCannotCreateCredit" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="1289546664" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000111" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1005" name="LegitimateHundredMillisecondBatchIsAccepted" fullname="PredictionDemo.Tests.DefectRegressionTests.LegitimateHundredMillisecondBatchIsAccepted" methodname="LegitimateHundredMillisecondBatchIsAccepted" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="1417307272" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000645" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1023" name="MeterResetBeginsNewEpoch" fullname="PredictionDemo.Tests.DefectRegressionTests.MeterResetBeginsNewEpoch" methodname="MeterResetBeginsNewEpoch" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="839128809" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.014712" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1022" name="NearestOfTwoTargetsWins" fullname="PredictionDemo.Tests.DefectRegressionTests.NearestOfTwoTargetsWins" methodname="NearestOfTwoTargetsWins" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="1350393668" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.007943" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1002" name="NormalFiftyTicksAllowFourMetresPerSecond" fullname="PredictionDemo.Tests.DefectRegressionTests.NormalFiftyTicksAllowFourMetresPerSecond" methodname="NormalFiftyTicksAllowFourMetresPerSecond" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="1570988090" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001569" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1021" name="OneReceiveCountedOnceAfterRepeatedInitialize" fullname="PredictionDemo.Tests.DefectRegressionTests.OneReceiveCountedOnceAfterRepeatedInitialize" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.006859" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1018" name="OneReceiveCountedOnceAfterRepeatedInitialize(1)" fullname="PredictionDemo.Tests.DefectRegressionTests.OneReceiveCountedOnceAfterRepeatedInitialize(1)" methodname="OneReceiveCountedOnceAfterRepeatedInitialize" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="794126036" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.003085" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1019" name="OneReceiveCountedOnceAfterRepeatedInitialize(2)" fullname="PredictionDemo.Tests.DefectRegressionTests.OneReceiveCountedOnceAfterRepeatedInitialize(2)" methodname="OneReceiveCountedOnceAfterRepeatedInitialize" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="795693954" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000511" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1020" name="OneReceiveCountedOnceAfterRepeatedInitialize(4)" fullname="PredictionDemo.Tests.DefectRegressionTests.OneReceiveCountedOnceAfterRepeatedInitialize(4)" methodname="OneReceiveCountedOnceAfterRepeatedInitialize" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="1085371943" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000377" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1017" name="RejectInvalidShotDirection" fullname="PredictionDemo.Tests.DefectRegressionTests.RejectInvalidShotDirection" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.007544" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1012" name="RejectInvalidShotDirection(0,0,0,False)" fullname="PredictionDemo.Tests.DefectRegressionTests.RejectInvalidShotDirection(0,0,0,False)" methodname="RejectInvalidShotDirection" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="608423928" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.002944" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1013" name="RejectInvalidShotDirection(0,0,1,True)" fullname="PredictionDemo.Tests.DefectRegressionTests.RejectInvalidShotDirection(0,0,1,True)" methodname="RejectInvalidShotDirection" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="1409835089" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000248" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1014" name="RejectInvalidShotDirection(float.NaN,0,1,False)" fullname="PredictionDemo.Tests.DefectRegressionTests.RejectInvalidShotDirection(float.NaN,0,1,False)" methodname="RejectInvalidShotDirection" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="871327129" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000404" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1015" name="RejectInvalidShotDirection(float.PositiveInfinity,0,0,False)" fullname="PredictionDemo.Tests.DefectRegressionTests.RejectInvalidShotDirection(float.PositiveInfinity,0,0,False)" methodname="RejectInvalidShotDirection" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="1185795630" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000288" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1016" name="RejectInvalidShotDirection(float.MaxValue,0,0,False)" fullname="PredictionDemo.Tests.DefectRegressionTests.RejectInvalidShotDirection(float.MaxValue,0,0,False)" methodname="RejectInvalidShotDirection" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="431261631" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000217" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1006" name="SameServerTimestampDoesNotRefillCredit" fullname="PredictionDemo.Tests.DefectRegressionTests.SameServerTimestampDoesNotRefillCredit" methodname="SameServerTimestampDoesNotRefillCredit" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="230418547" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000351" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1004" name="SustainedFloodBoundedByElapsedTimeAndBurstTolerance" fullname="PredictionDemo.Tests.DefectRegressionTests.SustainedFloodBoundedByElapsedTimeAndBurstTolerance" methodname="SustainedFloodBoundedByElapsedTimeAndBurstTolerance" classname="PredictionDemo.Tests.DefectRegressionTests" runstate="Runnable" seed="1942888710" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001958" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1024" name="Pr7SessionTests" fullname="PredictionDemo.Tests.Pr7SessionTests" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.018253" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1025" name="DedicatedDefaultsUseEncryptedIpProfile" fullname="PredictionDemo.Tests.Pr7SessionTests.DedicatedDefaultsUseEncryptedIpProfile" methodname="DedicatedDefaultsUseEncryptedIpProfile" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" seed="2138988954" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.003232" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1032" name="DedicatedRejectsInvalidConfiguration" fullname="PredictionDemo.Tests.Pr7SessionTests.DedicatedRejectsInvalidConfiguration" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.005680" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1026" name="DedicatedRejectsInvalidConfiguration(&quot;--pr7-max-players&quot;,&quot;17&quot;)" fullname="PredictionDemo.Tests.Pr7SessionTests.DedicatedRejectsInvalidConfiguration(&quot;--pr7-max-players&quot;,&quot;17&quot;)" methodname="DedicatedRejectsInvalidConfiguration" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" seed="461967876" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.002281" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1027" name="DedicatedRejectsInvalidConfiguration(&quot;--pr7-port&quot;,&quot;0&quot;)" fullname="PredictionDemo.Tests.Pr7SessionTests.DedicatedRejectsInvalidConfiguration(&quot;--pr7-port&quot;,&quot;0&quot;)" methodname="DedicatedRejectsInvalidConfiguration" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" seed="980734079" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000890" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1028" name="DedicatedRejectsInvalidConfiguration(&quot;--pr7-port&quot;,&quot;70000&quot;)" fullname="PredictionDemo.Tests.Pr7SessionTests.DedicatedRejectsInvalidConfiguration(&quot;--pr7-port&quot;,&quot;70000&quot;)" methodname="DedicatedRejectsInvalidConfiguration" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" seed="666404468" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000216" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1029" name="DedicatedRejectsInvalidConfiguration(&quot;--pr7-listen&quot;,&quot;::1&quot;)" fullname="PredictionDemo.Tests.Pr7SessionTests.DedicatedRejectsInvalidConfiguration(&quot;--pr7-listen&quot;,&quot;::1&quot;)" methodname="DedicatedRejectsInvalidConfiguration" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" seed="1614346752" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000179" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1030" name="DedicatedRejectsInvalidConfiguration(&quot;--pr7-map&quot;,&quot;SampleScene&quot;)" fullname="PredictionDemo.Tests.Pr7SessionTests.DedicatedRejectsInvalidConfiguration(&quot;--pr7-map&quot;,&quot;SampleScene&quot;)" methodname="DedicatedRejectsInvalidConfiguration" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" seed="1408983521" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000164" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1031" name="DedicatedRejectsInvalidConfiguration(&quot;--pr7-profile&quot;,&quot;automatic&quot;)" fullname="PredictionDemo.Tests.Pr7SessionTests.DedicatedRejectsInvalidConfiguration(&quot;--pr7-profile&quot;,&quot;automatic&quot;)" methodname="DedicatedRejectsInvalidConfiguration" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" seed="1108695840" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000148" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1041" name="IncompatibleOrInvalidSteamEntryIsRejected" fullname="PredictionDemo.Tests.Pr7SessionTests.IncompatibleOrInvalidSteamEntryIsRejected" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.003409" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1036" name="IncompatibleOrInvalidSteamEntryIsRejected(&quot;foreign-project,build-1.0.0,steam,players-1&quot;)" fullname="PredictionDemo.Tests.Pr7SessionTests.IncompatibleOrInvalidSteamEntryIsRejected(&quot;foreign-project,build-1.0.0,steam,players-1&quot;)" methodname="IncompatibleOrInvalidSteamEntryIsRejected" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" seed="1532732363" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001254" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1037" name="IncompatibleOrInvalidSteamEntryIsRejected(&quot;dustline-pr7-copper-basin,build-0.0.1,steam,players-1&quot;)" fullname="PredictionDemo.Tests.Pr7SessionTests.IncompatibleOrInvalidSteamEntryIsRejected(&quot;dustline-pr7-copper-basin,build-0.0.1,steam,players-1&quot;)" methodname="IncompatibleOrInvalidSteamEntryIsRejected" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" seed="1891530875" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000194" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1038" name="IncompatibleOrInvalidSteamEntryIsRejected(&quot;dustline-pr7-copper-basin,build-1.0.0,ip,players-1&quot;)" fullname="PredictionDemo.Tests.Pr7SessionTests.IncompatibleOrInvalidSteamEntryIsRejected(&quot;dustline-pr7-copper-basin,build-1.0.0,ip,players-1&quot;)" methodname="IncompatibleOrInvalidSteamEntryIsRejected" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" seed="1806224785" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000171" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1039" name="IncompatibleOrInvalidSteamEntryIsRejected(&quot;dustline-pr7-copper-basin,build-1.0.0,steam,players-100&quot;)" fullname="PredictionDemo.Tests.Pr7SessionTests.IncompatibleOrInvalidSteamEntryIsRejected(&quot;dustline-pr7-copper-basin,build-1.0.0,steam,players-100&quot;)" methodname="IncompatibleOrInvalidSteamEntryIsRejected" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" seed="1461052454" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000165" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1040" name="IncompatibleOrInvalidSteamEntryIsRejected(&quot;dustline-pr7-copper-basin,build-1.0.0,steam,players-invalid&quot;)" fullname="PredictionDemo.Tests.Pr7SessionTests.IncompatibleOrInvalidSteamEntryIsRejected(&quot;dustline-pr7-copper-basin,build-1.0.0,steam,players-invalid&quot;)" methodname="IncompatibleOrInvalidSteamEntryIsRejected" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" seed="666398959" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000117" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1035" name="MatchedSteamEntryUsesPublishedGamePlayerCount" fullname="PredictionDemo.Tests.Pr7SessionTests.MatchedSteamEntryUsesPublishedGamePlayerCount" methodname="MatchedSteamEntryUsesPublishedGamePlayerCount" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" seed="498429734" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000398" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1034" name="SteamGameAndQueryPortsMustDiffer" fullname="PredictionDemo.Tests.Pr7SessionTests.SteamGameAndQueryPortsMustDiffer" methodname="SteamGameAndQueryPortsMustDiffer" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" seed="950955587" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000955" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1033" name="SteamId480RequiresExplicitOptIn" fullname="PredictionDemo.Tests.Pr7SessionTests.SteamId480RequiresExplicitOptIn" methodname="SteamId480RequiresExplicitOptIn" classname="PredictionDemo.Tests.Pr7SessionTests" runstate="Runnable" seed="133223857" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001533" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1042" name="PredictionRulesTests" fullname="PredictionDemo.Tests.PredictionRulesTests" classname="PredictionDemo.Tests.PredictionRulesTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.011443" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1047" name="ClientOnlyDoubleDash_DivergesFromAuthoritativeDash" fullname="PredictionDemo.Tests.PredictionRulesTests.ClientOnlyDoubleDash_DivergesFromAuthoritativeDash" methodname="ClientOnlyDoubleDash_DivergesFromAuthoritativeDash" classname="PredictionDemo.Tests.PredictionRulesTests" runstate="Runnable" seed="364259985" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.002638" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1046" name="Dash_RejectsSecondRequestDuringCooldown" fullname="PredictionDemo.Tests.PredictionRulesTests.Dash_RejectsSecondRequestDuringCooldown" methodname="Dash_RejectsSecondRequestDuringCooldown" classname="PredictionDemo.Tests.PredictionRulesTests" runstate="Runnable" seed="376510425" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000807" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1045" name="Dash_RequiresDirectionAndFinishedCooldown" fullname="PredictionDemo.Tests.PredictionRulesTests.Dash_RequiresDirectionAndFinishedCooldown" methodname="Dash_RequiresDirectionAndFinishedCooldown" classname="PredictionDemo.Tests.PredictionRulesTests" runstate="Runnable" seed="79068005" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000950" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1043" name="NetworkProfiles_MatchRequiredLabValues" fullname="PredictionDemo.Tests.PredictionRulesTests.NetworkProfiles_MatchRequiredLabValues" methodname="NetworkProfiles_MatchRequiredLabValues" classname="PredictionDemo.Tests.PredictionRulesTests" runstate="Runnable" seed="1077006665" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000881" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1048" name="PacketLoss_IsDeterministicAndOnlyEnabledForStressProfile" fullname="PredictionDemo.Tests.PredictionRulesTests.PacketLoss_IsDeterministicAndOnlyEnabledForStressProfile" methodname="PacketLoss_IsDeterministicAndOnlyEnabledForStressProfile" classname="PredictionDemo.Tests.PredictionRulesTests" runstate="Runnable" seed="1851803991" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.003098" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1044" name="SanitizeMove_ClampsMagnitudeToOne" fullname="PredictionDemo.Tests.PredictionRulesTests.SanitizeMove_ClampsMagnitudeToOne" methodname="SanitizeMove_ClampsMagnitudeToOne" classname="PredictionDemo.Tests.PredictionRulesTests" runstate="Runnable" seed="904439758" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000482" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1049" name="ReplicationPolicyTests" fullname="PredictionDemo.Tests.ReplicationPolicyTests" classname="PredictionDemo.Tests.ReplicationPolicyTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.009233" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1050" name="LoadHasFiftyObjects" fullname="PredictionDemo.Tests.ReplicationPolicyTests.LoadHasFiftyObjects" methodname="LoadHasFiftyObjects" classname="PredictionDemo.Tests.ReplicationPolicyTests" runstate="Runnable" seed="1108150626" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000267" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1061" name="QuantizationBounded" fullname="PredictionDemo.Tests.ReplicationPolicyTests.QuantizationBounded" methodname="QuantizationBounded" classname="PredictionDemo.Tests.ReplicationPolicyTests" runstate="Runnable" seed="2082038744" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000648" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1060" name="ReducedCadence" fullname="PredictionDemo.Tests.ReplicationPolicyTests.ReducedCadence" classname="PredictionDemo.Tests.ReplicationPolicyTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.003170" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1056" name="ReducedCadence(0)" fullname="PredictionDemo.Tests.ReplicationPolicyTests.ReducedCadence(0)" methodname="ReducedCadence" classname="PredictionDemo.Tests.ReplicationPolicyTests" runstate="Runnable" seed="1156788721" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000582" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1057" name="ReducedCadence(1)" fullname="PredictionDemo.Tests.ReplicationPolicyTests.ReducedCadence(1)" methodname="ReducedCadence" classname="PredictionDemo.Tests.ReplicationPolicyTests" runstate="Runnable" seed="1308573771" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000165" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1058" name="ReducedCadence(2)" fullname="PredictionDemo.Tests.ReplicationPolicyTests.ReducedCadence(2)" methodname="ReducedCadence" classname="PredictionDemo.Tests.ReplicationPolicyTests" runstate="Runnable" seed="528968034" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000152" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1059" name="ReducedCadence(3)" fullname="PredictionDemo.Tests.ReplicationPolicyTests.ReducedCadence(3)" methodname="ReducedCadence" classname="PredictionDemo.Tests.ReplicationPolicyTests" runstate="Runnable" seed="1346043098" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000112" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1054" name="RelevanceBoundary" fullname="PredictionDemo.Tests.ReplicationPolicyTests.RelevanceBoundary" classname="PredictionDemo.Tests.ReplicationPolicyTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.002624" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1051" name="RelevanceBoundary(0,True)" fullname="PredictionDemo.Tests.ReplicationPolicyTests.RelevanceBoundary(0,True)" methodname="RelevanceBoundary" classname="PredictionDemo.Tests.ReplicationPolicyTests" runstate="Runnable" seed="1155607432" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000671" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1052" name="RelevanceBoundary(38,True)" fullname="PredictionDemo.Tests.ReplicationPolicyTests.RelevanceBoundary(38,True)" methodname="RelevanceBoundary" classname="PredictionDemo.Tests.ReplicationPolicyTests" runstate="Runnable" seed="1757016140" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000218" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1053" name="RelevanceBoundary(39,False)" fullname="PredictionDemo.Tests.ReplicationPolicyTests.RelevanceBoundary(39,False)" methodname="RelevanceBoundary" classname="PredictionDemo.Tests.ReplicationPolicyTests" runstate="Runnable" seed="215338637" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000169" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1055" name="ReturningToRangeRestoresVisibility" fullname="PredictionDemo.Tests.ReplicationPolicyTests.ReturningToRangeRestoresVisibility" methodname="ReturningToRangeRestoresVisibility" classname="PredictionDemo.Tests.ReplicationPolicyTests" runstate="Runnable" seed="1559601055" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000444" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1062" name="SecureTransportTests" fullname="PredictionDemo.Tests.SecureTransportTests" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" testcasecount="62" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:04Z" duration="0.804512" total="62" passed="62" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1066" name="Aes256GcmNistVector" fullname="PredictionDemo.Tests.SecureTransportTests.Aes256GcmNistVector" methodname="Aes256GcmNistVector" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1595126261" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.034764" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1073" name="DirectionAndTranscriptSeparateKeys" fullname="PredictionDemo.Tests.SecureTransportTests.DirectionAndTranscriptSeparateKeys" methodname="DirectionAndTranscriptSeparateKeys" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1456497381" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.005037" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1125" name="DisposeDisablesOldContextAndNonceCounterCannotWrap" fullname="PredictionDemo.Tests.SecureTransportTests.DisposeDisablesOldContextAndNonceCounterCannotWrap" methodname="DisposeDisablesOldContextAndNonceCounterCannotWrap" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="376257813" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.014548" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1085" name="DuplicateHelloKeepsContext" fullname="PredictionDemo.Tests.SecureTransportTests.DuplicateHelloKeepsContext" methodname="DuplicateHelloKeepsContext" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1607136566" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.008347" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1118" name="EmptyTruncatedOversizedAndRandomPacketsDoNotCrash" fullname="PredictionDemo.Tests.SecureTransportTests.EmptyTruncatedOversizedAndRandomPacketsDoNotCrash" methodname="EmptyTruncatedOversizedAndRandomPacketsDoNotCrash" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1902711254" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.095171" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1080" name="EveryHandshakeStageSurvivesLoss" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHandshakeStageSurvivesLoss" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.009917" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1076" name="EveryHandshakeStageSurvivesLoss(0)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHandshakeStageSurvivesLoss(0)" methodname="EveryHandshakeStageSurvivesLoss" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="541223953" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.003591" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1077" name="EveryHandshakeStageSurvivesLoss(1)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHandshakeStageSurvivesLoss(1)" methodname="EveryHandshakeStageSurvivesLoss" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1853071546" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001425" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1078" name="EveryHandshakeStageSurvivesLoss(2)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHandshakeStageSurvivesLoss(2)" methodname="EveryHandshakeStageSurvivesLoss" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1618616974" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001356" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1079" name="EveryHandshakeStageSurvivesLoss(3)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHandshakeStageSurvivesLoss(3)" methodname="EveryHandshakeStageSurvivesLoss" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="2129964302" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001157" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1117" name="EveryHeaderByteAuthenticatedOrRejected" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" testcasecount="20" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.045556" total="20" passed="20" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1097" name="EveryHeaderByteAuthenticatedOrRejected(0)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(0)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1423714641" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001669" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1098" name="EveryHeaderByteAuthenticatedOrRejected(1)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(1)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1842840811" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001287" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1099" name="EveryHeaderByteAuthenticatedOrRejected(2)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(2)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1696258358" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001400" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1100" name="EveryHeaderByteAuthenticatedOrRejected(3)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(3)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1933445445" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001160" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1101" name="EveryHeaderByteAuthenticatedOrRejected(4)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(4)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1955547018" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001355" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1102" name="EveryHeaderByteAuthenticatedOrRejected(5)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(5)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="422271075" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.006339" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1103" name="EveryHeaderByteAuthenticatedOrRejected(6)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(6)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="674126600" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001730" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1104" name="EveryHeaderByteAuthenticatedOrRejected(7)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(7)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1190675240" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001574" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1105" name="EveryHeaderByteAuthenticatedOrRejected(8)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(8)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1732108704" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001500" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1106" name="EveryHeaderByteAuthenticatedOrRejected(9)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(9)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="247075174" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001293" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1107" name="EveryHeaderByteAuthenticatedOrRejected(10)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(10)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="137657633" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001426" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1108" name="EveryHeaderByteAuthenticatedOrRejected(11)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(11)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1462323832" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001393" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1109" name="EveryHeaderByteAuthenticatedOrRejected(12)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(12)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="252874069" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001245" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1110" name="EveryHeaderByteAuthenticatedOrRejected(13)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(13)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="707965961" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001307" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1111" name="EveryHeaderByteAuthenticatedOrRejected(14)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(14)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1793122326" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001290" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1112" name="EveryHeaderByteAuthenticatedOrRejected(15)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(15)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1536769743" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001608" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1113" name="EveryHeaderByteAuthenticatedOrRejected(16)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(16)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1674051313" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001278" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1114" name="EveryHeaderByteAuthenticatedOrRejected(17)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(17)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1484110939" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.006460" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1115" name="EveryHeaderByteAuthenticatedOrRejected(18)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(18)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1633542738" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.002089" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1116" name="EveryHeaderByteAuthenticatedOrRejected(19)" fullname="PredictionDemo.Tests.SecureTransportTests.EveryHeaderByteAuthenticatedOrRejected(19)" methodname="EveryHeaderByteAuthenticatedOrRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="953913843" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001571" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1096" name="ForgedHighCounterDoesNotPoisonReplayWindow" fullname="PredictionDemo.Tests.SecureTransportTests.ForgedHighCounterDoesNotPoisonReplayWindow" methodname="ForgedHighCounterDoesNotPoisonReplayWindow" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="142398541" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001650" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1074" name="FullHandshakeAndBothDirections" fullname="PredictionDemo.Tests.SecureTransportTests.FullHandshakeAndBothDirections" methodname="FullHandshakeAndBothDirections" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="615281760" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.002550" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1075" name="GamesCannotPassBeforeConfirmation" fullname="PredictionDemo.Tests.SecureTransportTests.GamesCannotPassBeforeConfirmation" methodname="GamesCannotPassBeforeConfirmation" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1329360793" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000690" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1065" name="HkdfRfc5869Vector" fullname="PredictionDemo.Tests.SecureTransportTests.HkdfRfc5869Vector" methodname="HkdfRfc5869Vector" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1975706149" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000781" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1082" name="IdleSessionExpires" fullname="PredictionDemo.Tests.SecureTransportTests.IdleSessionExpires" methodname="IdleSessionExpires" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1784562520" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001736" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1121" name="IndependentClientsCannotDecryptEachOther" fullname="PredictionDemo.Tests.SecureTransportTests.IndependentClientsCannotDecryptEachOther" methodname="IndependentClientsCannotDecryptEachOther" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1964649363" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.002643" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1064" name="InvalidLowOrderPublicKeyRejected" fullname="PredictionDemo.Tests.SecureTransportTests.InvalidLowOrderPublicKeyRejected" methodname="InvalidLowOrderPublicKeyRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1336489879" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001069" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1126" name="InvalidPublicKeyInRealHelloDoesNotAllocateSession" fullname="PredictionDemo.Tests.SecureTransportTests.InvalidPublicKeyInRealHelloDoesNotAllocateSession" methodname="InvalidPublicKeyInRealHelloDoesNotAllocateSession" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="867020156" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001534" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1128" name="LogsContainOnlySafeEventNames" fullname="PredictionDemo.Tests.SecureTransportTests.LogsContainOnlySafeEventNames" methodname="LogsContainOnlySafeEventNames" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="980649289" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.004589" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1119" name="MaxSizeAndFinalPayloadSize" fullname="PredictionDemo.Tests.SecureTransportTests.MaxSizeAndFinalPayloadSize" methodname="MaxSizeAndFinalPayloadSize" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="390503756" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.003604" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1095" name="OldWindowPacketDropped" fullname="PredictionDemo.Tests.SecureTransportTests.OldWindowPacketDropped" methodname="OldWindowPacketDropped" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1231530407" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000657" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1127" name="PlaintextGameIsRejectedEvenAfterHandshake" fullname="PredictionDemo.Tests.SecureTransportTests.PlaintextGameIsRejectedEvenAfterHandshake" methodname="PlaintextGameIsRejectedEvenAfterHandshake" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1362317266" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001620" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1086" name="PlaintextHelloCannotReplaceEstablishedSession" fullname="PredictionDemo.Tests.SecureTransportTests.PlaintextHelloCannotReplaceEstablishedSession" methodname="PlaintextHelloCannotReplaceEstablishedSession" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="737440570" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.002124" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1083" name="ReconnectHasNewSessionId" fullname="PredictionDemo.Tests.SecureTransportTests.ReconnectHasNewSessionId" methodname="ReconnectHasNewSessionId" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="2032478765" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001409" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1094" name="ReplayIsDroppedAndReorderingAccepted" fullname="PredictionDemo.Tests.SecureTransportTests.ReplayIsDroppedAndReorderingAccepted" methodname="ReplayIsDroppedAndReorderingAccepted" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1211497707" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.003807" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1120" name="RetransmissionGetsFreshNonceAndSameGameBytes" fullname="PredictionDemo.Tests.SecureTransportTests.RetransmissionGetsFreshNonceAndSameGameBytes" methodname="RetransmissionGetsFreshNonceAndSameGameBytes" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1153409933" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001655" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1084" name="ReusedEndpointReplacesKeysOnlyAfterNewConfirmation" fullname="PredictionDemo.Tests.SecureTransportTests.ReusedEndpointReplacesKeysOnlyAfterNewConfirmation" methodname="ReusedEndpointReplacesKeysOnlyAfterNewConfirmation" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="661650140" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.003946" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1122" name="SourceLimitIncludesPortsAndCapsPendingSessions" fullname="PredictionDemo.Tests.SecureTransportTests.SourceLimitIncludesPortsAndCapsPendingSessions" methodname="SourceLimitIncludesPortsAndCapsPendingSessions" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="772491111" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.169261" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1072" name="TamperingReturnsNoPartialPlaintext" fullname="PredictionDemo.Tests.SecureTransportTests.TamperingReturnsNoPartialPlaintext" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.003246" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1067" name="TamperingReturnsNoPartialPlaintext(&quot;ciphertext&quot;)" fullname="PredictionDemo.Tests.SecureTransportTests.TamperingReturnsNoPartialPlaintext(&quot;ciphertext&quot;)" methodname="TamperingReturnsNoPartialPlaintext" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1893397514" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000574" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1068" name="TamperingReturnsNoPartialPlaintext(&quot;tag&quot;)" fullname="PredictionDemo.Tests.SecureTransportTests.TamperingReturnsNoPartialPlaintext(&quot;tag&quot;)" methodname="TamperingReturnsNoPartialPlaintext" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="832500503" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000226" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1069" name="TamperingReturnsNoPartialPlaintext(&quot;aad&quot;)" fullname="PredictionDemo.Tests.SecureTransportTests.TamperingReturnsNoPartialPlaintext(&quot;aad&quot;)" methodname="TamperingReturnsNoPartialPlaintext" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="2029131058" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000188" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1070" name="TamperingReturnsNoPartialPlaintext(&quot;nonce&quot;)" fullname="PredictionDemo.Tests.SecureTransportTests.TamperingReturnsNoPartialPlaintext(&quot;nonce&quot;)" methodname="TamperingReturnsNoPartialPlaintext" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1704236021" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000213" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1071" name="TamperingReturnsNoPartialPlaintext(&quot;key&quot;)" fullname="PredictionDemo.Tests.SecureTransportTests.TamperingReturnsNoPartialPlaintext(&quot;key&quot;)" methodname="TamperingReturnsNoPartialPlaintext" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1930506971" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000213" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1123" name="TokenBucketRefillsAndDoesNotMintTokensAtSameTime" fullname="PredictionDemo.Tests.SecureTransportTests.TokenBucketRefillsAndDoesNotMintTokensAtSameTime" methodname="TokenBucketRefillsAndDoesNotMintTokensAtSameTime" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="372110421" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000363" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1124" name="TotalEstablishedSessionCapacityIsBounded" fullname="PredictionDemo.Tests.SecureTransportTests.TotalEstablishedSessionCapacityIsBounded" methodname="TotalEstablishedSessionCapacityIsBounded" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="995571551" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.357671" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1081" name="UnfinishedHandshakeExpiresAndDisposes" fullname="PredictionDemo.Tests.SecureTransportTests.UnfinishedHandshakeExpiresAndDisposes" methodname="UnfinishedHandshakeExpiresAndDisposes" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="229745250" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000672" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1092" name="WrongResponseRejected" fullname="PredictionDemo.Tests.SecureTransportTests.WrongResponseRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:04Z" duration="0.008229" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1087" name="WrongResponseRejected(6)" fullname="PredictionDemo.Tests.SecureTransportTests.WrongResponseRejected(6)" methodname="WrongResponseRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1791459357" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.001911" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1088" name="WrongResponseRejected(7)" fullname="PredictionDemo.Tests.SecureTransportTests.WrongResponseRejected(7)" methodname="WrongResponseRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="484876369" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000900" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1089" name="WrongResponseRejected(8)" fullname="PredictionDemo.Tests.SecureTransportTests.WrongResponseRejected(8)" methodname="WrongResponseRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="761779148" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000941" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1090" name="WrongResponseRejected(16)" fullname="PredictionDemo.Tests.SecureTransportTests.WrongResponseRejected(16)" methodname="WrongResponseRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="252181998" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000871" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1091" name="WrongResponseRejected(52)" fullname="PredictionDemo.Tests.SecureTransportTests.WrongResponseRejected(52)" methodname="WrongResponseRejected" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1048017071" result="Passed" start-time="2026-11-25 08:35:03Z" end-time="2026-11-25 08:35:03Z" duration="0.000940" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1093" name="WrongSenderCannotEstablishClient" fullname="PredictionDemo.Tests.SecureTransportTests.WrongSenderCannotEstablishClient" methodname="WrongSenderCannotEstablishClient" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="1917742852" result="Passed" start-time="2026-11-25 08:35:04Z" end-time="2026-11-25 08:35:04Z" duration="0.002128" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1063" name="X25519Rfc7748Vector" fullname="PredictionDemo.Tests.SecureTransportTests.X25519Rfc7748Vector" methodname="X25519Rfc7748Vector" classname="PredictionDemo.Tests.SecureTransportTests" runstate="Runnable" seed="2126522219" result="Passed" start-time="2026-11-25 08:35:04Z" end-time="2026-11-25 08:35:04Z" duration="0.001420" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1129" name="TankCollisionTests" fullname="PredictionDemo.Tests.TankCollisionTests" classname="PredictionDemo.Tests.TankCollisionTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-25 08:35:04Z" end-time="2026-11-25 08:35:04Z" duration="0.006024" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="ParameterizedMethod" id="1132" name="DashStopsChassisAtLowCoverIncludingSideContact" fullname="PredictionDemo.Tests.TankCollisionTests.DashStopsChassisAtLowCoverIncludingSideContact" classname="PredictionDemo.Tests.TankCollisionTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-25 08:35:04Z" end-time="2026-11-25 08:35:04Z" duration="0.004937" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1130" name="DashStopsChassisAtLowCoverIncludingSideContact(0.0f)" fullname="PredictionDemo.Tests.TankCollisionTests.DashStopsChassisAtLowCoverIncludingSideContact(0.0f)" methodname="DashStopsChassisAtLowCoverIncludingSideContact" classname="PredictionDemo.Tests.TankCollisionTests" runstate="Runnable" seed="587405927" result="Passed" start-time="2026-11-25 08:35:04Z" end-time="2026-11-25 08:35:04Z" duration="0.003044" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1131" name="DashStopsChassisAtLowCoverIncludingSideContact(1.1f)" fullname="PredictionDemo.Tests.TankCollisionTests.DashStopsChassisAtLowCoverIncludingSideContact(1.1f)" methodname="DashStopsChassisAtLowCoverIncludingSideContact" classname="PredictionDemo.Tests.TankCollisionTests" runstate="Runnable" seed="543881925" result="Passed" start-time="2026-11-25 08:35:04Z" end-time="2026-11-25 08:35:04Z" duration="0.000712" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: WINDOWS_USER_HOME/AppData/LocalLow/DefaultCompany/PredictionDemo\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

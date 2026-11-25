@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="064f818c-07dc-45d7-909f-fab53e1424b3" name="WINDOWS_TEST_USER@WINDOWS_TEST_HOST 2026-11-25 10:29:10" runUser="WINDOWS_TEST_HOST\WINDOWS_TEST_USER" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-25T10:29:10.4609978+03:00" queuing="2026-11-25T10:29:10.4609980+03:00" start="2026-11-25T10:29:05.6523252+03:00" finish="2026-11-25T10:29:10.4866934+03:00" />
+  <TestSettings name="default" id="a04970fd-7d6f-4aa5-b6b6-45cc8cb62f99">
+    <Deployment runDeploymentRoot="92604_WINDOWS_TEST_HOST_2026-11-25_10_29_10" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="8af08899-fa91-4d69-841c-c7727e2ab391" testId="156164ff-7a07-830d-8826-802f76cb65e9" testName="SamePacketIsNotReturnedTwiceBeforeNextRto" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0003141" startTime="2026-11-25T10:29:10.4194551+03:00" endTime="2026-11-25T10:29:10.4198285+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8af08899-fa91-4d69-841c-c7727e2ab391" />
+    <UnitTestResult executionId="ccf61633-0bb5-4c6e-924f-c5abd67e02d0" testId="1d20b67a-9172-8332-9d32-1b1dd35f77b0" testName="PacketIsRetransmittedAfterRto" computerName="WINDOWS_TEST_HOST" duration="00:00:01.1873619" startTime="2026-11-25T10:29:09.2450022+03:00" endTime="2026-11-25T10:29:10.4334430+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ccf61633-0bb5-4c6e-924f-c5abd67e02d0" />
+    <UnitTestResult executionId="62b985d2-efcc-4532-8691-eebf4b6e29d9" testId="157b4bda-52cf-80b1-9556-29d8260e4005" testName="RtoIsClampedToMaximum" computerName="WINDOWS_TEST_HOST" duration="00:00:01.1399927" startTime="2026-11-25T10:29:09.2151757+03:00" endTime="2026-11-25T10:29:10.3862964+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="62b985d2-efcc-4532-8691-eebf4b6e29d9" />
+    <UnitTestResult executionId="cd175b99-d965-41fd-9986-7809848ee10a" testId="1a2555b7-b4f0-8ee5-af01-8ab93542a043" testName="SubsequentSampleUpdatesRttVar" computerName="WINDOWS_TEST_HOST" duration="00:00:01.1400740" startTime="2026-11-25T10:29:09.2151370+03:00" endTime="2026-11-25T10:29:10.3862430+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cd175b99-d965-41fd-9986-7809848ee10a" />
+    <UnitTestResult executionId="d476d108-9bae-486e-ba08-8dc440560093" testId="1fc5293d-cf21-8e8e-b116-b117f5163331" testName="RetransmissionIncrementsAttempts" computerName="WINDOWS_TEST_HOST" duration="00:00:01.1489308" startTime="2026-11-25T10:29:09.2150737+03:00" endTime="2026-11-25T10:29:10.3860235+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d476d108-9bae-486e-ba08-8dc440560093" />
+    <UnitTestResult executionId="547a5d87-50ab-4c3e-92a0-85bbf1ada10c" testId="15d2b73c-2019-8098-acfd-d04f3f1209f3" testName="FirstSampleCalculatesExpectedRto" computerName="WINDOWS_TEST_HOST" duration="00:00:01.1399756" startTime="2026-11-25T10:29:09.2151521+03:00" endTime="2026-11-25T10:29:10.3859707+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="547a5d87-50ab-4c3e-92a0-85bbf1ada10c" />
+    <UnitTestResult executionId="924112a3-145c-40fe-a9b4-86087839d164" testId="122f361f-a7a4-8ca5-b4c0-0d5fd3bc32f1" testName="SubsequentSampleUpdatesSrtt" computerName="WINDOWS_TEST_HOST" duration="00:00:01.1400664" startTime="2026-11-25T10:29:09.2150820+03:00" endTime="2026-11-25T10:29:10.3863598+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="924112a3-145c-40fe-a9b4-86087839d164" />
+    <UnitTestResult executionId="ed88d3f2-73d9-4378-8e7f-b30ea8da2b49" testId="19f28d1d-df2b-80dc-aaca-15057b6bb92d" testName="SequenceBoundaryAndLargeTimestampAreSupported" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0002822" startTime="2026-11-25T10:29:10.4223599+03:00" endTime="2026-11-25T10:29:10.4226938+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed88d3f2-73d9-4378-8e7f-b30ea8da2b49" />
+    <UnitTestResult executionId="a8748700-da97-43a0-8ec2-35c9787f68a2" testId="1cb790b6-e7f2-8df1-a831-c648a07759b0" testName="PacketIsNotRetransmittedBeforeRto" computerName="WINDOWS_TEST_HOST" duration="00:00:01.1342679" startTime="2026-11-25T10:29:09.2449807+03:00" endTime="2026-11-25T10:29:10.3861200+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a8748700-da97-43a0-8ec2-35c9787f68a2" />
+    <UnitTestResult executionId="e7939d99-46f6-421d-abaf-36edc5bd8fa1" testId="1dafeb3c-afd2-8c55-9583-a3c95be82bc2" testName="DuplicateAckIsIgnored" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0017172" startTime="2026-11-25T10:29:10.4017001+03:00" endTime="2026-11-25T10:29:10.4036315+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e7939d99-46f6-421d-abaf-36edc5bd8fa1" />
+    <UnitTestResult executionId="67651e27-3eaa-4065-9625-e665525c1cc2" testId="1555d571-5336-8bb0-9221-cbf59e4cb49c" testName="MultiplePendingPacketsAreHandledIndependently" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0007077" startTime="2026-11-25T10:29:10.4195460+03:00" endTime="2026-11-25T10:29:10.4203249+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="67651e27-3eaa-4065-9625-e665525c1cc2" />
+    <UnitTestResult executionId="772e460a-513f-4115-8300-f5c8de598141" testId="1041a0d3-b741-8688-87a8-ecb9aad397f9" testName="PacketBytesAndMetadataAreStableSnapshots" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0112989" startTime="2026-11-25T10:29:10.4221283+03:00" endTime="2026-11-25T10:29:10.4334948+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="772e460a-513f-4115-8300-f5c8de598141" />
+    <UnitTestResult executionId="b25775c5-57a6-4a56-b96e-c67997ade66d" testId="13846370-9249-8239-959e-268eff22398a" testName="RetransmissionUpdatesLastSentTime" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0246000" startTime="2026-11-25T10:29:10.3584752+03:00" endTime="2026-11-25T10:29:10.3863635+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b25775c5-57a6-4a56-b96e-c67997ade66d" />
+    <UnitTestResult executionId="dce69abf-6c6f-4c87-916c-8eb594032eb1" testId="1c70b006-61ab-8661-8d17-5d3b150b5dcc" testName="InvalidSamplesAreRejectedWithoutChangingState" computerName="WINDOWS_TEST_HOST" duration="00:00:01.1400036" startTime="2026-11-25T10:29:09.2151636+03:00" endTime="2026-11-25T10:29:10.3860801+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dce69abf-6c6f-4c87-916c-8eb594032eb1" />
+    <UnitTestResult executionId="37cde577-718a-4d25-953c-b3d23330b572" testId="12069a6f-e255-81a7-b9c8-60719702fd97" testName="DuplicatePendingSequenceIsHandledDeterministically" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0136783" startTime="2026-11-25T10:29:10.4196001+03:00" endTime="2026-11-25T10:29:10.4341132+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37cde577-718a-4d25-953c-b3d23330b572" />
+    <UnitTestResult executionId="9a38fa12-3d27-4501-b0e3-9983125ee070" testId="1891ffe2-9190-8673-92fe-1c5a9939e5eb" testName="UnknownAckIsIgnored" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0018479" startTime="2026-11-25T10:29:10.4017153+03:00" endTime="2026-11-25T10:29:10.4037183+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a38fa12-3d27-4501-b0e3-9983125ee070" />
+    <UnitTestResult executionId="f2f7367d-9294-4ae2-b3ce-79e668f9ffa0" testId="1bf67c29-a27b-8f1d-b596-3c69bc9a76a2" testName="EarlierTimeDoesNotUnderflowOrRetransmit" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0001908" startTime="2026-11-25T10:29:10.4222981+03:00" endTime="2026-11-25T10:29:10.4225558+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2f7367d-9294-4ae2-b3ce-79e668f9ffa0" />
+    <UnitTestResult executionId="14ff23f0-5d19-4ebc-a097-5720c05aba28" testId="15498128-f234-86ee-8834-684149727cff" testName="DefaultRtoBeforeInitializationIsDefined" computerName="WINDOWS_TEST_HOST" duration="00:00:01.1399077" startTime="2026-11-25T10:29:09.2151703+03:00" endTime="2026-11-25T10:29:10.3862834+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="14ff23f0-5d19-4ebc-a097-5720c05aba28" />
+    <UnitTestResult executionId="f2e8f5c8-e165-451f-857e-ea9d4e99d3c0" testId="1e89cf11-8f06-8e33-bd89-f81fa61c33d3" testName="FailedPacketsAreReadOnlySnapshots" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0017615" startTime="2026-11-25T10:29:10.4222117+03:00" endTime="2026-11-25T10:29:10.4240215+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2e8f5c8-e165-451f-857e-ea9d4e99d3c0" />
+    <UnitTestResult executionId="ba5646db-7788-4dd3-8aaa-a989b684898a" testId="1ad1fffb-946e-859c-8c90-94b83c8de219" testName="InvalidArgumentsDoNotCreatePendingEntries" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0015069" startTime="2026-11-25T10:29:10.4223426+03:00" endTime="2026-11-25T10:29:10.4239101+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba5646db-7788-4dd3-8aaa-a989b684898a" />
+    <UnitTestResult executionId="020bba67-0d53-4a10-8ebf-50009005645d" testId="1f2f2375-cdea-89c4-8832-9ea9e9c596bc" testName="RtoIsClampedToMinimum" computerName="WINDOWS_TEST_HOST" duration="00:00:01.1398937" startTime="2026-11-25T10:29:09.2151063+03:00" endTime="2026-11-25T10:29:10.3861931+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="020bba67-0d53-4a10-8ebf-50009005645d" />
+    <UnitTestResult executionId="d44c1eb5-230b-4302-8b70-a8fc17bbdd17" testId="154ecd4b-9a55-8f98-9f27-bd81e3dace9f" testName="FailedPacketIsRemovedFromPending" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0002795" startTime="2026-11-25T10:29:10.4192554+03:00" endTime="2026-11-25T10:29:10.4196205+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d44c1eb5-230b-4302-8b70-a8fc17bbdd17" />
+    <UnitTestResult executionId="1a4a0c26-1bb4-4d3f-a0ee-1138a9101cb6" testId="128f8e5f-2399-8341-8cad-b20d906be8b5" testName="ChangedAdaptiveTimeoutIsUsedOnNextCollection" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0001407" startTime="2026-11-25T10:29:10.4246208+03:00" endTime="2026-11-25T10:29:10.4248164+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1a4a0c26-1bb4-4d3f-a0ee-1138a9101cb6" />
+    <UnitTestResult executionId="4dabf184-9691-4fb9-aa11-f32e2fe72a29" testId="1ff8f430-e5c4-8c36-be52-3798543230de" testName="FirstSampleInitializesSrttAndRttVar" computerName="WINDOWS_TEST_HOST" duration="00:00:01.1399091" startTime="2026-11-25T10:29:09.2150933+03:00" endTime="2026-11-25T10:29:10.3862449+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4dabf184-9691-4fb9-aa11-f32e2fe72a29" />
+    <UnitTestResult executionId="ca9b8ef6-acc0-4396-b4e9-c5e8a5c72bb1" testId="1f83fdc4-eb60-8fdd-b188-cb8056d5a18d" testName="AckRemovesPendingPacket" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0002385" startTime="2026-11-25T10:29:10.4243910+03:00" endTime="2026-11-25T10:29:10.4246983+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ca9b8ef6-acc0-4396-b4e9-c5e8a5c72bb1" />
+    <UnitTestResult executionId="fa6b418c-f060-4426-82e1-e06df599a864" testId="1d7ccbf6-4efc-8c0c-a655-7cba0a6d5333" testName="PacketMovesToFailedAfterMaxAttempts" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0062159" startTime="2026-11-25T10:29:10.4017895+03:00" endTime="2026-11-25T10:29:10.4081595+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fa6b418c-f060-4426-82e1-e06df599a864" />
+    <UnitTestResult executionId="bb55c4ad-c285-42e1-a476-03eccf408706" testId="1c861946-5bff-8d7f-89e1-b11ecdb49dd5" testName="AckMetadataAllowsKarnFiltering" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0003544" startTime="2026-11-25T10:29:10.4197597+03:00" endTime="2026-11-25T10:29:10.4201982+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bb55c4ad-c285-42e1-a476-03eccf408706" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="DuplicatePendingSequenceIsHandledDeterministically" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="12069a6f-e255-81a7-b9c8-60719702fd97">
+      <Execution id="37cde577-718a-4d25-953c-b3d23330b572" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="DuplicatePendingSequenceIsHandledDeterministically" />
+    </UnitTest>
+    <UnitTest name="RetransmissionIncrementsAttempts" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="1fc5293d-cf21-8e8e-b116-b117f5163331">
+      <Execution id="d476d108-9bae-486e-ba08-8dc440560093" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="RetransmissionIncrementsAttempts" />
+    </UnitTest>
+    <UnitTest name="FirstSampleInitializesSrttAndRttVar" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="1ff8f430-e5c4-8c36-be52-3798543230de">
+      <Execution id="4dabf184-9691-4fb9-aa11-f32e2fe72a29" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.AdaptiveTimeoutTests" name="FirstSampleInitializesSrttAndRttVar" />
+    </UnitTest>
+    <UnitTest name="EarlierTimeDoesNotUnderflowOrRetransmit" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="1bf67c29-a27b-8f1d-b596-3c69bc9a76a2">
+      <Execution id="f2f7367d-9294-4ae2-b3ce-79e668f9ffa0" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="EarlierTimeDoesNotUnderflowOrRetransmit" />
+    </UnitTest>
+    <UnitTest name="PacketIsRetransmittedAfterRto" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="1d20b67a-9172-8332-9d32-1b1dd35f77b0">
+      <Execution id="ccf61633-0bb5-4c6e-924f-c5abd67e02d0" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="PacketIsRetransmittedAfterRto" />
+    </UnitTest>
+    <UnitTest name="AckRemovesPendingPacket" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="1f83fdc4-eb60-8fdd-b188-cb8056d5a18d">
+      <Execution id="ca9b8ef6-acc0-4396-b4e9-c5e8a5c72bb1" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="AckRemovesPendingPacket" />
+    </UnitTest>
+    <UnitTest name="SequenceBoundaryAndLargeTimestampAreSupported" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="19f28d1d-df2b-80dc-aaca-15057b6bb92d">
+      <Execution id="ed88d3f2-73d9-4378-8e7f-b30ea8da2b49" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="SequenceBoundaryAndLargeTimestampAreSupported" />
+    </UnitTest>
+    <UnitTest name="MultiplePendingPacketsAreHandledIndependently" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="1555d571-5336-8bb0-9221-cbf59e4cb49c">
+      <Execution id="67651e27-3eaa-4065-9625-e665525c1cc2" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="MultiplePendingPacketsAreHandledIndependently" />
+    </UnitTest>
+    <UnitTest name="RtoIsClampedToMinimum" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="1f2f2375-cdea-89c4-8832-9ea9e9c596bc">
+      <Execution id="020bba67-0d53-4a10-8ebf-50009005645d" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.AdaptiveTimeoutTests" name="RtoIsClampedToMinimum" />
+    </UnitTest>
+    <UnitTest name="InvalidSamplesAreRejectedWithoutChangingState" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="1c70b006-61ab-8661-8d17-5d3b150b5dcc">
+      <Execution id="dce69abf-6c6f-4c87-916c-8eb594032eb1" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.AdaptiveTimeoutTests" name="InvalidSamplesAreRejectedWithoutChangingState" />
+    </UnitTest>
+    <UnitTest name="ChangedAdaptiveTimeoutIsUsedOnNextCollection" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="128f8e5f-2399-8341-8cad-b20d906be8b5">
+      <Execution id="1a4a0c26-1bb4-4d3f-a0ee-1138a9101cb6" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="ChangedAdaptiveTimeoutIsUsedOnNextCollection" />
+    </UnitTest>
+    <UnitTest name="UnknownAckIsIgnored" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="1891ffe2-9190-8673-92fe-1c5a9939e5eb">
+      <Execution id="9a38fa12-3d27-4501-b0e3-9983125ee070" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="UnknownAckIsIgnored" />
+    </UnitTest>
+    <UnitTest name="DefaultRtoBeforeInitializationIsDefined" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="15498128-f234-86ee-8834-684149727cff">
+      <Execution id="14ff23f0-5d19-4ebc-a097-5720c05aba28" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.AdaptiveTimeoutTests" name="DefaultRtoBeforeInitializationIsDefined" />
+    </UnitTest>
+    <UnitTest name="FailedPacketIsRemovedFromPending" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="154ecd4b-9a55-8f98-9f27-bd81e3dace9f">
+      <Execution id="d44c1eb5-230b-4302-8b70-a8fc17bbdd17" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="FailedPacketIsRemovedFromPending" />
+    </UnitTest>
+    <UnitTest name="RetransmissionUpdatesLastSentTime" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="13846370-9249-8239-959e-268eff22398a">
+      <Execution id="b25775c5-57a6-4a56-b96e-c67997ade66d" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="RetransmissionUpdatesLastSentTime" />
+    </UnitTest>
+    <UnitTest name="PacketBytesAndMetadataAreStableSnapshots" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="1041a0d3-b741-8688-87a8-ecb9aad397f9">
+      <Execution id="772e460a-513f-4115-8300-f5c8de598141" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="PacketBytesAndMetadataAreStableSnapshots" />
+    </UnitTest>
+    <UnitTest name="SubsequentSampleUpdatesSrtt" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="122f361f-a7a4-8ca5-b4c0-0d5fd3bc32f1">
+      <Execution id="924112a3-145c-40fe-a9b4-86087839d164" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.AdaptiveTimeoutTests" name="SubsequentSampleUpdatesSrtt" />
+    </UnitTest>
+    <UnitTest name="DuplicateAckIsIgnored" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="1dafeb3c-afd2-8c55-9583-a3c95be82bc2">
+      <Execution id="e7939d99-46f6-421d-abaf-36edc5bd8fa1" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="DuplicateAckIsIgnored" />
+    </UnitTest>
+    <UnitTest name="SubsequentSampleUpdatesRttVar" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="1a2555b7-b4f0-8ee5-af01-8ab93542a043">
+      <Execution id="cd175b99-d965-41fd-9986-7809848ee10a" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.AdaptiveTimeoutTests" name="SubsequentSampleUpdatesRttVar" />
+    </UnitTest>
+    <UnitTest name="PacketIsNotRetransmittedBeforeRto" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="1cb790b6-e7f2-8df1-a831-c648a07759b0">
+      <Execution id="a8748700-da97-43a0-8ec2-35c9787f68a2" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="PacketIsNotRetransmittedBeforeRto" />
+    </UnitTest>
+    <UnitTest name="FailedPacketsAreReadOnlySnapshots" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="1e89cf11-8f06-8e33-bd89-f81fa61c33d3">
+      <Execution id="f2e8f5c8-e165-451f-857e-ea9d4e99d3c0" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="FailedPacketsAreReadOnlySnapshots" />
+    </UnitTest>
+    <UnitTest name="AckMetadataAllowsKarnFiltering" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="1c861946-5bff-8d7f-89e1-b11ecdb49dd5">
+      <Execution id="bb55c4ad-c285-42e1-a476-03eccf408706" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="AckMetadataAllowsKarnFiltering" />
+    </UnitTest>
+    <UnitTest name="RtoIsClampedToMaximum" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="157b4bda-52cf-80b1-9556-29d8260e4005">
+      <Execution id="62b985d2-efcc-4532-8691-eebf4b6e29d9" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.AdaptiveTimeoutTests" name="RtoIsClampedToMaximum" />
+    </UnitTest>
+    <UnitTest name="PacketMovesToFailedAfterMaxAttempts" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="1d7ccbf6-4efc-8c0c-a655-7cba0a6d5333">
+      <Execution id="fa6b418c-f060-4426-82e1-e06df599a864" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="PacketMovesToFailedAfterMaxAttempts" />
+    </UnitTest>
+    <UnitTest name="InvalidArgumentsDoNotCreatePendingEntries" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="1ad1fffb-946e-859c-8c90-94b83c8de219">
+      <Execution id="ba5646db-7788-4dd3-8aaa-a989b684898a" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="InvalidArgumentsDoNotCreatePendingEntries" />
+    </UnitTest>
+    <UnitTest name="SamePacketIsNotReturnedTwiceBeforeNextRto" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="156164ff-7a07-830d-8826-802f76cb65e9">
+      <Execution id="8af08899-fa91-4d69-841c-c7727e2ab391" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.ReliableChannelTests" name="SamePacketIsNotReturnedTwiceBeforeNextRto" />
+    </UnitTest>
+    <UnitTest name="FirstSampleCalculatesExpectedRto" storage="PROJECT_ROOT\legacyudp\tests\udpgame.reliability.tests\bin\debug\net10.0\udpgame.reliability.tests.dll" id="15d2b73c-2019-8098-acfd-d04f3f1209f3">
+      <Execution id="547a5d87-50ab-4c3e-92a0-85bbf1ada10c" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Reliability.Tests.AdaptiveTimeoutTests" name="FirstSampleCalculatesExpectedRto" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="156164ff-7a07-830d-8826-802f76cb65e9" executionId="8af08899-fa91-4d69-841c-c7727e2ab391" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1d20b67a-9172-8332-9d32-1b1dd35f77b0" executionId="ccf61633-0bb5-4c6e-924f-c5abd67e02d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="157b4bda-52cf-80b1-9556-29d8260e4005" executionId="62b985d2-efcc-4532-8691-eebf4b6e29d9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1a2555b7-b4f0-8ee5-af01-8ab93542a043" executionId="cd175b99-d965-41fd-9986-7809848ee10a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1fc5293d-cf21-8e8e-b116-b117f5163331" executionId="d476d108-9bae-486e-ba08-8dc440560093" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="15d2b73c-2019-8098-acfd-d04f3f1209f3" executionId="547a5d87-50ab-4c3e-92a0-85bbf1ada10c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="122f361f-a7a4-8ca5-b4c0-0d5fd3bc32f1" executionId="924112a3-145c-40fe-a9b4-86087839d164" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="19f28d1d-df2b-80dc-aaca-15057b6bb92d" executionId="ed88d3f2-73d9-4378-8e7f-b30ea8da2b49" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1cb790b6-e7f2-8df1-a831-c648a07759b0" executionId="a8748700-da97-43a0-8ec2-35c9787f68a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1dafeb3c-afd2-8c55-9583-a3c95be82bc2" executionId="e7939d99-46f6-421d-abaf-36edc5bd8fa1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1555d571-5336-8bb0-9221-cbf59e4cb49c" executionId="67651e27-3eaa-4065-9625-e665525c1cc2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1041a0d3-b741-8688-87a8-ecb9aad397f9" executionId="772e460a-513f-4115-8300-f5c8de598141" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="13846370-9249-8239-959e-268eff22398a" executionId="b25775c5-57a6-4a56-b96e-c67997ade66d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c70b006-61ab-8661-8d17-5d3b150b5dcc" executionId="dce69abf-6c6f-4c87-916c-8eb594032eb1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="12069a6f-e255-81a7-b9c8-60719702fd97" executionId="37cde577-718a-4d25-953c-b3d23330b572" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1891ffe2-9190-8673-92fe-1c5a9939e5eb" executionId="9a38fa12-3d27-4501-b0e3-9983125ee070" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1bf67c29-a27b-8f1d-b596-3c69bc9a76a2" executionId="f2f7367d-9294-4ae2-b3ce-79e668f9ffa0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="15498128-f234-86ee-8834-684149727cff" executionId="14ff23f0-5d19-4ebc-a097-5720c05aba28" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1e89cf11-8f06-8e33-bd89-f81fa61c33d3" executionId="f2e8f5c8-e165-451f-857e-ea9d4e99d3c0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ad1fffb-946e-859c-8c90-94b83c8de219" executionId="ba5646db-7788-4dd3-8aaa-a989b684898a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f2f2375-cdea-89c4-8832-9ea9e9c596bc" executionId="020bba67-0d53-4a10-8ebf-50009005645d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="154ecd4b-9a55-8f98-9f27-bd81e3dace9f" executionId="d44c1eb5-230b-4302-8b70-a8fc17bbdd17" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="128f8e5f-2399-8341-8cad-b20d906be8b5" executionId="1a4a0c26-1bb4-4d3f-a0ee-1138a9101cb6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ff8f430-e5c4-8c36-be52-3798543230de" executionId="4dabf184-9691-4fb9-aa11-f32e2fe72a29" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f83fdc4-eb60-8fdd-b188-cb8056d5a18d" executionId="ca9b8ef6-acc0-4396-b4e9-c5e8a5c72bb1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1d7ccbf6-4efc-8c0c-a655-7cba0a6d5333" executionId="fa6b418c-f060-4426-82e1-e06df599a864" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c861946-5bff-8d7f-89e1-b11ecdb49dd5" executionId="bb55c4ad-c285-42e1-a476-03eccf408706" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Список результатов" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="27" executed="27" passed="27" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>Включена параллелизация тестов для PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll (Workers: 12, Scope: MethodLevel)&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

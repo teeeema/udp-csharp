@@ -1,0 +1,8 @@
+docker.io/library/ubuntu@sha256:562111b88caa79c71391c0c4d3c2114a7d5c35915c20561fd893cb1e07929e6b: Pulling from library/ubuntu
+8e8df94085bf: Pulling fs layer
+0807a1a81786: Download complete
+8e8df94085bf: Download complete
+8e8df94085bf: Pull complete
+Digest: sha256:562111b88caa79c71391c0c4d3c2114a7d5c35915c20561fd893cb1e07929e6b
+Status: Downloaded newer image for ubuntu@sha256:562111b88caa79c71391c0c4d3c2114a7d5c35915c20561fd893cb1e07929e6b
+docker.io/library/ubuntu:24.04@sha256:562111b88caa79c71391c0c4d3c2114a7d5c35915c20561fd893cb1e07929e6b

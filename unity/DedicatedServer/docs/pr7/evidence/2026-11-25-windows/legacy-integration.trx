@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="ecc7d631-b0a1-43de-8d36-e0f77a81fab5" name="WINDOWS_TEST_USER@WINDOWS_TEST_HOST 2026-11-25 10:29:11" runUser="WINDOWS_TEST_HOST\WINDOWS_TEST_USER" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-25T10:29:11.4388212+03:00" queuing="2026-11-25T10:29:11.4388218+03:00" start="2026-11-25T10:29:06.2033685+03:00" finish="2026-11-25T10:29:14.4913164+03:00" />
+  <TestSettings name="default" id="a9cb8207-b444-4d3f-8c2d-ce863e5d4a77">
+    <Deployment runDeploymentRoot="92604_WINDOWS_TEST_HOST_2026-11-25_10_29_11" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="17a3d77e-c2f2-423e-a814-1bbb664973f6" testId="165c01f7-6453-8e07-8e58-263adb5aba11" testName="IncomingEmulatorCanDropRealUdpAck" computerName="WINDOWS_TEST_HOST" duration="00:00:02.3944764" startTime="2026-11-25T10:29:11.4227148+03:00" endTime="2026-11-25T10:29:13.8173562+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="17a3d77e-c2f2-423e-a814-1bbb664973f6" />
+    <UnitTestResult executionId="b3232a70-fab1-4fcf-b28c-ad5b5bf548bc" testId="1214cef3-a308-86da-ba55-e6cf9752a537" testName="FixedSeedReproducesEmulatorDecisionsAndProfilesAreCorrect" computerName="WINDOWS_TEST_HOST" duration="00:00:01.4176438" startTime="2026-11-25T10:29:11.4227578+03:00" endTime="2026-11-25T10:29:12.8405379+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b3232a70-fab1-4fcf-b28c-ad5b5bf548bc" />
+    <UnitTestResult executionId="3457f58e-b5c1-4e7d-b237-ab533b094d59" testId="1c49acd8-928d-8ab1-bf05-98e1f9302f59" testName="DuplicateAndUnknownAckDoNotUpdateRto" computerName="WINDOWS_TEST_HOST" duration="00:00:04.5142926" startTime="2026-11-25T10:29:09.2536391+03:00" endTime="2026-11-25T10:29:13.7886968+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3457f58e-b5c1-4e7d-b237-ab533b094d59" />
+    <UnitTestResult executionId="a749cbe5-642d-44ba-85dd-f183261340ff" testId="1c9faeaf-efab-8c42-8b55-46e1e13c34e0" testName="FirstAttemptAckUpdatesAdaptiveTimeoutAndRemovesPending" computerName="WINDOWS_TEST_HOST" duration="00:00:04.5147395" startTime="2026-11-25T10:29:09.2536948+03:00" endTime="2026-11-25T10:29:13.7891559+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a749cbe5-642d-44ba-85dd-f183261340ff" />
+    <UnitTestResult executionId="7303a291-fc6d-4ff0-900e-ac32c5f83353" testId="1f61455e-7901-8ea3-8922-8a4bd3a27b70" testName="RolloverFrom65535ToZeroDoesNotSuppressNewCommand" computerName="WINDOWS_TEST_HOST" duration="00:00:02.1294156" startTime="2026-11-25T10:29:09.2536563+03:00" endTime="2026-11-25T10:29:11.4067073+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7303a291-fc6d-4ff0-900e-ac32c5f83353" />
+    <UnitTestResult executionId="2afe3e0d-55a5-4d39-a417-52da16d7d521" testId="12cbee13-ed61-89bb-9298-9f6cda9477c1" testName="DuplicateShootGetsAckAndCachedStateWithoutAnotherEffect" computerName="WINDOWS_TEST_HOST" duration="00:00:02.5333774" startTime="2026-11-25T10:29:09.2854772+03:00" endTime="2026-11-25T10:29:11.8197144+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2afe3e0d-55a5-4d39-a417-52da16d7d521" />
+    <UnitTestResult executionId="4fc73094-7c76-4f9b-8ec8-df1832fb9749" testId="1d78702c-5906-85d2-bb7b-31f0af76bdca" testName="InvalidDedupCapacityIsRejected" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0013287" startTime="2026-11-25T10:29:11.4127958+03:00" endTime="2026-11-25T10:29:11.4141794+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4fc73094-7c76-4f9b-8ec8-df1832fb9749" />
+    <UnitTestResult executionId="b782a2d1-abd0-4d68-9f9c-4241ebf8deba" testId="1149aa0c-5093-8bc8-80c7-3e525b7b2889" testName="ReceiveDelayAllowsRetransmissionPollingAndEventuallyDelivers" computerName="WINDOWS_TEST_HOST" duration="00:00:02.1250593" startTime="2026-11-25T10:29:11.8197779+03:00" endTime="2026-11-25T10:29:13.9449560+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b782a2d1-abd0-4d68-9f9c-4241ebf8deba" />
+    <UnitTestResult executionId="ec0073ef-c751-49d4-b274-50c5c668974c" testId="16e48151-f178-8cdd-b329-e2368e391bfe" testName="WrongOrExpiredPongCannotUpdateAdaptiveRto" computerName="WINDOWS_TEST_HOST" duration="00:00:04.5165654" startTime="2026-11-25T10:29:09.2536879+03:00" endTime="2026-11-25T10:29:13.7909763+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ec0073ef-c751-49d4-b274-50c5c668974c" />
+    <UnitTestResult executionId="139c63d5-8b07-4c4a-a7f4-ec538c3f0ae1" testId="1f4c57bd-2ef3-8768-aab4-94ab55deded7" testName="DifferentShootsApplyTwiceAndSessionsAreIndependent" computerName="WINDOWS_TEST_HOST" duration="00:00:02.1294141" startTime="2026-11-25T10:29:09.2537007+03:00" endTime="2026-11-25T10:29:11.4067220+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="139c63d5-8b07-4c4a-a7f4-ec538c3f0ae1" />
+    <UnitTestResult executionId="041f6d45-614c-4f61-b799-2ad43e24cd6d" testId="16caa0fe-c12a-8ab0-9b9b-15e4d9769d14" testName="RetransmittedAckDoesNotUpdateAdaptiveTimeout" computerName="WINDOWS_TEST_HOST" duration="00:00:04.5156838" startTime="2026-11-25T10:29:09.2537111+03:00" endTime="2026-11-25T10:29:13.7901090+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="041f6d45-614c-4f61-b799-2ad43e24cd6d" />
+    <UnitTestResult executionId="614a65ce-0e60-446f-bad2-94eb13d2022a" testId="1feca568-5e08-80ae-8195-994ebc044890" testName="IncomingAckCannotCreateAckLoopOrGameEffect" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0012980" startTime="2026-11-25T10:29:11.4127410+03:00" endTime="2026-11-25T10:29:11.4141127+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="614a65ce-0e60-446f-bad2-94eb13d2022a" />
+    <UnitTestResult executionId="d414f27d-02ef-43cd-90a4-93d9f1cc5164" testId="1b1b5843-c0e2-83b1-94a1-085b6f75e5be" testName="ReliableShootRequiresAckAndRetryPreservesRawBytesAndSequence" computerName="WINDOWS_TEST_HOST" duration="00:00:04.5629170" startTime="2026-11-25T10:29:09.2536833+03:00" endTime="2026-11-25T10:29:13.8373488+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d414f27d-02ef-43cd-90a4-93d9f1cc5164" />
+    <UnitTestResult executionId="a609e884-de63-47f9-8523-a7685a7a477a" testId="1a3635dd-a756-854c-838d-32b9e4d2b381" testName="DedupWindowHasBoundedCapacityAndEvictsOldest" computerName="WINDOWS_TEST_HOST" duration="00:00:02.1294240" startTime="2026-11-25T10:29:09.2536721+03:00" endTime="2026-11-25T10:29:11.4066826+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a609e884-de63-47f9-8523-a7685a7a477a" />
+    <UnitTestResult executionId="6d9ec562-ac65-4a84-8c92-dca678fc2773" testId="1459f886-8468-8a8f-a65b-d3bc8cab7bb0" testName="SuccessfulPingUpdatesAdaptiveRtoWithoutRequiresAck" computerName="WINDOWS_TEST_HOST" duration="00:00:04.5055610" startTime="2026-11-25T10:29:09.2854564+03:00" endTime="2026-11-25T10:29:13.7918800+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d9ec562-ac65-4a84-8c92-dca678fc2773" />
+    <UnitTestResult executionId="879c1eae-588b-46db-b39d-4ef447c172dd" testId="1447cf60-8e76-8251-b188-afbb8c7aa696" testName="ReliableShootSendsAckBeforeGameEffect" computerName="WINDOWS_TEST_HOST" duration="00:00:02.1294101" startTime="2026-11-25T10:29:09.2536244+03:00" endTime="2026-11-25T10:29:11.4067234+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="879c1eae-588b-46db-b39d-4ef447c172dd" />
+    <UnitTestResult executionId="cfe9fd43-0c32-46a6-a587-3cdf267dd25b" testId="17f317b4-7d25-857a-89c4-9ca0a5a23933" testName="TotalShootLossBecomesFailedWithoutAnException" computerName="WINDOWS_TEST_HOST" duration="00:00:02.9998338" startTime="2026-11-25T10:29:11.4134070+03:00" endTime="2026-11-25T10:29:14.4161722+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cfe9fd43-0c32-46a6-a587-3cdf267dd25b" />
+    <UnitTestResult executionId="d9ac074f-ae02-4acb-82f4-d50938ecf839" testId="1026c3e9-53af-8e5a-b0e2-5d9d72cbd3e7" testName="InvalidWeaponIsAckedButDoesNotApplyAndItsResultIsCached" computerName="WINDOWS_TEST_HOST" duration="00:00:01.0535932" startTime="2026-11-25T10:29:10.7657049+03:00" endTime="2026-11-25T10:29:11.8197151+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d9ac074f-ae02-4acb-82f4-d50938ecf839" />
+    <UnitTestResult executionId="52d43dae-c6e2-4b35-9218-7c62c0b5bc9d" testId="1da91268-0765-8986-8dae-673a50536f9d" testName="MovementRemainsUnreliableAndDoesNotCreateAckOrDedupEntry" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0010818" startTime="2026-11-25T10:29:11.4121848+03:00" endTime="2026-11-25T10:29:11.4133567+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52d43dae-c6e2-4b35-9218-7c62c0b5bc9d" />
+    <UnitTestResult executionId="209e595f-962e-490a-8e42-462a209f999b" testId="1c916503-9efd-8e73-bd04-9495da9b9031" testName="LostAckCausesRetransmissionWithoutDuplicateShootEffect" computerName="WINDOWS_TEST_HOST" duration="00:00:02.4979735" startTime="2026-11-25T10:29:11.4128054+03:00" endTime="2026-11-25T10:29:13.9108967+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="209e595f-962e-490a-8e42-462a209f999b" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="DedupWindowHasBoundedCapacityAndEvictsOldest" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="1a3635dd-a756-854c-838d-32b9e4d2b381">
+      <Execution id="a609e884-de63-47f9-8523-a7685a7a477a" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="DedupWindowHasBoundedCapacityAndEvictsOldest" />
+    </UnitTest>
+    <UnitTest name="WrongOrExpiredPongCannotUpdateAdaptiveRto" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="16e48151-f178-8cdd-b329-e2368e391bfe">
+      <Execution id="ec0073ef-c751-49d4-b274-50c5c668974c" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="WrongOrExpiredPongCannotUpdateAdaptiveRto" />
+    </UnitTest>
+    <UnitTest name="InvalidDedupCapacityIsRejected" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="1d78702c-5906-85d2-bb7b-31f0af76bdca">
+      <Execution id="4fc73094-7c76-4f9b-8ec8-df1832fb9749" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="InvalidDedupCapacityIsRejected" />
+    </UnitTest>
+    <UnitTest name="RetransmittedAckDoesNotUpdateAdaptiveTimeout" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="16caa0fe-c12a-8ab0-9b9b-15e4d9769d14">
+      <Execution id="041f6d45-614c-4f61-b799-2ad43e24cd6d" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="RetransmittedAckDoesNotUpdateAdaptiveTimeout" />
+    </UnitTest>
+    <UnitTest name="ReceiveDelayAllowsRetransmissionPollingAndEventuallyDelivers" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="1149aa0c-5093-8bc8-80c7-3e525b7b2889">
+      <Execution id="b782a2d1-abd0-4d68-9f9c-4241ebf8deba" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="ReceiveDelayAllowsRetransmissionPollingAndEventuallyDelivers" />
+    </UnitTest>
+    <UnitTest name="DuplicateAndUnknownAckDoNotUpdateRto" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="1c49acd8-928d-8ab1-bf05-98e1f9302f59">
+      <Execution id="3457f58e-b5c1-4e7d-b237-ab533b094d59" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="DuplicateAndUnknownAckDoNotUpdateRto" />
+    </UnitTest>
+    <UnitTest name="DifferentShootsApplyTwiceAndSessionsAreIndependent" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="1f4c57bd-2ef3-8768-aab4-94ab55deded7">
+      <Execution id="139c63d5-8b07-4c4a-a7f4-ec538c3f0ae1" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="DifferentShootsApplyTwiceAndSessionsAreIndependent" />
+    </UnitTest>
+    <UnitTest name="LostAckCausesRetransmissionWithoutDuplicateShootEffect" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="1c916503-9efd-8e73-bd04-9495da9b9031">
+      <Execution id="209e595f-962e-490a-8e42-462a209f999b" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="LostAckCausesRetransmissionWithoutDuplicateShootEffect" />
+    </UnitTest>
+    <UnitTest name="TotalShootLossBecomesFailedWithoutAnException" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="17f317b4-7d25-857a-89c4-9ca0a5a23933">
+      <Execution id="cfe9fd43-0c32-46a6-a587-3cdf267dd25b" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="TotalShootLossBecomesFailedWithoutAnException" />
+    </UnitTest>
+    <UnitTest name="IncomingEmulatorCanDropRealUdpAck" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="165c01f7-6453-8e07-8e58-263adb5aba11">
+      <Execution id="17a3d77e-c2f2-423e-a814-1bbb664973f6" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="IncomingEmulatorCanDropRealUdpAck" />
+    </UnitTest>
+    <UnitTest name="IncomingAckCannotCreateAckLoopOrGameEffect" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="1feca568-5e08-80ae-8195-994ebc044890">
+      <Execution id="614a65ce-0e60-446f-bad2-94eb13d2022a" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="IncomingAckCannotCreateAckLoopOrGameEffect" />
+    </UnitTest>
+    <UnitTest name="FirstAttemptAckUpdatesAdaptiveTimeoutAndRemovesPending" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="1c9faeaf-efab-8c42-8b55-46e1e13c34e0">
+      <Execution id="a749cbe5-642d-44ba-85dd-f183261340ff" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="FirstAttemptAckUpdatesAdaptiveTimeoutAndRemovesPending" />
+    </UnitTest>
+    <UnitTest name="ReliableShootRequiresAckAndRetryPreservesRawBytesAndSequence" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="1b1b5843-c0e2-83b1-94a1-085b6f75e5be">
+      <Execution id="d414f27d-02ef-43cd-90a4-93d9f1cc5164" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="ReliableShootRequiresAckAndRetryPreservesRawBytesAndSequence" />
+    </UnitTest>
+    <UnitTest name="SuccessfulPingUpdatesAdaptiveRtoWithoutRequiresAck" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="1459f886-8468-8a8f-a65b-d3bc8cab7bb0">
+      <Execution id="6d9ec562-ac65-4a84-8c92-dca678fc2773" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="SuccessfulPingUpdatesAdaptiveRtoWithoutRequiresAck" />
+    </UnitTest>
+    <UnitTest name="RolloverFrom65535ToZeroDoesNotSuppressNewCommand" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="1f61455e-7901-8ea3-8922-8a4bd3a27b70">
+      <Execution id="7303a291-fc6d-4ff0-900e-ac32c5f83353" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="RolloverFrom65535ToZeroDoesNotSuppressNewCommand" />
+    </UnitTest>
+    <UnitTest name="FixedSeedReproducesEmulatorDecisionsAndProfilesAreCorrect" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="1214cef3-a308-86da-ba55-e6cf9752a537">
+      <Execution id="b3232a70-fab1-4fcf-b28c-ad5b5bf548bc" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="FixedSeedReproducesEmulatorDecisionsAndProfilesAreCorrect" />
+    </UnitTest>
+    <UnitTest name="DuplicateShootGetsAckAndCachedStateWithoutAnotherEffect" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="12cbee13-ed61-89bb-9298-9f6cda9477c1">
+      <Execution id="2afe3e0d-55a5-4d39-a417-52da16d7d521" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="DuplicateShootGetsAckAndCachedStateWithoutAnotherEffect" />
+    </UnitTest>
+    <UnitTest name="InvalidWeaponIsAckedButDoesNotApplyAndItsResultIsCached" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="1026c3e9-53af-8e5a-b0e2-5d9d72cbd3e7">
+      <Execution id="d9ac074f-ae02-4acb-82f4-d50938ecf839" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="InvalidWeaponIsAckedButDoesNotApplyAndItsResultIsCached" />
+    </UnitTest>
+    <UnitTest name="ReliableShootSendsAckBeforeGameEffect" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="1447cf60-8e76-8251-b188-afbb8c7aa696">
+      <Execution id="879c1eae-588b-46db-b39d-4ef447c172dd" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="ReliableShootSendsAckBeforeGameEffect" />
+    </UnitTest>
+    <UnitTest name="MovementRemainsUnreliableAndDoesNotCreateAckOrDedupEntry" storage="PROJECT_ROOT\legacyudp\tests\udpgame.integration.tests\bin\debug\net10.0\udpgame.integration.tests.dll" id="1da91268-0765-8986-8dae-673a50536f9d">
+      <Execution id="52d43dae-c6e2-4b35-9218-7c62c0b5bc9d" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Integration.Tests.DeliveryIntegrationTests" name="MovementRemainsUnreliableAndDoesNotCreateAckOrDedupEntry" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="165c01f7-6453-8e07-8e58-263adb5aba11" executionId="17a3d77e-c2f2-423e-a814-1bbb664973f6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1214cef3-a308-86da-ba55-e6cf9752a537" executionId="b3232a70-fab1-4fcf-b28c-ad5b5bf548bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c49acd8-928d-8ab1-bf05-98e1f9302f59" executionId="3457f58e-b5c1-4e7d-b237-ab533b094d59" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c9faeaf-efab-8c42-8b55-46e1e13c34e0" executionId="a749cbe5-642d-44ba-85dd-f183261340ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f61455e-7901-8ea3-8922-8a4bd3a27b70" executionId="7303a291-fc6d-4ff0-900e-ac32c5f83353" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="12cbee13-ed61-89bb-9298-9f6cda9477c1" executionId="2afe3e0d-55a5-4d39-a417-52da16d7d521" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1d78702c-5906-85d2-bb7b-31f0af76bdca" executionId="4fc73094-7c76-4f9b-8ec8-df1832fb9749" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1149aa0c-5093-8bc8-80c7-3e525b7b2889" executionId="b782a2d1-abd0-4d68-9f9c-4241ebf8deba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16e48151-f178-8cdd-b329-e2368e391bfe" executionId="ec0073ef-c751-49d4-b274-50c5c668974c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f4c57bd-2ef3-8768-aab4-94ab55deded7" executionId="139c63d5-8b07-4c4a-a7f4-ec538c3f0ae1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16caa0fe-c12a-8ab0-9b9b-15e4d9769d14" executionId="041f6d45-614c-4f61-b799-2ad43e24cd6d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1feca568-5e08-80ae-8195-994ebc044890" executionId="614a65ce-0e60-446f-bad2-94eb13d2022a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1b1b5843-c0e2-83b1-94a1-085b6f75e5be" executionId="d414f27d-02ef-43cd-90a4-93d9f1cc5164" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1a3635dd-a756-854c-838d-32b9e4d2b381" executionId="a609e884-de63-47f9-8523-a7685a7a477a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1459f886-8468-8a8f-a65b-d3bc8cab7bb0" executionId="6d9ec562-ac65-4a84-8c92-dca678fc2773" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1447cf60-8e76-8251-b188-afbb8c7aa696" executionId="879c1eae-588b-46db-b39d-4ef447c172dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="17f317b4-7d25-857a-89c4-9ca0a5a23933" executionId="cfe9fd43-0c32-46a6-a587-3cdf267dd25b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1026c3e9-53af-8e5a-b0e2-5d9d72cbd3e7" executionId="d9ac074f-ae02-4acb-82f4-d50938ecf839" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1da91268-0765-8986-8dae-673a50536f9d" executionId="52d43dae-c6e2-4b35-9218-7c62c0b5bc9d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c916503-9efd-8e73-bd04-9495da9b9031" executionId="209e595f-962e-490a-8e42-462a209f999b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Список результатов" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="20" executed="20" passed="20" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>Включена параллелизация тестов для PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll (Workers: 12, Scope: MethodLevel)&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

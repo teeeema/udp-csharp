@@ -1,0 +1,11 @@
+dustline-pr7-steam-server-1
+[PR7] STEAM_INIT_OK role=dedicated appid=480 query=27018
+[PR7] SERVER_READY name=DUSTLINE-Steam-PR7 map=Copper Basin profile=steam transport=SteamNetworkingSockets+secure-UTP bind=0.0.0.0:7789 max=4 clients=0 localPlayer=false
+[PR7] STEAM_ADVERTISE_REQUESTED appid=480
+[PR7] STEAM_SOCKET_CONNECTED role=dedicated addressType=IPv4 connection=direct-ip relayPop=0
+[PR7] STEAM_SOCKET_CLOSED state=k_ESteamNetworkingConnectionState_ClosedByPeer reason=4003
+[PR7] STEAM_BACKEND_DISCONNECTED result=k_EResultNoConnection
+[PR7] SERVER_STOP_REQUEST
+[PR7] STEAM_DEREGISTER_REQUESTED
+[PR7] SERVER_STOPPED
+IP container running healthy

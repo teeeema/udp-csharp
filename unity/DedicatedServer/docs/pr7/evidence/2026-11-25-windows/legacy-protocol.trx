@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="3a4d8c2d-c26f-4fc2-9ce4-b880b26aa0cc" name="WINDOWS_TEST_USER@WINDOWS_TEST_HOST 2026-11-25 10:29:10" runUser="WINDOWS_TEST_HOST\WINDOWS_TEST_USER" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-25T10:29:10.4787542+03:00" queuing="2026-11-25T10:29:10.4787545+03:00" start="2026-11-25T10:29:05.6523512+03:00" finish="2026-11-25T10:29:10.5177104+03:00" />
+  <TestSettings name="default" id="be723aa5-c9f0-472d-9da4-2911e8fef1df">
+    <Deployment runDeploymentRoot="92604_WINDOWS_TEST_HOST_2026-11-25_10_29_10" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="2e899a9f-c671-47ea-8041-a0f492d9769a" testId="150c6629-36d5-85ae-982c-67c1b8d68363" testName="AckPayloadIsBigEndian" computerName="WINDOWS_TEST_HOST" duration="00:00:01.2249108" startTime="2026-11-25T10:29:09.2150630+03:00" endTime="2026-11-25T10:29:10.4606777+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2e899a9f-c671-47ea-8041-a0f492d9769a" />
+    <UnitTestResult executionId="5de68c7b-1563-49a7-9a80-ac91e5609fe8" testId="1c7ca91f-cf80-8625-9fe6-367fc4c240f2" testName="TruncatedPacket_IsRejected" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0007754" startTime="2026-11-25T10:29:10.4589554+03:00" endTime="2026-11-25T10:29:10.4607347+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5de68c7b-1563-49a7-9a80-ac91e5609fe8" />
+    <UnitTestResult executionId="cab2f246-ec4b-48d5-b634-5cad3d38fb82" testId="1dcf570d-77dc-861c-a1cf-ac57f30b9448" testName="InvalidPayloadSize_IsRejected" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0001620" startTime="2026-11-25T10:29:10.4482083+03:00" endTime="2026-11-25T10:29:10.4484512+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cab2f246-ec4b-48d5-b634-5cad3d38fb82" />
+    <UnitTestResult executionId="b42ac2ce-2462-4f85-8c20-c24622eaace1" testId="164f29a1-cbe1-814b-a40c-274ba3bf1564" testName="Pong_SerializeDeserialize_RoundTrips" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0018730" startTime="2026-11-25T10:29:10.4587560+03:00" endTime="2026-11-25T10:29:10.4607116+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b42ac2ce-2462-4f85-8c20-c24622eaace1" />
+    <UnitTestResult executionId="51e3bae8-423b-4416-8692-be45b4e15513" testId="17a5cb02-7ebf-8088-ba32-a2c743ad07c4" testName="U16_ReadWrite_UsesBigEndian" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0004794" startTime="2026-11-25T10:29:10.4591820+03:00" endTime="2026-11-25T10:29:10.4607175+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51e3bae8-423b-4416-8692-be45b4e15513" />
+    <UnitTestResult executionId="ff2adaa9-2f68-452b-be95-a157455f2734" testId="184f0fce-31bf-82c2-a4cf-738599384ad1" testName="TruncatedAckAndHeaderAreRejectedBeforePayloadRead" computerName="WINDOWS_TEST_HOST" duration="00:00:01.2046293" startTime="2026-11-25T10:29:09.2150887+03:00" endTime="2026-11-25T10:29:10.4420743+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff2adaa9-2f68-452b-be95-a157455f2734" />
+    <UnitTestResult executionId="d2cf0bfc-2530-4083-9418-e973115a19f8" testId="10afd714-55b8-8051-9120-2d440195a2c6" testName="InvalidRequiresAckIsRejected" computerName="WINDOWS_TEST_HOST" duration="00:00:01.2046461" startTime="2026-11-25T10:29:09.2150289+03:00" endTime="2026-11-25T10:29:10.4420484+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2cf0bfc-2530-4083-9418-e973115a19f8" />
+    <UnitTestResult executionId="3277eace-5b38-4de5-9844-8221cfe587fe" testId="1cca72f0-baef-8003-9fb0-7455cbe7bc6b" testName="U64_ReadWrite_UsesBigEndian" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0012316" startTime="2026-11-25T10:29:10.4589137+03:00" endTime="2026-11-25T10:29:10.4607547+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3277eace-5b38-4de5-9844-8221cfe587fe" />
+    <UnitTestResult executionId="c6034535-ea89-4039-8797-f8064c671a64" testId="10972086-9f83-80c1-8501-1520e555fbe8" testName="Shoot_HasExpectedWireFormat" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0267160" startTime="2026-11-25T10:29:10.4326587+03:00" endTime="2026-11-25T10:29:10.4606956+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c6034535-ea89-4039-8797-f8064c671a64" />
+    <UnitTestResult executionId="c53c518d-714a-46c9-b7b9-13347da408a9" testId="134c6917-946c-8931-9109-2858100c8de8" testName="OversizedPacketIsRejected" computerName="WINDOWS_TEST_HOST" duration="00:00:01.2046486" startTime="2026-11-25T10:29:09.2149849+03:00" endTime="2026-11-25T10:29:10.4420652+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c53c518d-714a-46c9-b7b9-13347da408a9" />
+    <UnitTestResult executionId="f55a36df-a053-4c0c-8362-c81f205cdaec" testId="13713ef7-a7b9-89da-a45d-00473c4ac2c4" testName="WrongProtocolVersion_IsRejected" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0005500" startTime="2026-11-25T10:29:10.4589371+03:00" endTime="2026-11-25T10:29:10.4595566+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f55a36df-a053-4c0c-8362-c81f205cdaec" />
+    <UnitTestResult executionId="e3e0274e-1f38-43eb-ad78-dc0c1dc23d49" testId="18b549dd-e8ad-85ee-9aa7-d90167b5a1d6" testName="ExistingPacketTypesStillRoundTrip" computerName="WINDOWS_TEST_HOST" duration="00:00:01.2066563" startTime="2026-11-25T10:29:09.2149985+03:00" endTime="2026-11-25T10:29:10.4420570+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e3e0274e-1f38-43eb-ad78-dc0c1dc23d49" />
+    <UnitTestResult executionId="2d1acf43-9cb4-430f-91c0-3a18bbc3a8e4" testId="1c5773ba-df5a-80b5-b1cc-65b9c62f28ad" testName="VersionOneWirePacketIsRejected" computerName="WINDOWS_TEST_HOST" duration="00:00:01.2046457" startTime="2026-11-25T10:29:09.2150500+03:00" endTime="2026-11-25T10:29:10.4420816+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2d1acf43-9cb4-430f-91c0-3a18bbc3a8e4" />
+    <UnitTestResult executionId="ed6dec83-8de3-40c2-b122-88cc69ad15ab" testId="10f05a77-84d6-843a-9536-9e3ed7b6811f" testName="StateUpdate_RoundTripsAndKeepsSequenceNumber" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0008880" startTime="2026-11-25T10:29:10.4477550+03:00" endTime="2026-11-25T10:29:10.4487136+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed6dec83-8de3-40c2-b122-88cc69ad15ab" />
+    <UnitTestResult executionId="fd3f2704-c69b-4575-a56c-79f6c2e512d4" testId="1e543a25-f6d7-8fda-96d2-0bfe0d9085c1" testName="UnknownPacketType_IsRejected" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0004880" startTime="2026-11-25T10:29:10.4591532+03:00" endTime="2026-11-25T10:29:10.4607278+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd3f2704-c69b-4575-a56c-79f6c2e512d4" />
+    <UnitTestResult executionId="fa7b5490-98ee-45ec-ab26-288f37ff7228" testId="1b72e2f2-1284-8dd6-87e2-44af54478a46" testName="Ping_SerializeDeserialize_UsesBigEndianU64" computerName="WINDOWS_TEST_HOST" duration="00:00:00.0122703" startTime="2026-11-25T10:29:10.4482632+03:00" endTime="2026-11-25T10:29:10.4614270+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fa7b5490-98ee-45ec-ab26-288f37ff7228" />
+    <UnitTestResult executionId="e299e827-aa68-4f22-8c44-a75ad2ea447f" testId="1999a3f4-6109-8a79-ac3d-c2455bcfb458" testName="RequiresAckSerializeDeserializeRoundTrip" computerName="WINDOWS_TEST_HOST" duration="00:00:01.1934616" startTime="2026-11-25T10:29:09.2449589+03:00" endTime="2026-11-25T10:29:10.4420899+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e299e827-aa68-4f22-8c44-a75ad2ea447f" />
+    <UnitTestResult executionId="f1f4d3cd-9c31-4edd-a779-0ed0bac38eb5" testId="156d0f04-96e1-8c79-8d21-e8620e2f62d6" testName="Movement_HasExpectedBigEndianWireFormat" computerName="WINDOWS_TEST_HOST" duration="00:00:01.2252874" startTime="2026-11-25T10:29:09.2150781+03:00" endTime="2026-11-25T10:29:10.4607527+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f1f4d3cd-9c31-4edd-a779-0ed0bac38eb5" />
+    <UnitTestResult executionId="7e39af6a-b5c7-46cf-9f6f-85c73bf94c44" testId="1bc99a11-e6dc-879c-be15-39408c57e978" testName="InvalidAckPayloadSizeIsRejected" computerName="WINDOWS_TEST_HOST" duration="00:00:01.2046667" startTime="2026-11-25T10:29:09.2150648+03:00" endTime="2026-11-25T10:29:10.4420928+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7e39af6a-b5c7-46cf-9f6f-85c73bf94c44" />
+    <UnitTestResult executionId="335b376d-21d9-4767-a97f-218f0ed899d5" testId="104a787d-022b-8bd3-acdd-152e0a6397ea" testName="AckCannotRequireAck" computerName="WINDOWS_TEST_HOST" duration="00:00:01.2046456" startTime="2026-11-25T10:29:09.2149698+03:00" endTime="2026-11-25T10:29:10.4420073+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="335b376d-21d9-4767-a97f-218f0ed899d5" />
+    <UnitTestResult executionId="a74a37e3-843a-4abc-943f-8f10e861815d" testId="1e9d2361-3f48-85e3-aad3-6b1301634b60" testName="AckSerializeDeserializeRoundTrip" computerName="WINDOWS_TEST_HOST" duration="00:00:01.1934223" startTime="2026-11-25T10:29:09.2449366+03:00" endTime="2026-11-25T10:29:10.4420363+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a74a37e3-843a-4abc-943f-8f10e861815d" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="U16_ReadWrite_UsesBigEndian" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="17a5cb02-7ebf-8088-ba32-a2c743ad07c4">
+      <Execution id="51e3bae8-423b-4416-8692-be45b4e15513" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.ProtocolTests" name="U16_ReadWrite_UsesBigEndian" />
+    </UnitTest>
+    <UnitTest name="Ping_SerializeDeserialize_UsesBigEndianU64" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="1b72e2f2-1284-8dd6-87e2-44af54478a46">
+      <Execution id="fa7b5490-98ee-45ec-ab26-288f37ff7228" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.ProtocolTests" name="Ping_SerializeDeserialize_UsesBigEndianU64" />
+    </UnitTest>
+    <UnitTest name="Shoot_HasExpectedWireFormat" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="10972086-9f83-80c1-8501-1520e555fbe8">
+      <Execution id="c6034535-ea89-4039-8797-f8064c671a64" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.ProtocolTests" name="Shoot_HasExpectedWireFormat" />
+    </UnitTest>
+    <UnitTest name="Movement_HasExpectedBigEndianWireFormat" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="156d0f04-96e1-8c79-8d21-e8620e2f62d6">
+      <Execution id="f1f4d3cd-9c31-4edd-a779-0ed0bac38eb5" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.ProtocolTests" name="Movement_HasExpectedBigEndianWireFormat" />
+    </UnitTest>
+    <UnitTest name="InvalidRequiresAckIsRejected" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="10afd714-55b8-8051-9120-2d440195a2c6">
+      <Execution id="d2cf0bfc-2530-4083-9418-e973115a19f8" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.AckTests" name="InvalidRequiresAckIsRejected" />
+    </UnitTest>
+    <UnitTest name="ExistingPacketTypesStillRoundTrip" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="18b549dd-e8ad-85ee-9aa7-d90167b5a1d6">
+      <Execution id="e3e0274e-1f38-43eb-ad78-dc0c1dc23d49" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.AckTests" name="ExistingPacketTypesStillRoundTrip" />
+    </UnitTest>
+    <UnitTest name="InvalidAckPayloadSizeIsRejected" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="1bc99a11-e6dc-879c-be15-39408c57e978">
+      <Execution id="7e39af6a-b5c7-46cf-9f6f-85c73bf94c44" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.AckTests" name="InvalidAckPayloadSizeIsRejected" />
+    </UnitTest>
+    <UnitTest name="AckSerializeDeserializeRoundTrip" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="1e9d2361-3f48-85e3-aad3-6b1301634b60">
+      <Execution id="a74a37e3-843a-4abc-943f-8f10e861815d" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.AckTests" name="AckSerializeDeserializeRoundTrip" />
+    </UnitTest>
+    <UnitTest name="UnknownPacketType_IsRejected" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="1e543a25-f6d7-8fda-96d2-0bfe0d9085c1">
+      <Execution id="fd3f2704-c69b-4575-a56c-79f6c2e512d4" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.ProtocolTests" name="UnknownPacketType_IsRejected" />
+    </UnitTest>
+    <UnitTest name="AckCannotRequireAck" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="104a787d-022b-8bd3-acdd-152e0a6397ea">
+      <Execution id="335b376d-21d9-4767-a97f-218f0ed899d5" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.AckTests" name="AckCannotRequireAck" />
+    </UnitTest>
+    <UnitTest name="Pong_SerializeDeserialize_RoundTrips" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="164f29a1-cbe1-814b-a40c-274ba3bf1564">
+      <Execution id="b42ac2ce-2462-4f85-8c20-c24622eaace1" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.ProtocolTests" name="Pong_SerializeDeserialize_RoundTrips" />
+    </UnitTest>
+    <UnitTest name="RequiresAckSerializeDeserializeRoundTrip" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="1999a3f4-6109-8a79-ac3d-c2455bcfb458">
+      <Execution id="e299e827-aa68-4f22-8c44-a75ad2ea447f" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.AckTests" name="RequiresAckSerializeDeserializeRoundTrip" />
+    </UnitTest>
+    <UnitTest name="StateUpdate_RoundTripsAndKeepsSequenceNumber" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="10f05a77-84d6-843a-9536-9e3ed7b6811f">
+      <Execution id="ed6dec83-8de3-40c2-b122-88cc69ad15ab" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.ProtocolTests" name="StateUpdate_RoundTripsAndKeepsSequenceNumber" />
+    </UnitTest>
+    <UnitTest name="OversizedPacketIsRejected" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="134c6917-946c-8931-9109-2858100c8de8">
+      <Execution id="c53c518d-714a-46c9-b7b9-13347da408a9" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.AckTests" name="OversizedPacketIsRejected" />
+    </UnitTest>
+    <UnitTest name="InvalidPayloadSize_IsRejected" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="1dcf570d-77dc-861c-a1cf-ac57f30b9448">
+      <Execution id="cab2f246-ec4b-48d5-b634-5cad3d38fb82" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.ProtocolTests" name="InvalidPayloadSize_IsRejected" />
+    </UnitTest>
+    <UnitTest name="WrongProtocolVersion_IsRejected" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="13713ef7-a7b9-89da-a45d-00473c4ac2c4">
+      <Execution id="f55a36df-a053-4c0c-8362-c81f205cdaec" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.ProtocolTests" name="WrongProtocolVersion_IsRejected" />
+    </UnitTest>
+    <UnitTest name="U64_ReadWrite_UsesBigEndian" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="1cca72f0-baef-8003-9fb0-7455cbe7bc6b">
+      <Execution id="3277eace-5b38-4de5-9844-8221cfe587fe" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.ProtocolTests" name="U64_ReadWrite_UsesBigEndian" />
+    </UnitTest>
+    <UnitTest name="AckPayloadIsBigEndian" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="150c6629-36d5-85ae-982c-67c1b8d68363">
+      <Execution id="2e899a9f-c671-47ea-8041-a0f492d9769a" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.AckTests" name="AckPayloadIsBigEndian" />
+    </UnitTest>
+    <UnitTest name="VersionOneWirePacketIsRejected" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="1c5773ba-df5a-80b5-b1cc-65b9c62f28ad">
+      <Execution id="2d1acf43-9cb4-430f-91c0-3a18bbc3a8e4" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.AckTests" name="VersionOneWirePacketIsRejected" />
+    </UnitTest>
+    <UnitTest name="TruncatedPacket_IsRejected" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="1c7ca91f-cf80-8625-9fe6-367fc4c240f2">
+      <Execution id="5de68c7b-1563-49a7-9a80-ac91e5609fe8" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.ProtocolTests" name="TruncatedPacket_IsRejected" />
+    </UnitTest>
+    <UnitTest name="TruncatedAckAndHeaderAreRejectedBeforePayloadRead" storage="PROJECT_ROOT\legacyudp\tests\udpgame.protocol.tests\bin\debug\net10.0\udpgame.protocol.tests.dll" id="184f0fce-31bf-82c2-a4cf-738599384ad1">
+      <Execution id="ff2adaa9-2f68-452b-be95-a157455f2734" />
+      <TestMethod codeBase="PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="UdpGame.Protocol.Tests.AckTests" name="TruncatedAckAndHeaderAreRejectedBeforePayloadRead" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="150c6629-36d5-85ae-982c-67c1b8d68363" executionId="2e899a9f-c671-47ea-8041-a0f492d9769a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c7ca91f-cf80-8625-9fe6-367fc4c240f2" executionId="5de68c7b-1563-49a7-9a80-ac91e5609fe8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1dcf570d-77dc-861c-a1cf-ac57f30b9448" executionId="cab2f246-ec4b-48d5-b634-5cad3d38fb82" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="164f29a1-cbe1-814b-a40c-274ba3bf1564" executionId="b42ac2ce-2462-4f85-8c20-c24622eaace1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="17a5cb02-7ebf-8088-ba32-a2c743ad07c4" executionId="51e3bae8-423b-4416-8692-be45b4e15513" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="184f0fce-31bf-82c2-a4cf-738599384ad1" executionId="ff2adaa9-2f68-452b-be95-a157455f2734" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="10afd714-55b8-8051-9120-2d440195a2c6" executionId="d2cf0bfc-2530-4083-9418-e973115a19f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1cca72f0-baef-8003-9fb0-7455cbe7bc6b" executionId="3277eace-5b38-4de5-9844-8221cfe587fe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="10972086-9f83-80c1-8501-1520e555fbe8" executionId="c6034535-ea89-4039-8797-f8064c671a64" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="134c6917-946c-8931-9109-2858100c8de8" executionId="c53c518d-714a-46c9-b7b9-13347da408a9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="13713ef7-a7b9-89da-a45d-00473c4ac2c4" executionId="f55a36df-a053-4c0c-8362-c81f205cdaec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18b549dd-e8ad-85ee-9aa7-d90167b5a1d6" executionId="e3e0274e-1f38-43eb-ad78-dc0c1dc23d49" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c5773ba-df5a-80b5-b1cc-65b9c62f28ad" executionId="2d1acf43-9cb4-430f-91c0-3a18bbc3a8e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="10f05a77-84d6-843a-9536-9e3ed7b6811f" executionId="ed6dec83-8de3-40c2-b122-88cc69ad15ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1e543a25-f6d7-8fda-96d2-0bfe0d9085c1" executionId="fd3f2704-c69b-4575-a56c-79f6c2e512d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1b72e2f2-1284-8dd6-87e2-44af54478a46" executionId="fa7b5490-98ee-45ec-ab26-288f37ff7228" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1999a3f4-6109-8a79-ac3d-c2455bcfb458" executionId="e299e827-aa68-4f22-8c44-a75ad2ea447f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="156d0f04-96e1-8c79-8d21-e8620e2f62d6" executionId="f1f4d3cd-9c31-4edd-a779-0ed0bac38eb5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1bc99a11-e6dc-879c-be15-39408c57e978" executionId="7e39af6a-b5c7-46cf-9f6f-85c73bf94c44" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="104a787d-022b-8bd3-acdd-152e0a6397ea" executionId="335b376d-21d9-4767-a97f-218f0ed899d5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1e9d2361-3f48-85e3-aad3-6b1301634b60" executionId="a74a37e3-843a-4abc-943f-8f10e861815d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Список результатов" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="21" executed="21" passed="21" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>Включена параллелизация тестов для PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll (Workers: 12, Scope: MethodLevel)&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

@@ -1,0 +1,15 @@
+**
+!deploy/
+deploy/**
+!deploy/entrypoint.sh
+!Builds/
+Builds/**
+!Builds/PR7/
+Builds/PR7/**
+!Builds/PR7/LinuxServer/
+!Builds/PR7/LinuxServer/**
+Builds/PR7/LinuxServer/**/*_BurstDebugInformation_DoNotShip/**
+Builds/PR7/LinuxServer/**/*_BackUpThisFolder_ButDontShipItWithYourGame/**
+**/steam_appid.txt
+**/*.pem
+**/*.key

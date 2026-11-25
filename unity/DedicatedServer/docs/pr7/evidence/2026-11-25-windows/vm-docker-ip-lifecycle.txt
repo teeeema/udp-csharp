@@ -1,0 +1,9 @@
+server-1  | [PR7] SERVER_READY name=DUSTLINE Dedicated map=Copper Basin profile=ip transport=secure-UTP/UDP bind=0.0.0.0:7777 max=4 clients=0 localPlayer=false
+server-1  | [PR6] HANDSHAKE_OK
+server-1  | [PR7] PLAYER_JOIN client=1 count=1
+server-1  | [PR7] PLAYER_JOIN client=2 count=2
+server-1  | [PR7] PLAYER_LEAVE client=1 count=1
+server-1  | [PR6] HANDSHAKE_OK
+server-1  | [PR7] PLAYER_JOIN client=3 count=2
+server-1  | [PR7] PLAYER_LEAVE client=3 count=1
+server-1  | [PR7] PLAYER_LEAVE client=2 count=0

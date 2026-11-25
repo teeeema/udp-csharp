@@ -1,0 +1,17 @@
+dustline-pr7-server-1 Up 47 seconds (healthy) 0.0.0.0:7777->7777/udp
+dustline-pr7-steam-server-1 Up 3 minutes (healthy) 0.0.0.0:7789->7789/udp, 7777/udp, 0.0.0.0:27018->27018/udp
+Failed to connect to bus: Host is down
+dlopen failed trying to load:
+flock /sys/devices/virtual/dmi/id/sys_vendor LOCK_SH failed. errno = 13flock /sys/devices/virtual/dmi/id/product_name LOCK_SH failed. errno = 13[S_API] SteamAPI_Init(): Loaded '/home/dustline/.steam/sdk64/steamclient.so' OK.  (First tried local 'steamclient.so')
+[PR7] STEAM_INIT_OK role=dedicated appid=480 query=27018
+[PR7] STEAM_ADVERTISE_REQUESTED appid=480
+[PR7] STEAM_DEREGISTER_REQUESTED
+Failed to connect to bus: Host is down
+dlopen failed trying to load:
+flock /sys/devices/virtual/dmi/id/sys_vendor LOCK_SH failed. errno = 13flock /sys/devices/virtual/dmi/id/product_name LOCK_SH failed. errno = 13[S_API] SteamAPI_Init(): Loaded '/home/dustline/.steam/sdk64/steamclient.so' OK.  (First tried local 'steamclient.so')
+[PR7] STEAM_INIT_OK role=dedicated appid=480 query=27018
+[PR7] STEAM_ADVERTISE_REQUESTED appid=480
+[PR7] STEAM_SOCKET_CONNECTED role=dedicated addressType=IPv4 connection=direct-ip relayPop=0
+[PR7] STEAM_SOCKET_CLOSED state=k_ESteamNetworkingConnectionState_ClosedByPeer reason=4003
+[PR7] STEAM_BACKEND_DISCONNECTED result=k_EResultNoConnection
+[PR7] STEAM_ADVERTISE_REQUESTED appid=480

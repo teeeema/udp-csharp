@@ -1,0 +1,6 @@
+A2S challenge received
+name DUSTLINE-Steam-PR7
+map Copper Basin
+folder dustline-pr7-copper-basin
+game DUSTLINE
+app_id=480 players=0/4 bots=0 dedicated=True

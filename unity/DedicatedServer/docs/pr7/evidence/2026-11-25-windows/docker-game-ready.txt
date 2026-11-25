@@ -1,0 +1,3 @@
+NAME                    IMAGE                COMMAND                  SERVICE   CREATED              STATUS                        PORTS
+dustline-pr7-server-1   dustline-pr7:local   "/usr/local/bin/dust…"   server    About a minute ago   Up About a minute (healthy)   0.0.0.0:7777->7777/udp
+server-1  | [PR7] SERVER_READY name=DUSTLINE Dedicated map=Copper Basin profile=ip transport=secure-UTP/UDP bind=0.0.0.0:7777 max=4 clients=0 localPlayer=false

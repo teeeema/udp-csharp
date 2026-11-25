@@ -1,0 +1,53 @@
+  Определение проектов для восстановления...
+  Восстановлен PROJECT_ROOT\LegacyUdp\src\UdpGame.Transport\UdpGame.Transport.csproj (за 104 мс).
+  Восстановлен PROJECT_ROOT\LegacyUdp\src\UdpGame.Reliability\UdpGame.Reliability.csproj (за 104 мс).
+  Восстановлен PROJECT_ROOT\LegacyUdp\src\UdpGame.Client\UdpGame.Client.csproj (за 115 мс).
+  Восстановлен PROJECT_ROOT\LegacyUdp\src\UdpGame.Server\UdpGame.Server.csproj (за 115 мс).
+  Восстановлен PROJECT_ROOT\LegacyUdp\src\UdpGame.Telemetry\UdpGame.Telemetry.csproj (за 104 мс).
+  Восстановлен PROJECT_ROOT\LegacyUdp\src\UdpGame.Protocol\UdpGame.Protocol.csproj (за 104 мс).
+  Восстановлен PROJECT_ROOT\LegacyUdp\tests\UdpGame.Telemetry.Tests\UdpGame.Telemetry.Tests.csproj (за 5,4 с).
+  Восстановлен PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\UdpGame.Protocol.Tests.csproj (за 5,4 с).
+  Восстановлен PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\UdpGame.Reliability.Tests.csproj (за 5,4 с).
+  Восстановлен PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\UdpGame.Integration.Tests.csproj (за 5,4 с).
+  UdpGame.Protocol -> PROJECT_ROOT\LegacyUdp\src\UdpGame.Protocol\bin\Debug\net10.0\UdpGame.Protocol.dll
+  UdpGame.Transport -> PROJECT_ROOT\LegacyUdp\src\UdpGame.Transport\bin\Debug\net10.0\UdpGame.Transport.dll
+  UdpGame.Reliability -> PROJECT_ROOT\LegacyUdp\src\UdpGame.Reliability\bin\Debug\net10.0\UdpGame.Reliability.dll
+  UdpGame.Telemetry -> PROJECT_ROOT\LegacyUdp\src\UdpGame.Telemetry\bin\Debug\net10.0\UdpGame.Telemetry.dll
+  UdpGame.Server -> PROJECT_ROOT\LegacyUdp\src\UdpGame.Server\bin\Debug\net10.0\UdpGame.Server.dll
+  UdpGame.Client -> PROJECT_ROOT\LegacyUdp\src\UdpGame.Client\bin\Debug\net10.0\UdpGame.Client.dll
+  UdpGame.Protocol.Tests -> PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll
+  UdpGame.Reliability.Tests -> PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll
+  UdpGame.Telemetry.Tests -> PROJECT_ROOT\LegacyUdp\tests\UdpGame.Telemetry.Tests\bin\Debug\net10.0\UdpGame.Telemetry.Tests.dll
+Тестовый запуск для PROJECT_ROOT\LegacyUdp\tests\UdpGame.Protocol.Tests\bin\Debug\net10.0\UdpGame.Protocol.Tests.dll (.NETCoreApp,Version=v10.0)
+Тестовый запуск для PROJECT_ROOT\LegacyUdp\tests\UdpGame.Reliability.Tests\bin\Debug\net10.0\UdpGame.Reliability.Tests.dll (.NETCoreApp,Version=v10.0)
+Тестовый запуск для PROJECT_ROOT\LegacyUdp\tests\UdpGame.Telemetry.Tests\bin\Debug\net10.0\UdpGame.Telemetry.Tests.dll (.NETCoreApp,Version=v10.0)
+Версия VSTest 18.0.1 (x64)
+
+Версия VSTest 18.0.1 (x64)
+Версия VSTest 18.0.1 (x64)
+
+
+Запуск выполнения тестов; подождите...
+Запуск выполнения тестов; подождите...
+Запуск выполнения тестов; подождите...
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+  UdpGame.Integration.Tests -> PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll
+Тестовый запуск для PROJECT_ROOT\LegacyUdp\tests\UdpGame.Integration.Tests\bin\Debug\net10.0\UdpGame.Integration.Tests.dll (.NETCoreApp,Version=v10.0)
+Версия VSTest 18.0.1 (x64)
+
+Запуск выполнения тестов; подождите...
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+Файл результатов: PROJECT_ROOT\docs\pr7\evidence\2026-11-25-windows\92604_TEMA_2026-11-25_10_29_10.trx
+
+Пройден!   : не пройдено     0, пройдено    27, пропущено     0, всего    27, длительность 1 s. - UdpGame.Reliability.Tests.dll (net10.0)
+Файл результатов: PROJECT_ROOT\docs\pr7\evidence\2026-11-25-windows\92604_TEMA_2026-11-25_10_29_10[1].trx
+
+Пройден!   : не пройдено     0, пройдено    21, пропущено     0, всего    21, длительность 1 s. - UdpGame.Protocol.Tests.dll (net10.0)
+Файл результатов: PROJECT_ROOT\docs\pr7\evidence\2026-11-25-windows\92604_TEMA_2026-11-25_10_29_11.trx
+
+Пройден!   : не пройдено     0, пройдено    20, пропущено     0, всего    20, длительность 5 s. - UdpGame.Integration.Tests.dll (net10.0)
+Файл результатов: PROJECT_ROOT\docs\pr7\evidence\2026-11-25-windows\92604_TEMA_2026-11-25_10_29_17.trx
+
+Пройден!   : не пройдено     0, пройдено    10, пропущено     0, всего    10, длительность 753 ms. - UdpGame.Telemetry.Tests.dll (net10.0)

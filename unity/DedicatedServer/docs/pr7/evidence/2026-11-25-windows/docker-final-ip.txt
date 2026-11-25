@@ -1,0 +1,69 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 574B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 767B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/ubuntu:24.04@sha256:562111b88caa79c71391c0c4d3c2114a7d5c35915c20561fd893cb1e07929e6b
+#3 DONE 1.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 358B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 DONE 0.0s
+
+#6 [1/6] FROM docker.io/library/ubuntu:24.04@sha256:562111b88caa79c71391c0c4d3c2114a7d5c35915c20561fd893cb1e07929e6b
+#6 resolve docker.io/library/ubuntu:24.04@sha256:562111b88caa79c71391c0c4d3c2114a7d5c35915c20561fd893cb1e07929e6b 0.1s done
+#6 DONE 0.1s
+
+#5 [internal] load build context
+#5 transferring context: 1.57MB 0.1s done
+#5 DONE 0.1s
+
+#7 [2/6] RUN apt-get update && apt-get install -y --no-install-recommends         ca-certificates libstdc++6 libgcc-s1 libatomic1 libgl1 libx11-6 libxcursor1 libxrandr2         libxinerama1 libxi6 libasound2t64 libpulse0 libgtk-3-0t64     && rm -rf /var/lib/apt/lists/*     && useradd --uid 10001 --create-home --shell /usr/sbin/nologin dustline
+#7 CACHED
+
+#8 [3/6] WORKDIR /opt/dustline
+#8 CACHED
+
+#9 [4/6] COPY --chown=10001:10001 Builds/PR7/LinuxServer/ ./
+#9 DONE 4.1s
+
+#10 [5/6] COPY --chmod=755 deploy/entrypoint.sh /usr/local/bin/dustline-entrypoint
+#10 DONE 0.1s
+
+#11 [6/6] RUN chmod 755 DustlineServer.x86_64
+#11 DONE 0.5s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 8.4s done
+#12 exporting manifest sha256:a8beef9b944bf92703f885b90e0a41ff47bf654c0506b01cf3f68019d853af27
+#12 exporting manifest sha256:a8beef9b944bf92703f885b90e0a41ff47bf654c0506b01cf3f68019d853af27 0.0s done
+#12 exporting config sha256:4b74189edf033e8f44eaf09867f92c11cc3f7f5cf2a9c0a5b7e236c2c64ce9ba 0.0s done
+#12 exporting attestation manifest sha256:71099bfac0dab54cb307f4b49607499da58514bd696d24fda964e9d61077382a 0.0s done
+#12 exporting manifest list sha256:2002bdacf6b575cd4799fa506bf0e13c0e478a15d10f21f01ec00bfcde90988c
+#12 exporting manifest list sha256:2002bdacf6b575cd4799fa506bf0e13c0e478a15d10f21f01ec00bfcde90988c 0.0s done
+#12 naming to docker.io/library/dustline-pr7:local done
+#12 unpacking to docker.io/library/dustline-pr7:local
+#12 unpacking to docker.io/library/dustline-pr7:local 2.5s done
+#12 DONE 11.1s
+
+#13 resolving provenance for metadata file
+#13 DONE 0.0s
+NAME                    IMAGE                COMMAND                  SERVICE   CREATED         STATUS                   PORTS
+dustline-pr7-server-1   dustline-pr7:local   "/usr/local/bin/dust…"   server    7 seconds ago   Up 5 seconds (healthy)   0.0.0.0:7777->7777/udp
+server-1  | Initialize engine version: 6000.6.7f1 (b22767f04f04)
+server-1  | [PR7] SERVER_READY name=DUSTLINE Dedicated map=Copper Basin profile=ip transport=secure-UTP/UDP bind=0.0.0.0:7777 max=4 clients=0 localPlayer=false
+ Image dustline-pr7:local Building
+ Image dustline-pr7:local Built
+ Container dustline-pr7-server-1 Recreate
+ Container dustline-pr7-server-1 Recreated
+ Container dustline-pr7-server-1 Starting
+ Container dustline-pr7-server-1 Started
+ Container dustline-pr7-server-1 Waiting
+ Container dustline-pr7-server-1 Healthy

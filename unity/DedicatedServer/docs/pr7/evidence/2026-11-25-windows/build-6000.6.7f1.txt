@@ -1,0 +1,8 @@
+Unity Editor 6000.6.7f1_b22767f04f04
+[PR7] BUILD_OK target=StandaloneLinux64 subtarget=Server bytes=203102004
+Exiting batchmode successfully now!
+[PR7] BUILD_OK target=StandaloneWindows64 subtarget=Player bytes=190278408
+Exiting batchmode successfully now!
+3726509af94bdacbfe23f85da13109a7e70fb7d61913506e98690bd3208b2fd7  Dustline.exe
+b9b38a09c97baf56b9969a4495898b862ab0a77c6bf260e6ccc14fe6b4bddd0a  DustlineServer.x86_64
+de33b145623397a27964d970017d71fe67f79b10c7ac146b0734dfde51767e1a  UnityPlayer.so

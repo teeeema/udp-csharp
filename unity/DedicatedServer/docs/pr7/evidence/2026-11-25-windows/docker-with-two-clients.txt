@@ -1,0 +1,5 @@
+two-windows-clients-joined
+CONTAINER ID   NAME                    CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O     PIDS
+86c1088bb1f4   dustline-pr7-server-1   14.51%    154.6MiB / 3.824GiB   3.95%     18.5kB / 54.7kB   0B / 12.3kB   26
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2        20G  5.9G   13G  32% /

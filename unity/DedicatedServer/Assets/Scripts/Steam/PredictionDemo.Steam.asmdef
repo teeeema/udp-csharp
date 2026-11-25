@@ -1,0 +1,7 @@
+{
+  "name": "PredictionDemo.Steam",
+  "rootNamespace": "PredictionDemo.Steam",
+  "references": ["PredictionDemo.Runtime", "com.rlabrecque.steamworks.net"],
+  "includePlatforms": ["Editor", "LinuxStandalone64", "macOSStandalone", "WindowsStandalone64"],
+  "allowUnsafeCode": true
+}

@@ -1,0 +1,16 @@
+NAME                          IMAGE                                                                     COMMAND                  SERVICE   CREATED          STATUS                    PORTS
+dustline-pr7-steam-server-1   sha256:3bbe1c4dff51ba8cf8a79813c373b693ae9c99a274c611ae3c13ad4ea502ff26   "/usr/local/bin/dust…"   server    22 seconds ago   Up 21 seconds (healthy)   0.0.0.0:7789->7789/udp, 7777/udp, 0.0.0.0:27018->27018/udp
+server-1  | steamclient.so
+server-1  | steamclient.so: cannot open shared object file: No such file or directory
+server-1  | flock /sys/devices/virtual/dmi/id/sys_vendor LOCK_SH failed. errno = 13flock /sys/devices/virtual/dmi/id/product_name LOCK_SH failed. errno = 13[S_API] SteamAPI_Init(): Loaded '/home/dustline/.steam/sdk64/steamclient.so' OK.  (First tried local 'steamclient.so')
+server-1  | [PR7] STEAM_INIT_OK role=dedicated appid=480 query=27018
+server-1  | [PR7] SERVER_READY name=DUSTLINE-Steam-PR7 map=Copper Basin profile=steam transport=SteamNetworkingSockets+secure-UTP bind=0.0.0.0:7789 max=4 clients=0 localPlayer=false
+server-1  | [PR7] STEAM_ADVERTISE_REQUESTED appid=480
+ Network dustline-pr7-steam_default Creating
+ Network dustline-pr7-steam_default Created
+ Container dustline-pr7-steam-server-1 Creating
+ Container dustline-pr7-steam-server-1 Created
+ Container dustline-pr7-steam-server-1 Starting
+ Container dustline-pr7-steam-server-1 Started
+ Container dustline-pr7-steam-server-1 Waiting
+ Container dustline-pr7-steam-server-1 Healthy
