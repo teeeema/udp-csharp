@@ -1,3 +1,4 @@
+- [PDF-отчёт по контрактам ПР7](../../unity/DedicatedServer/docs/pr7/Отчёт_ПР7_Контракты_DUSTLINE.pdf)
 # Практическая работа №7. Linux Dedicated Server, Docker и Steam
 
 Linux-сервер Unity запускается в Docker на Ubuntu. Два Windows-клиента проверили движение, стрельбу и переподключение. Публичная сеть и Steam-доступность описаны по результатам проверок.
