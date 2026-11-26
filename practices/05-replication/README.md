@@ -1,9 +1,6 @@
-# ПР5. Оптимизация репликации
+# Практическая работа №5. Оптимизация репликации
 
-Эксперимент сравнивает базовый и оптимизированный режимы репликации 50 сетевых объектов. Оптимизация учитывает релевантность и меняет частоту обновлений. Сравнение выполнено по исходящему payload NGO в одинаковых сценариях.
-
-- [Отчёт ПР5, условия и порядок пересчёта](../../docs/PR5/)
-- [Методика сравнения](../../docs/PR5/Replication_Baseline.md) · [Результаты оптимизации](../../docs/PR5/Replication_Optimization.md)
-- [Исходные счётчики и агрегаты](../../docs/PR5/data/)
-- [Проверки и ограничения](../../docs/PR5/Testing_Report.md)
-- [Код репликации в последующей Unity-версии](../../unity/PredictionDemo/Assets/Scripts/Prediction/Replication/)
+Работа сравнивает объём сетевого обмена для игрового состояния в базовом и оптимизированном режимах.
+- [Все документы, графики и измерения](../../docs/practice-05-replication/)
+- [Методика](../../docs/practice-05-replication/Replication_Baseline.md) · [итоговое сравнение](../../docs/practice-05-replication/Replication_Optimization.md)
+- [Данные и проверка результатов](../../docs/practice-05-replication/data/) · [ограничения](../../docs/practice-05-replication/Testing_Report.md)

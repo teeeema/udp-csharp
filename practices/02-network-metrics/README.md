@@ -1,9 +1,7 @@
-# ПР2. Задержка, джиттер и потери
+# Практическая работа №2. Сетевые метрики
 
-Эксперимент измеряет RTT, сглаженный RTT, джиттер и долю потерь по запросам `PING` и ответам `PONG`. Исходные данные включают шесть серий по 50 запросов.
-
+Серии PING/PONG измеряют RTT, сглаженную задержку, джиттер и потери для нескольких сетевых профилей.
+- [Все документы, логи и доказательства](../../docs/practice-02-network-metrics/)
+- [Настройка эксперимента](../../docs/practice-02-network-metrics/Experiment_Config.md) · [анализ графиков](../../docs/practice-02-network-metrics/Charts_Analysis.md)
+- [CSV-измерения](../../docs/practice-02-network-metrics/latency_samples.csv) · [графики](../../docs/practice-02-network-metrics/charts/)
 - [Методичка](<../../Практическая работа 2.pdf>)
-- [Запуск эксперимента](../../docs/Демонстрация_запуска_ПР2.md)
-- [Условия эксперимента](../../docs/Experiment_Config.md)
-- [Отчёт](../../docs/Latency_Report.md) · [CSV](../../docs/latency_samples.csv) · [Графики](../../docs/charts/)
-- [Архитектура консольного проекта](../../docs/Architecture_Design.md)
